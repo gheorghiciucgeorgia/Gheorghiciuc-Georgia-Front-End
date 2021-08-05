@@ -12,6 +12,7 @@ body {
   font-family: "Lato", sans-serif;
   display: flex;
   justify-content: space-around;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* Style the header links */
@@ -58,13 +59,9 @@ body {
   font-weight: 700;
 }
 
-.header-center a, .header-right a {
-  margin-left: 20px;
-}
-
 /*--Styling the dropdown content--*/
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
+.dropdown, .dropdown2 {
   position: relative;
   display: inline-block;
 }
@@ -101,7 +98,41 @@ body {
 .header-center .princ-button:hover {
   background-color: #262a32;
   color: white;
-  padding: 10px 10px 40px 10px;
+  border-bottom: 5px solid #84bc22;
+  padding-bottom: 40px;
+}
+
+/*------------------------------------dropdown 2-----------------------------*/
+.dropdown-content2 {
+  display: none;
+  position: fixed;
+  background-color: #262a32;
+  width: 97%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 2.8%;
+  justify-content: flex-start;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Links inside the dropdown */
+.dropdown-content2 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown2:hover .dropbtn2 {
+  background-color: #262a32;
+  color: white;
   border-bottom: 5px solid #84bc22;
 }
 
