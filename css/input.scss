@@ -1,64 +1,109 @@
 $black:black;
 $white:white;
-$font:"Lato";
+$font:'Lato', sans-serif;;
 $dark-blue:rgb(1, 24, 71);
 $green:rgb(132, 188, 34);
+$darker-blue:#262a32;
 
 body{
-    background-color:$green;
+    background-color:$white;
 }
 /* The header style */
 .header {
     width:100%;
-    overflow: hidden;
-    background-color: $white;
-    padding:20px 0px;
-    font-family: $font;
     position: fixed;
+    overflow: hidden;
+    padding:20px 0px;
+    background-color: $white;
+    font-family: $font;
+    display:flex;
+    justify-content: space-around;
   }
+  
   /* Style the header links */
   .header a {
-    float: left;
     color: $black;
     padding: 12px;
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
-    border-radius: 4px;
   }
   
-  /* Style the logo link */
+  /*--header left styling--*/
   .header a.logo {
     font-size: 25px;
   }
-  /* The width of img */
   .header a.logo img{
     width:30%;
   }
-  /* The style of text */
   .header a.logo h1{
     float:right;
     line-height: 1.2;
     font-size: 31.655px;
     font-family: $font;
     color:$dark-blue;
-    font-weight: 900;
+    font-weight:900;
     text-transform: uppercase;
     text-align: left;
     position: absolute;
-    left: 100px;
-    top: 14.507px;
+    left: 12%;
+    top: 1.4%;
   }
-  /* The style of the span */
   .Academy {
     font-size: 18px;
     color: $green;
     position: absolute;
-    font-weight: 100;
+    font-weight: 700;
+  }
+  .header-center, .header-right{
+      padding-top:1.4%;
+      font-weight:700;
+  }
+  .header-center a, .header-right a{
+    margin-left: 20px;
+  }
+
+/*--Styling the dropdown content--*/
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color:$darker-blue;
+  width:97%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top:2.8%;
+  justify-content: flex-start;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: $white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn,
+.header-center .princ-button:hover {
+  background-color: $darker-blue;
+  color:$white;
+  padding:10px 10px 40px 10px;
+  border-bottom: 5px solid $green;
   }
   
-  /* Float the link section to the right */
-  .header-right {
-    float: right;
-  }
+ 
   
