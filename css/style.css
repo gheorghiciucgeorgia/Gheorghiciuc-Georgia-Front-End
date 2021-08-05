@@ -1,13 +1,15 @@
 body {
-  background-color: black;
+  background-color: #84bc22;
 }
 
 /* The header style */
 .header {
+  width: 100%;
+  position: fixed;
   overflow: hidden;
-  background-color: #ffffff;
-  padding: 20px 10px;
-  font-family: Lato;
+  padding: 20px 0px;
+  background-color: white;
+  font-family: "Lato";
 }
 
 /* Style the header links */

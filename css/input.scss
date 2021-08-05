@@ -1,17 +1,25 @@
+$black:black;
+$white:white;
+$font:"Lato";
+$dark-blue:rgb(1, 24, 71);
+$green:rgb(132, 188, 34);
+
 body{
-    background-color:black;
+    background-color:$green;
 }
 /* The header style */
 .header {
+    width:100%;
     overflow: hidden;
-    background-color: #ffffff;
-    padding: 20px 10px;
-    font-family: Lato;
+    background-color: $white;
+    padding:20px 0px;
+    font-family: $font;
+    position: fixed;
   }
   /* Style the header links */
   .header a {
     float: left;
-    color: black;
+    color: $black;
     padding: 12px;
     text-decoration: none;
     font-size: 18px;
@@ -32,8 +40,8 @@ body{
     float:right;
     line-height: 1.2;
     font-size: 31.655px;
-    font-family: "Lato";
-    color: rgb(1, 24, 71);
+    font-family: $font;
+    color:$dark-blue;
     font-weight: 900;
     text-transform: uppercase;
     text-align: left;
@@ -44,7 +52,7 @@ body{
   /* The style of the span */
   .Academy {
     font-size: 18px;
-    color: rgb(132, 188, 34);
+    color: $green;
     position: absolute;
     font-weight: 100;
   }
