@@ -1,8 +1,10 @@
+/*--------------------------Values saved----------------*/
+/*--------------------- Style of the body---------------- */
 body {
   background-color: white;
 }
 
-/* The header style */
+/* ---------------------The header style -------------------*/
 .header {
   width: 100%;
   position: fixed;
@@ -15,7 +17,7 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* Style the header links */
+/*-------------------- Style the header-links --------------*/
 .header a {
   color: black;
   padding: 12px;
@@ -24,7 +26,7 @@ body {
   line-height: 25px;
 }
 
-/*--header left styling--*/
+/*-------------------------left header styling-------------------*/
 .header a.logo {
   font-size: 25px;
 }
@@ -59,14 +61,13 @@ body {
   font-weight: 700;
 }
 
-/*--Styling the dropdown content--*/
-/* The container <div> - needed to position the dropdown content */
+/*------------------------------Styling the dropdown content--------------------------*/
 .dropdown, .dropdown2 {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/* --------------------Dropdown Content (Hidden by Default) -------------------*/
 .dropdown-content {
   display: none;
   position: fixed;
@@ -75,25 +76,63 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   margin-top: 2.8%;
-  justify-content: flex-start;
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+/*------------------------------Columns for the mega menu--------------*/
+.column {
+  float: left;
+  width: 15%;
+  margin-left: 5%;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 
-/* Show the dropdown menu on hover */
+/* ----------------------Clear floats after the columns -----------------*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ----------------------------Links inside the dropdown ---------------*/
+.dropdown-content a {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-decoration: none;
+  display: block;
+  margin-left: -12px;
+}
+
+/*-----------------------------Styling the Titles in the dropdown contect---*/
+.column h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/*------Styling the empty space to keep all the columns inside the dropdown at the same level--*/
+.column .downsize {
+  font-size: 62px;
+}
+
+/*----------------------style the image in the dropdown content-----*/
+.column img {
+  width: 140%;
+  margin-top: 20%;
+  margin-left: -60%;
+}
+
+/* --------------------Show the dropdown menu on hover------------------ */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
+/* and for the rest of the buttons to be some hover over them */
 .dropdown:hover .dropbtn,
 .header-center .princ-button:hover {
   background-color: #262a32;
@@ -102,7 +141,7 @@ body {
   padding-bottom: 40px;
 }
 
-/*------------------------------------dropdown 2-----------------------------*/
+/*------------------------------------DROPDOWN2-----------------------------*/
 #droptdownbtn2 {
   color: rgba(69, 65, 62, 0.502);
 }
