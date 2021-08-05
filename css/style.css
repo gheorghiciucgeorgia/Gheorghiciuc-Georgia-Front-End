@@ -1,56 +1,62 @@
-body{
-    background-color:black;
+body {
+  background-color: black;
 }
+
 /* The header style */
 .header {
-    overflow: hidden;
-    background-color: #ffffff;
-    padding: 20px 10px;
-    font-family: Lato;
-  }
-  /* Style the header links */
-  .header a {
-    float: left;
-    color: black;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-  }
-  
-  /* Style the logo link */
-  .header a.logo {
-    font-size: 25px;
-  }
-  /* The width of img */
-  .header a.logo img{
-    width:30%;
-  }
-  /* The style of text */
-  .header a.logo h1{
-    float:right;
-    line-height: 1.2;
-    font-size: 31.655px;
-    font-family: "Lato";
-    color: rgb(1, 24, 71);
-    font-weight: 900;
-    text-transform: uppercase;
-    text-align: left;
-    position: absolute;
-    left: 100px;
-    top: 14.507px;
-  }
-  /* The style of the span */
-  .Academy {
-    font-size: 18px;
-    color: rgb(132, 188, 34);
-    position: absolute;
-    font-weight: 100;
-  }
-  
-  /* Float the link section to the right */
-  .header-right {
-    float: right;
-  }
-  
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 20px 10px;
+  font-family: Lato;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link */
+.header a.logo {
+  font-size: 25px;
+}
+
+/* The width of img */
+.header a.logo img {
+  width: 30%;
+}
+
+/* The style of text */
+.header a.logo h1 {
+  float: right;
+  line-height: 1.2;
+  font-size: 31.655px;
+  font-family: "Lato";
+  color: #011847;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: left;
+  position: absolute;
+  left: 100px;
+  top: 14.507px;
+}
+
+/* The style of the span */
+.Academy {
+  font-size: 18px;
+  color: #84bc22;
+  position: absolute;
+  font-weight: 100;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/*# sourceMappingURL=style.css.map */
