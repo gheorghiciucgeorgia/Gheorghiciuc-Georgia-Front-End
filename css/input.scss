@@ -7,6 +7,8 @@ $green:rgb(132, 188, 34);
 $darker-blue:#262a32;
 $light-grey:rgba(69, 65, 62, 0.502);
 $lighter-gray:rgb(232, 226, 214);
+$icons-color:rgb(69, 65, 62);
+$border-color:rgb(215, 215, 215);
 
 /*--------------------- Style of the body---------------- */
 body{
@@ -24,41 +26,38 @@ body{
     justify-content: space-around;
     border-bottom:3px solid $lighter-gray;
     margin-left:-1%;
-  }
-  
-  /*-------------------- Style the header-links --------------*/
-  .header a {
-    color: $black;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 400;
-  }
-  
-  /*-------------------------left header styling-------------------*/
-  .header a.logo {
-    font-size: 25px;
-  }
 
-  .header a.logo img{
-    width:30%;
+    /*-------------------- Style the header-links --------------*/
+    a {
+      color: $black;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 400;
+      
+       /*-------------------------left header styling-------------------*/
+      .logo {
+        font-size: 25px;
+      }
+    }
+    a.logo img{
+      width:30%;
+    }
+    a.logo h1{
+      float:right;
+      line-height: 1.2;
+      font-size: 31.655px;
+      font-family: $font;
+      color:$dark-blue;
+      font-weight:900;
+      text-transform: uppercase;
+      text-align: left;
+      position: absolute;
+      left: 11%;
+      top: -8%;
+    }
   }
-
-  .header a.logo h1{
-    float:right;
-    line-height: 1.2;
-    font-size: 31.655px;
-    font-family: $font;
-    color:$dark-blue;
-    font-weight:900;
-    text-transform: uppercase;
-    text-align: left;
-    position: absolute;
-    left: 11%;
-    top: -8%;
-  }
-
   .Academy {
     font-size: 18px;
     color: $green;
@@ -66,6 +65,7 @@ body{
     font-weight: 700;
   }
 
+/*----------------Styling the header-center and header-right----*/
   .header-center, .header-right{
       padding-top:1.4%;
       font-weight:700;
@@ -89,51 +89,51 @@ body{
   margin-top:2.15%;
   left: 50%;
   transform: translateX(-50%);
+
+  /* ----------------------------Links inside the dropdown ---------------*/
+    a {
+      color: $white;
+      font-size:15px;
+      font-weight:400;
+      line-height: 1.2;
+      text-decoration: none;
+      display: block;
+      margin-left:-12px;
+    }
 }
-/*------------------------------Columns for the mega menu--------------*/
-.column {
-  float: left;
-  width: 15%;
-  margin-left:5%;
-  margin-top:2.5%;
-  margin-bottom:3%;
-}
+  /*------------------------------Columns for the mega menu--------------*/
+  .column {
+    float: left;
+    width: 15%;
+    margin-left:5%;
+    margin-top:2.5%;
+    margin-bottom:3%;
+
+    /*-----------------------------Styling the Titles in the dropdown contect---*/
+      h2{
+        color:$white;
+        font-size: 18px;
+        font-weight: 900;
+      }
+    /*------Styling the empty space to keep all the columns inside the dropdown at the same level--*/
+      .downsize{
+        font-size:64px;
+      }
+    
+      /*----------------------style the image in the dropdown content-----*/
+      img{
+        width:140%;
+        margin-top:20%;
+        margin-left: -60%;
+        border-radius:5%;
+      }
+  }
 
 /* ----------------------Clear floats after the columns -----------------*/
 .row:after {
   content: "";
   display: table;
   clear: both;
-}
-/* ----------------------------Links inside the dropdown ---------------*/
-.dropdown-content a {
-  color: $white;
-  font-size:15px;
-  font-weight:400;
-  line-height: 1.2;
-  text-decoration: none;
-  display: block;
-  margin-left:-12px;
-}
-
-/*-----------------------------Styling the Titles in the dropdown contect---*/
-.column h2{
-  color:$white;
-  font-size: 18px;
-  font-weight: 900;
-}
-
-/*------Styling the empty space to keep all the columns inside the dropdown at the same level--*/
-.column .downsize{
-  font-size:64px;
-}
-
-/*----------------------style the image in the dropdown content-----*/
-.column img{
-  width:140%;
-  margin-top:20%;
-  margin-left: -60%;
-  border-radius:5%;
 }
 
 /* --------------------Show the dropdown menu on hover------------------ */
@@ -160,19 +160,197 @@ body{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     justify-content: flex-start;
-  }
-  /* Links inside the dropdown */
-  .dropdown-content2 a {
-    color: $black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .dropdown-content2 a:hover{
-    background-color:rgb(228, 227, 227);
+      /* Links inside the dropdown */
+    a {
+      color: $black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    a:hover{
+      background-color:rgb(228, 227, 227);
+    }
   }
   /* Show the dropdown menu on hover */
   .dropdown2:hover .dropdown-content2 {display: block;}
+
+  /*------------------Styling the header-right--------*/
+  .header-right{
+    a{
+      font-size:25px;
+      margin-left:20px;
+      color:$icons-color;
+      opacity:0.502;
+      font-weight: 400;
+    }
+  }
+
+  /*--------------Modal form Log In----------*/
+
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0, 0.741); /* Black w/ opacity */
+  padding-top: 10px;
+  font-family: $font;
+}
+
+  /* Modal Content/Box */
+
+.modal-content {
+  background-color:$white;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  width: 40%; /* Could be more or less, depending on screen size */
+  border-radius: 6px;
+  padding:30px 0px;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+  
+  h1{
+    color:$icons-color;
+    font-weight:900;
+    font-size:40px;
+  }
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: -110%;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  opacity:0.5;
+  cursor: pointer;
+}
+
+.container {
+  padding: 60px;
+}
+
+/* The fields of the email and lato */
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid $border-color;
+  box-sizing: border-box;
+  border-radius: 25px;
+  outline:none;
+  font-weight:400;
+  margin-bottom:40px;
+  background-color: transparent;
+  z-index:1;
+}
+
+/* the styling of the forgot password */
+span.psw {
+  float: right;
+  a{
+    text-decoration: none;
+    color:$green;
+    font-weight:700;
+  }
+}
+.input-container{
+  position: relative;
+}
+.input-container .fa-eye{
+  float:right;
+  opacity:0.7;
+  font-size:20px;
+  position: absolute;
+  top:20px;
+  right:20px;
+  z-index:2;
+  cursor: pointer;
+}
+/* Set a style for all buttons */
+button {
+  background-color: $green;
+  color:$white;
+  padding: 14px 100px;
+  margin: 8px 0;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $green;
+  cursor: pointer;
+  border-radius:25px;
+  text-transform: uppercase;
+  font-size:18px;
+  text-align: center;
+  font-family: $font;
+
+  /*we put the button in the center of the modal container */
+  display:grid;
+  margin:auto;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.idonthave{
+  text-align: center;
+  display:grid;
+  margin:auto;
+  font-size:20px;
+  line-height: 3.583;
+  color:$green;
+  
+  a{
+    text-decoration: none;
+    color:$green;
+  }
+  a:hover{
+    opacity:0.7;
+  }
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+      
   
  
   
