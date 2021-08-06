@@ -17,7 +17,7 @@ body{
     width:100%;
     position: fixed;
     overflow: hidden;
-    padding:30px 10px 20px 0px;
+    padding:10px 10px 10px 0px;
     background-color: $white;
     font-family: $font;
     display:flex;
@@ -55,8 +55,8 @@ body{
     text-transform: uppercase;
     text-align: left;
     position: absolute;
-    left: 12%;
-    top: 10%;
+    left: 11%;
+    top: -8%;
   }
 
   .Academy {
@@ -86,7 +86,7 @@ body{
   width:97%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  margin-top:2.8%;
+  margin-top:2.15%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -95,8 +95,8 @@ body{
   float: left;
   width: 15%;
   margin-left:5%;
-  margin-top:4%;
-  margin-bottom:4%;
+  margin-top:2.5%;
+  margin-bottom:3%;
 }
 
 /* ----------------------Clear floats after the columns -----------------*/
@@ -146,7 +146,7 @@ body{
   background-color: $darker-blue;
   color:$white;
   border-bottom: 5px solid $green;
-  padding-bottom:40px;
+  padding-bottom:30px;
   }
 
   /*------------------------------------DROPDOWN2-----------------------------*/
