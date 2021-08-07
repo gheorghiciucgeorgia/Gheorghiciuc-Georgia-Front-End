@@ -354,5 +354,8 @@ button:hover {
     width: 100%;
   }
 }
+.menu-wrap {
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */

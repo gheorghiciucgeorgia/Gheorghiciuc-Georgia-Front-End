@@ -1,4 +1,5 @@
-@media only screen and (max-width: 1138px) and (min-width: 768px) {
+/* for tablets */
+@media only screen and (max-width: 1138px) and (min-width: 767px) {
   .header a {
     font-size: 10px;
   }
@@ -27,6 +28,28 @@
 
   .modal-content {
     width: 50%;
+  }
+}
+/* for phones */
+@media only screen and (max-width: 767px) and (min-width: 280px) {
+  .header {
+    justify-content: center;
+  }
+  .header a.logo img {
+    width: 40%;
+    display: grid;
+    margin: -10% auto;
+  }
+  .header a.logo h1 {
+    display: none;
+  }
+
+  .header-right a {
+    displaY: none;
+  }
+
+  .header-center {
+    display: none;
   }
 }
 
