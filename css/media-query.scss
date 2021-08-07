@@ -1,0 +1,30 @@
+@media only screen and (max-width: 1138px) and (min-width: 768px){
+  .header {
+      a{
+        font-size:10px;
+
+        .logo{
+          font-size:15px;
+        }
+      }
+      a.logo img{
+        width:20%;
+      }
+      a.logo h1{
+        font-size:20px;
+        top:-1%;
+      }
+    }
+    .Academy{
+      font-size:12px;
+    }
+    .header-right a{
+      margin-left:-10px;
+    }
+    .header-center  {
+      margin-right:10px;
+    }
+    .modal-content{
+      width: 50%;
+    }
+}
