@@ -34,11 +34,14 @@
 @media only screen and (max-width: 767px) and (min-width: 280px) {
   .header {
     justify-content: center;
+    /*a.logo img{
+      width: 40%;
+      display: grid;
+      margin: -10% auto;
+    }*/
   }
-  .header a.logo img {
-    width: 40%;
-    display: grid;
-    margin: -10% auto;
+  .header .header-left {
+    display: none;
   }
   .header a.logo h1 {
     display: none;
@@ -50,6 +53,177 @@
 
   .header-center {
     display: none;
+  }
+
+  .media-dropdown {
+    display: block;
+    text-align: left;
+    line-height: 70px;
+    width: 100%;
+  }
+  .media-dropdown label {
+    width: 50px;
+    font-size: 50px;
+    color: #45413e;
+    margin: 0 35% 0 0;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .media-dropdown .PictureWoman {
+    width: 70%;
+    border-radius: 5%;
+  }
+  .media-dropdown .logo-query {
+    width: 15%;
+  }
+
+  .menu-media {
+    width: 100%;
+    height: 550px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 30px 0 0;
+    text-align: center;
+    display: none;
+    border: 1px solid black;
+    background-color: #262a32;
+  }
+  .menu-media label {
+    font-size: 15px;
+    margin: 0;
+  }
+  .menu-media input {
+    display: inline;
+    position: absolute;
+    left: 100px;
+    top: 120px;
+  }
+  .menu-media p {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    line-height: 70px;
+    display: block;
+    font-family: "Lato", sans-serif;
+    text-align: left;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  .menu-media p:hover {
+    border-bottom: 5px solid #84bc22;
+  }
+
+  .sub-menu-media {
+    display: none;
+    margin-left: 10px;
+  }
+  .sub-menu-media label {
+    font-size: 15px;
+  }
+  .sub-menu-media span {
+    font-size: 15px;
+  }
+  .sub-menu-media a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    line-height: 50px;
+    display: block;
+    font-family: "Lato", sans-serif;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .sub-menu2-media {
+    margin-left: 50px;
+    display: none;
+  }
+
+  .sub-menu3-media {
+    display: none;
+    margin-left: 50px;
+  }
+
+  #toggle-second:checked + .sub-menu-media {
+    display: block;
+  }
+
+  #toggle-third:checked + .sub-menu2-media {
+    display: block;
+  }
+
+  #toggle-fourth:checked + .sub-menu3-media {
+    display: block;
+  }
+
+  #toggle-fifth:checked + .sub-menu4-media {
+    display: block;
+  }
+
+  #toggle-sixth:checked + .sub-menu5-media {
+    display: block;
+  }
+
+  .sub-menu4-media {
+    display: none;
+  }
+
+  .sub-menu4-media {
+    margin-left: 20px;
+  }
+  .sub-menu4-media label {
+    font-size: 15px;
+  }
+  .sub-menu4-media span {
+    font-size: 15px;
+  }
+  .sub-menu4-media a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    line-height: 50px;
+    display: block;
+    font-family: "Lato", sans-serif;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .sub-menu5-media {
+    display: none;
+    margin-left: 10px;
+  }
+  .sub-menu5-media label {
+    font-size: 15px;
+  }
+  .sub-menu5-media span {
+    font-size: 15px;
+  }
+  .sub-menu5-media a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    line-height: 50px;
+    display: block;
+    font-family: "Lato", sans-serif;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  #toggle,
+#toggle-second,
+#toggle-third,
+#toggle-fourth,
+#toggle-fifth,
+#toggle-sixth {
+    display: none;
+  }
+
+  #toggle:checked + .menu-media {
+    display: block;
+  }
+
+  .mobile-footer {
+    display: block;
   }
 }
 
