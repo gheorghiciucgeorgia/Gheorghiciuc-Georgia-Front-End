@@ -222,5 +222,40 @@ $border-color:rgb(215, 215, 215);
   }
   .mobile-footer{
     display:block;
+    position: fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:$darker-blue;
+    color:$white;
+    text-align: center;
+    padding:20px 0px 20px 20px;
+
+    a{
+      font-size:30px;
+      text-decoration: none;
+      color:$lighter-gray;
+      margin-right:15%;
+    }
+  }
+  /*-------Styling the modal---*/
+  .modal-content{
+    width:70%;
+    height:60%;
+  }
+  .imgcontainer{
+    h1{
+      font-size:27px;
+    }
+  }
+  .close{
+    font-size:20px;
+  }
+  button{
+    font-size:12px;
+    padding:14px 50px;
+  }
+  .idonthave{
+    font-size:15px;
   }
 }
