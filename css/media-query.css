@@ -262,6 +262,10 @@
   .idonthave {
     font-size: 15px;
   }
+
+  .main-footer {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=media-query.css.map */

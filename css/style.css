@@ -1,7 +1,7 @@
 /*--------------------------Values saved----------------*/
 /*--------------------- Style of the body---------------- */
 body {
-  background-color: white;
+  background-color: black;
 }
 
 /* ---------------------The header style -------------------*/
@@ -173,6 +173,10 @@ body {
   color: #45413e;
   opacity: 0.502;
   font-weight: 400;
+}
+.header-right .fa-heart:hover, .header-right .fa-shopping-bag:hover {
+  color: #84bc22;
+  opacity: 1;
 }
 
 /*--------------Modal form Log In----------*/
@@ -347,16 +351,82 @@ button:hover {
   display: none;
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-
-  .cancelbtn {
-    width: 100%;
-  }
+.mobile-footer {
+  display: none;
 }
+
+/*------Footer-----*/
+.main-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  font-family: "Lato", sans-serif;
+  padding: 3% 0%;
+}
+.main-footer .copyright {
+  color: #45413e;
+  font-size: 15px;
+  font-weight: 700;
+}
+.main-footer a {
+  text-decoration: none;
+  line-height: 1.2;
+  color: rgba(69, 65, 62, 0.502);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  display: block;
+  padding-bottom: 7%;
+}
+.main-footer .inline {
+  display: inline-flex;
+  justify-content: center;
+}
+.main-footer .inline a {
+  padding-right: 25%;
+  font-size: 20px;
+}
+
+.footer-column {
+  float: left;
+  width: 12%;
+  margin-left: 4%;
+  margin-top: 0.5%;
+}
+.footer-column h2 {
+  font-size: 15px;
+  color: #333333;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 20%;
+}
+.footer-column .down {
+  margin-bottom: 10%;
+}
+.footer-column .downsize {
+  padding-bottom: 12%;
+}
+.footer-column #special-column {
+  margin-top: 10%;
+}
+.footer-column #special-column a {
+  color: #45413e;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* Clear floats after the columns */
+.footer-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*-------End Footer-----*/
 
 /*# sourceMappingURL=style.css.map */

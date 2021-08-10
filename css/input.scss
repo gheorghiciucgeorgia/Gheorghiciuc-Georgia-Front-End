@@ -9,10 +9,11 @@ $light-grey:rgba(69, 65, 62, 0.502);
 $lighter-gray:rgb(232, 226, 214);
 $icons-color:rgb(69, 65, 62);
 $border-color:rgb(215, 215, 215);
+$color-footer-titles:rgb(51, 51, 51);
 
 /*--------------------- Style of the body---------------- */
 body{
-    background-color:$white;
+    background-color:$black;
 }
 /* ---------------------The header style -------------------*/
 .header {
@@ -183,7 +184,12 @@ body{
       opacity:0.502;
       font-weight: 400;
     }
+    .fa-heart:hover,.fa-shopping-bag:hover{
+      color:$green;
+      opacity:1;
+    }
   }
+  
 
   /*--------------Modal form Log In----------*/
 
@@ -346,16 +352,80 @@ button:hover {
 .mobile-footer{
   display:none;
 }
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
+.footer2-media{
+  display:none;
 }
+/*------Footer-----*/
+.main-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:$white;
+    color: $black;
+    font-family: $font;
+    padding:3% 0%;
+    
+    .copyright{
+      color:$icons-color;
+      font-size:15px;
+      font-weight: 700;
+    }
+
+    a{
+      text-decoration: none;
+      line-height: 1.2;
+      color:$light-grey;
+      font-size:15px;
+      font-weight:400;
+      line-height: 1.2;
+      display: block;
+      padding-bottom:7%;
+    }
+    .inline{
+      display:inline-flex;
+      justify-content: center;
+        a{
+          padding-right:25%;
+          font-size:20px;
+        }
+      }
+}
+.footer-column {
+  float: left;
+  width: 12%;
+  margin-left:4%;
+  margin-top:0.5%;
+
+  h2{
+    font-size: 15px;
+    color: $color-footer-titles;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    margin-top:20%;
+  }
+  .down{
+    margin-bottom:10%;
+  }
+  .downsize{
+    padding-bottom:12%;
+  }
+  #special-column{ 
+    a{
+      color:$icons-color;
+      font-size:15px;
+      font-weight:700;
+    }
+    margin-top:10%;
+  }
   
- 
-  
+}
+/* Clear floats after the columns */
+.footer-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*-------End Footer-----*/ 
