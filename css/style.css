@@ -355,6 +355,10 @@ button:hover {
   display: none;
 }
 
+.footer2-media {
+  display: none;
+}
+
 /*------Footer-----*/
 .main-footer {
   position: fixed;
@@ -365,6 +369,7 @@ button:hover {
   color: black;
   font-family: "Lato", sans-serif;
   padding: 3% 0%;
+  z-index: -1;
 }
 .main-footer .copyright {
   color: #45413e;

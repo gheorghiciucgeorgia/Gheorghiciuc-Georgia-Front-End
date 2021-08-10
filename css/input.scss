@@ -365,6 +365,7 @@ button:hover {
     color: $black;
     font-family: $font;
     padding:3% 0%;
+    z-index:-1;
     
     .copyright{
       color:$icons-color;

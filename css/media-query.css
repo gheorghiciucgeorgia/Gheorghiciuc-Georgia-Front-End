@@ -240,7 +240,7 @@
     margin-right: 15%;
   }
 
-  /*-------Styling the modal---*/
+  /*----------------------Styling the modal-------*/
   .modal-content {
     width: 70%;
     height: 60%;
@@ -263,8 +263,79 @@
     font-size: 15px;
   }
 
+  /*-------------------------END LOG IN MODAL FOR MEDIA--------------*/
   .main-footer {
     display: none;
+  }
+
+  /*-----------------------------FOOTER STYLING FOR MEDIA-------------------*/
+  .footer2-media {
+    width: 100%;
+    height: 300px;
+    display: block;
+    position: fixed;
+    bottom: 5%;
+    left: 0;
+    padding: 20px 0px 20px 20px;
+    background-color: white;
+    font-family: "Lato", sans-serif;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: -1;
+    font-size: 18px;
+  }
+
+  .contact-down {
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #45413e;
+    display: none;
+  }
+  .contact-down a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding-bottom: 12px;
+  }
+
+  #toggle-seventh,
+#toggle-eight,
+#toggle-neinth {
+    display: none;
+  }
+
+  #toggle-seventh:checked + .contact-down,
+#toggle-eight:checked + .contact2-down,
+#toggle-neinth:checked + .contact3-down {
+    display: block;
+  }
+
+  .contact2-down a,
+.contact3-down a {
+    text-decoration: none;
+    color: #45413e;
+    margin: 0;
+    line-height: 1.2;
+    display: block;
+    text-align: left;
+    margin-left: 50px;
+    font-size: 15px;
+  }
+
+  .contact2-down,
+.contact3-down {
+    display: none;
+  }
+
+  .social-media {
+    position: relative;
+    top: 0;
+  }
+  .social-media a {
+    padding-left: 15%;
+    width: 100%;
+    color: rgba(69, 65, 62, 0.502);
   }
 }
 
