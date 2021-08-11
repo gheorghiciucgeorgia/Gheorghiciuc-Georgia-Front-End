@@ -183,6 +183,9 @@ body {
   color: #84bc22;
   opacity: 1;
 }
+.header-right #user-icon {
+  width: auto;
+}
 
 /*--------------Modal form Log In----------*/
 /* The Modal (background) */
@@ -250,7 +253,7 @@ body {
 }
 
 /* The fields of the email and lato */
-input[type=text], input[type=password] {
+input[type=email], input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -263,6 +266,10 @@ input[type=text], input[type=password] {
   margin-bottom: 40px;
   background-color: transparent;
   z-index: 1;
+}
+
+#password {
+  position: relative;
 }
 
 /* the styling of the forgot password */
@@ -278,7 +285,6 @@ span.psw a {
 .input-container {
   position: relative;
 }
-
 .input-container .fa-eye {
   float: right;
   opacity: 0.7;

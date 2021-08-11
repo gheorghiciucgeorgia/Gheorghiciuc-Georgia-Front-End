@@ -239,6 +239,9 @@
     color: #e8e2d6;
     margin-right: 15%;
   }
+  .mobile-footer #user-icon-for-mobile {
+    width: auto;
+  }
 
   /*----------------------Styling the modal-------*/
   .modal-content {

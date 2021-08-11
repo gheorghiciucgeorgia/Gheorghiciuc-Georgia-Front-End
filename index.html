@@ -161,7 +161,7 @@
             <a href="#about" class="princ-button">LIBRARY</a>
             <a href="#about" class="princ-button">CONTACT US</a>
           <div class="dropdown2">
-              <a href="#about" id="droptdownbtn2" class="dropbtn2">EN <i class="fas fa-sort-down" style="margin-left:5px;"></i></a>
+              <a href="#about" id="droptdownbtn2" class="dropbtn2">EN <i class="fas fa-sort-down" ></i></a>
                 <div class="dropdown-content2">
                   <a href="#">US</a>
                   <a href="#">FR</a>
@@ -169,7 +169,7 @@
                 </div>
             </div>
             <div class="dropdown2">
-              <a href="#about" id="droptdownbtn2" class="dropbtn2">$ US <i class="fas fa-sort-down" style="margin-left:5px;"></i></a>
+              <a href="#about" id="droptdownbtn2" class="dropbtn2">$ US <i class="fas fa-sort-down" ></i></a>
                 <div class="dropdown-content2">
                   <a href="#">EUR</a>
                   <a href="#">CAD</a>
@@ -180,7 +180,7 @@
 
       <div class="header-right">
             <a href="#about"><i class="fas fa-search"></i></a>
-            <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="far fa-user"></i></a>
+            <a href="#" id="user-icon"><i class="far fa-user"></i></a>
             <a href="#about"><i class="far fa-heart"></i></a>
             <a href="#about"><i class="fas fa-shopping-bag"></i></a>
       </div>
@@ -193,17 +193,17 @@
       <form class="modal-content animate"  method="post">
         <div class="imgcontainer">
           <h1>Sign In</h1>
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <span id="close-icon" class="close" title="Close Modal">&times;</span>
         </div>
     
         <div class="container">
           <label for="uname"><b>Email</b></label>
-          <input type="text"  name="uname" required>
+          <input type="email"  name="uname"  required>
           <label for="psw"><b>Lato</b></label><span class="psw"><a href="#">forgot password</a></span>
           
           <div class="input-container">
           <i class="far fa-eye" id="togglePassword"></i>
-          <input   type="password" name="psw" style="position: relative;" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="At least 6 characters length, contain 1 numeric, 1 uppercase letter, 1 special character" required>
+          <input   type="password" name="psw" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="At least 6 characters length, contain 1 numeric, 1 uppercase letter, 1 special character" required>
           </div>
           <button type="submit">Login</button>
           <span class="idonthave"><a href="#">I don't have an account</a></span>
@@ -322,7 +322,7 @@
 <!--user aplications for mobile-->
 <footer class="mobile-footer">
   <a href="#about"><i class="fas fa-search"></i></a>
-  <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="far fa-user"></i></a>
+  <a href="#" id="user-icon-for-mobile"><i class="far fa-user"></i></a>
   <a href="#about"><i class="far fa-heart"></i></a>
   <a href="#about"><i class="fas fa-shopping-bag"></i></a> 
 </footer>

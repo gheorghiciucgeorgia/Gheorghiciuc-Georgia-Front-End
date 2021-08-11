@@ -1,7 +1,23 @@
 // Get the modal
 var modal = document.getElementById('id01');
+var usericon=document.getElementById('user-icon');
+var closeicon=document.getElementById('close-icon');
 
+//I had to do again for mobile because the id is unique and if i made for class it doesn't work
+var usericonmobile=document.getElementById('user-icon-for-mobile');
 
+//when you click on the user icon the modal it shows
+usericon.onclick = function(){
+    modal.style.display="block";
+};
+//click event for user icon mobile
+usericonmobile.onclick = function(){
+    modal.style.display="block";
+};
+//when the user clicks on the x it closes the modal
+closeicon.onclick=function(){
+    modal.style.display="none";
+};
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
