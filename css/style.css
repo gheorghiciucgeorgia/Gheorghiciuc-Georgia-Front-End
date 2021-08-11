@@ -137,6 +137,11 @@ body {
   padding-bottom: 30px;
 }
 
+/*--A little distance for the dropdown arrow on Services---*/
+.fa-sort-down {
+  margin-left: 5px;
+}
+
 /*------------------------------------DROPDOWN2-----------------------------*/
 #droptdownbtn2 {
   color: rgba(69, 65, 62, 0.502);
