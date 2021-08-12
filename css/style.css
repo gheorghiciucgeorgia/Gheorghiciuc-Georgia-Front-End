@@ -1,19 +1,20 @@
 /*--------------------------Values saved----------------*/
-/*--------------------- Style of the body---------------- */
+/* use viewport-relative units to cover page fully */
 body {
-  background-color: white;
+  font-family: "Lato", sans-serif;
+  background-color: #d7d7d7;
 }
 
+/*--------------------- Style of the body---------------- */
 /* ---------------------The header style -------------------*/
 .header {
   width: 100%;
-  position: fixed;
+  position: relative;
   overflow: hidden;
-  padding: 10px 10px 10px 0px;
-  background-color: white;
-  font-family: "Lato", sans-serif;
   display: flex;
   justify-content: space-around;
+  padding: 10px 10px 10px 0px;
+  background-color: white;
   border-bottom: 3px solid #e8e2d6;
   margin-left: -1%;
   z-index: 12;
@@ -38,7 +39,6 @@ body {
   float: right;
   line-height: 1.2;
   font-size: 31.655px;
-  font-family: "Lato", sans-serif;
   color: #011847;
   font-weight: 900;
   text-transform: uppercase;
@@ -201,14 +201,10 @@ body {
   top: 0;
   width: 100%;
   /* Full width */
-  height: 100%;
-  /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.741);
   /* Black w/ opacity */
-  padding-top: 10px;
-  font-family: "Lato", sans-serif;
   z-index: 13;
 }
 
@@ -217,10 +213,10 @@ body {
   background-color: white;
   margin: 5% auto 15% auto;
   /* 5% from the top, 15% from the bottom and centered */
-  width: 40%;
+  width: 30%;
   /* Could be more or less, depending on screen size */
   border-radius: 6px;
-  padding: 30px 0px;
+  padding: 10px 0px;
 }
 
 /* Center the image and position the close button */
@@ -239,7 +235,7 @@ body {
 .close {
   position: absolute;
   right: 25px;
-  top: -110%;
+  top: -80%;
   font-size: 35px;
   font-weight: bold;
 }
@@ -312,7 +308,6 @@ span.psw a {
   text-transform: uppercase;
   font-size: 18px;
   text-align: center;
-  font-family: "Lato", sans-serif;
   /*we put the button in the center of the modal container */
   display: grid;
   margin: auto;
@@ -377,11 +372,8 @@ span.psw a {
 .homepage {
   display: flex;
   justify-content: center;
-  position: absolute;
-  width: 100%;
-  top: 20%;
-  z-index: 1;
-  font-family: "Lato", sans-serif;
+  background-color: rgba(69, 65, 62, 0.502);
+  margin-top: 4%;
 }
 .homepage .right-content {
   padding-left: 5%;
@@ -492,17 +484,18 @@ span.psw a {
     opacity: 1;
   }
 }
+.products {
+  background-color: #011847;
+  color: white;
+  margin-top: 4%;
+}
+
 /*--------------------------------------------------Footer--------------------------*/
 .main-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
   background-color: white;
   color: black;
-  font-family: "Lato", sans-serif;
   padding: 3% 0%;
-  z-index: -1;
 }
 .main-footer .copyright {
   color: #45413e;

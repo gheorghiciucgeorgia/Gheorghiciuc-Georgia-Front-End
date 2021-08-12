@@ -11,20 +11,21 @@ $icons-color:rgb(69, 65, 62);
 $border-color:rgb(215, 215, 215);
 $color-footer-titles:rgb(51, 51, 51);
 
-/*--------------------- Style of the body---------------- */
-body{
-    background-color:$white;
+/* use viewport-relative units to cover page fully */
+body {
+  font-family:$font;
+  background-color: $border-color;
 }
+/*--------------------- Style of the body---------------- */
 /* ---------------------The header style -------------------*/
 .header {
     width:100%;
-    position: fixed;
+    position: relative;
     overflow: hidden;
-    padding:10px 10px 10px 0px;
-    background-color: $white;
-    font-family: $font;
     display:flex;
     justify-content: space-around;
+    padding:10px 10px 10px 0px;
+    background-color: $white;
     border-bottom:3px solid $lighter-gray;
     margin-left:-1%;
     z-index:12;
@@ -50,7 +51,6 @@ body{
       float:right;
       line-height: 1.2;
       font-size: 31.655px;
-      font-family: $font;
       color:$dark-blue;
       font-weight:900;
       text-transform: uppercase;
@@ -209,11 +209,8 @@ body{
   left: 0;
   top: 0;
   width: 100%; /* Full width */
-  height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(0,0,0, 0.741); /* Black w/ opacity */
-  padding-top: 10px;
-  font-family: $font;
   z-index:13;
 }
 
@@ -222,9 +219,9 @@ body{
 .modal-content {
   background-color:$white;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  width: 40%; /* Could be more or less, depending on screen size */
+  width: 30%; /* Could be more or less, depending on screen size */
   border-radius: 6px;
-  padding:30px 0px;
+  padding:10px 0px;
 }
 
 /* Center the image and position the close button */
@@ -243,7 +240,7 @@ body{
 .close {
   position: absolute;
   right: 25px;
-  top: -110%;
+  top: -80%;
   font-size: 35px;
   font-weight: bold;
 }
@@ -314,7 +311,6 @@ span.psw {
   text-transform: uppercase;
   font-size:18px;
   text-align: center;
-  font-family: $font;
 
   /*we put the button in the center of the modal container */
   display:grid;
@@ -372,11 +368,8 @@ span.psw {
 .homepage{
   display:flex;
   justify-content: center;
-  position:absolute;
-  width: 100%;
-  top:20%;
-  z-index:1;
-  font-family: $font;
+  background-color: $light-grey;
+  margin-top:4%;
 
     .right-content{
         padding-left:5%;
@@ -388,7 +381,6 @@ span.psw {
       }
     }
 }
-
 /*---------Styling carousel banner---*/
 .slideshow-container {
   max-width: 1000px;
@@ -481,17 +473,17 @@ span.psw {
   from {opacity: .4}
   to {opacity: 1}
 }
+.products{
+  background-color: $dark-blue;
+  color:white;
+  margin-top:4%;
+}
 /*--------------------------------------------------Footer--------------------------*/
 .main-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     background-color:$white;
     color: $black;
-    font-family: $font;
     padding:3% 0%;
-    z-index:-1;
     
     .copyright{
       color:$icons-color;
