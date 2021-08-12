@@ -10,11 +10,10 @@ $lighter-gray:rgb(232, 226, 214);
 $icons-color:rgb(69, 65, 62);
 $border-color:rgb(215, 215, 215);
 $color-footer-titles:rgb(51, 51, 51);
-
+$facebook-color:rgb(58, 91, 150);
 /* use viewport-relative units to cover page fully */
 body {
   font-family:$font;
-  background-color: $border-color;
 }
 /*--------------------- Style of the body---------------- */
 /* ---------------------The header style -------------------*/
@@ -368,92 +367,177 @@ span.psw {
 .homepage{
   display:flex;
   justify-content: center;
-  background-color: $light-grey;
   margin-top:4%;
 
     .right-content{
         padding-left:5%;
       .btn55{
-        padding:14px 50px;
+        padding:5px 40px;
+        border-radius:6px;
+        position: relative;
+        text-align:center;
+        display:block;
+        border:none;
+        background-color: $green;
+        color:$white;
+        text-transform: uppercase;
+          h1{
+            font-size:100px;
+            opacity:1;
+            font-weight:900;
+          }
+          h2{
+            text-align: center;
+            width:80%;
+            font-weight:400;
+          }
+          img{
+            position: absolute;
+            bottom:0;
+            left:0;
+            opacity: 0.078;
+            height:50%;
+          }
       }
       .socialmedia-text{
         font-size:12px;
+        text-align:center;
+          h2{
+            font-weight:400;
+          }
+          h3{
+            font-weight:400;
+          }
+          button{
+            border-radius:25px;
+            border:2px solid $facebook-color;
+            background-color:transparent;
+            padding:10px 40px;
+            font-size:20px;
+            color:$facebook-color;
+            i{
+              padding-right:15px;
+            }
+            a{
+              text-decoration: none;
+              color:inherit;
+              text-transform: uppercase;
+            }
+          }
       }
     }
 }
+
+
 /*---------Styling carousel banner---*/
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  color:$white;
+
+    /* Styling the Left text */
+    .text-left {
+      position: absolute;
+      font-size: 50px;
+      top:3%;
+      left:5%;
+    }
+    .minitext-left{
+      position: absolute;
+      font-size: 15px;
+      font-weight:400;
+      top:50%;
+      left:6%;
+    }
+    .viewmorebtn{
+      position: absolute;
+      border:2px solid $white;
+      border-radius:25px;
+      background-color: transparent;
+      padding:10px 35px;
+      bottom:20%;
+      left:6%;
+      text-transform: uppercase;
+        a{
+          text-decoration: none;
+          color:inherit;
+        }
+    }
+    /*Styling the center text */
+    .text-center {
+      left: 20%;
+      text-align: center;
+    }
+    .minitext-center{
+      left:32%;
+      text-align: center;
+    }
+    .center{
+      text-align: center;
+      left:42%;
+    }
+    /*Styling the right text*/
+    .text-right{
+      position: absolute;
+      font-size: 50px;
+      top:3%;
+      right:5%;
+      text-align:right;
+    }
+    .minitext-right{
+      position: absolute;
+      font-size: 15px;
+      font-weight:400;
+      top:50%;
+      right:10%;
+      text-align:right;
+    }
+    .viewmorebtn-right{
+      position: absolute;
+      border:2px solid $white;
+      border-radius:25px;
+      background-color: transparent;
+      padding:10px 35px;
+      bottom:20%;
+      right:10%;
+      text-transform: uppercase;
+        a{
+          text-decoration: none;
+          color:inherit;
+        }
+    }
+
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
 }
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
+.alldots{
   position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  text-align:center;
+	bottom:5%;
+  width:100%;
 }
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text-left {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
+  height: 10px;
+  width: 10px;
+  margin: 0% 1%;
+  background-color: $white;
+  border:4px solid transparent;
+  opacity:0.502;
   border-radius: 50%;
-  display: inline-block;
+  display:inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  border:4px solid $white;
+  background-color: transparent;
+  opacity:1;
 }
 
 /* Fading animation */
