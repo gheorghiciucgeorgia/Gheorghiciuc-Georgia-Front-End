@@ -371,7 +371,7 @@ span.psw a {
 .homepage {
   display: flex;
   justify-content: center;
-  margin-top: 4%;
+  margin: 4%;
 }
 .homepage .right-content {
   padding-left: 5%;
@@ -566,10 +566,31 @@ span.psw a {
     opacity: 1;
   }
 }
-.products {
-  background-color: #011847;
+/*-------------------------------------------POPULAR ITEMS---------------------*/
+.popular-items-section {
+  background-color: #262a32;
   color: white;
-  margin-top: 4%;
+  padding: 4%;
+}
+.popular-items-section .popular-items-title {
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.popular-items-section .products-list {
+  display: flex;
+  justify-content: row;
+  margin-left: 4%;
+}
+
+.popular-items-title:before, .popular-items-title:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 3px solid white;
+  margin: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  opacity: 0.5;
 }
 
 /*--------------------------------------------------Footer--------------------------*/

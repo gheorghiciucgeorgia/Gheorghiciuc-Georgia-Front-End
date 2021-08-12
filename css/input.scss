@@ -367,7 +367,7 @@ span.psw {
 .homepage{
   display:flex;
   justify-content: center;
-  margin-top:4%;
+  margin:4%;
 
     .right-content{
         padding-left:5%;
@@ -427,8 +427,6 @@ span.psw {
       }
     }
 }
-
-
 /*---------Styling carousel banner---*/
 .slideshow-container {
   max-width: 1000px;
@@ -557,11 +555,33 @@ span.psw {
   from {opacity: .4}
   to {opacity: 1}
 }
-.products{
-  background-color: $dark-blue;
-  color:white;
-  margin-top:4%;
+/*-------------------------------------------POPULAR ITEMS---------------------*/
+.popular-items-section{
+  background-color: $darker-blue;
+  color:$white;
+  padding:4%;
+    .popular-items-title{
+        font-size:30px;
+        display: flex; 
+	      flex-direction: row;
+    }
+    .products-list{
+      display:flex;
+      justify-content: row;
+      margin-left:4%;
+    }
 }
+//--the lines after and before the title----//
+.popular-items-title:before,.popular-items-title:after{
+  content: ""; 
+  flex: 1 1; 
+  border-bottom: 3px solid rgb(255, 255, 255); 
+  margin:auto;
+  margin-left:50px;
+  margin-right:50px;
+  opacity: 0.5;
+}
+
 /*--------------------------------------------------Footer--------------------------*/
 .main-footer{
     width: 100%;
