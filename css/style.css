@@ -741,6 +741,63 @@ span.psw a {
   display: table;
   clear: both;
 }
+.popular-items-section .loadbtn-section {
+  display: flex;
+  justify-content: center;
+}
+.popular-items-section .load-btn {
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 1% 8%;
+  background-color: transparent;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.popular-items-section .load-btn i {
+  margin-left: 4px;
+}
+.popular-items-section .load-btn:hover {
+  background-color: #84bc22;
+  color: black;
+  border-color: #84bc22;
+}
+.popular-items-section .box-hidden {
+  display: none;
+}
+
+/*---------------------BANNER OSF THEME------*/
+.banner {
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+}
+.banner h1 {
+  position: absolute;
+  font-size: 70px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner h2 {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 400;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+
+/*------------------------FEATURED PRODUCTS--------------*/
+.featured-products {
+  width: 100%;
+  background-color: #262a32;
+  color: white;
+}
 
 /*--------------------------------------------------Footer--------------------------*/
 .main-footer {

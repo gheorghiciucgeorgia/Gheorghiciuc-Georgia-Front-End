@@ -68,4 +68,14 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
- 
+//--------------------Load More button-----------//
+$(function () {
+    $(".box-hidden").slice(0, 4).show();
+    $("#loadMore").on('click', function (e) {
+        e.preventDefault();
+        $(".box-hidden:hidden").slice(0, 4).slideDown('fast','linear');
+        if ($(".box-hidden:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+    });
+});

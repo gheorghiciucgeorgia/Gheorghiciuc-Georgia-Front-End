@@ -740,16 +740,71 @@ span.psw {
         }
 
     }
-
-
-    
     /* Clear floats after the columns */
     .products-row:after {
       content: "";
       display: table;
       clear: both;
     }
-}   
+    //-------------------------LOAD BUTTON------------//
+    .loadbtn-section{
+      display:flex;
+      justify-content: center;
+    }
+    .load-btn{
+      border:2px solid $white;
+      border-radius:25px;
+      padding:1% 8%;
+      background-color: transparent;
+      font-size:18px;
+      text-transform: uppercase;
+        i{
+          margin-left:4px;
+        }
+    }
+    .load-btn:hover{
+      background-color: $green;
+      color:$black;
+      border-color:$green;
+    }
+    .box-hidden{
+      display:none;
+    }
+} 
+/*---------------------BANNER OSF THEME------*/
+.banner{
+  width:100%;
+  text-align:center;
+  color:$white;
+  position: relative;
+    img{
+      width:100%;
+      
+    }
+    h1{
+      position: absolute;
+      font-size:70px;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h2{
+      position: absolute;
+      font-size:20px;
+      font-weight:400;
+      bottom:20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width:30%;
+    }
+}
+/*------------------------FEATURED PRODUCTS--------------*/
+.featured-products{
+  width:100%;
+  background-color:$darker-blue;
+  color:$white;
+  
+}
 
 /*--------------------------------------------------Footer--------------------------*/
 .main-footer{
