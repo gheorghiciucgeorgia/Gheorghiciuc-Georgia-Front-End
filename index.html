@@ -204,7 +204,7 @@
           
           <div class="input-container">
           <i class="far fa-eye" id="togglePassword"></i>
-          <input   type="password" name="psw" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="At least 6 characters length, contain 1 numeric, 1 uppercase letter, 1 special character" required>
+          <input type="password" name="psw" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="At least 6 characters length, contain 1 numeric, 1 uppercase letter, 1 special character" required>
           </div>
           <button type="submit" class="loginbtn">Login</button>
           <span class="idonthave"><a href="#">I don't have an account</a></span>
@@ -263,62 +263,134 @@
           <div class="socialmedia-text">
             <h2>Follow us on Facebook</h2>
             <h3>Sed ut perspiciatis unde omnis iste natus error sit</h3>
-            <button class="facebook-button"><a href="https://www.facebook.com/OSFDigital/"><i class="fab fa-facebook-f"></i> Follow </a></button>
+            <button class="facebook-button"><a href="https://www.facebook.com/OSFDigital/" target="_blank"><i class="fab fa-facebook-f"></i> Follow </a></button>
           </div>
         </div>
     </div>
     <!-------------------------------POPULAR ITEMS SECTION------------------------------>
     <div class="popular-items-section">
       <h2 class="popular-items-title">Popular Items</h2>
-      <div class="products-list">
-        <div class="product">
-            <img class="product-image" src="img/prd1.png" alt="Product Image1">
-            <h3 class="title-cart">Kristina Dam Oak Table With White Marble Top</h3>
-            <p class="price">$ 799.55</p>
-          <div class="image__overlay image__overlay--primary">
-            <div class="buttons">
-              <button class="Plus-button"><i class="fas fa-plus"></i></button>
-              <button class="Heart-button"><i class="fas fa-heart"></i></button>
-          </div>
-          </div>
-        </div>
-        <div class="product">
-          <img class="product-image" src="img/prd1.png" alt="Product Image1">
-          <h3 class="title-cart">Kristina Dam Oak Table With White Marble Top</h3>
-          <p class="price">$ 799.55</p>
-        <div class="image__overlay image__overlay--primary">
-          <div class="buttons">
-            <button class="Plus-button"><i class="fas fa-plus"></i></button>
-            <button class="Heart-button"><i class="fas fa-heart"></i></button>
-        </div>
-        </div>
-      </div>
-      <div class="product">
-        <img class="product-image" src="img/prd1.png" alt="Product Image1">
-        <h3 class="title-cart">Kristina Dam Oak Table With White Marble Top</h3>
-        <p class="price">$ 799.55</p>
-      <div class="image__overlay image__overlay--primary">
-        <div class="buttons">
-          <button class="Plus-button"><i class="fas fa-plus"></i></button>
-          <button class="Heart-button"><i class="fas fa-heart"></i></button>
-      </div>
-      </div>
-    </div>
-    <div class="product">
-      <img class="product-image" src="img/prd1.png" alt="Product Image1">
-      <h3 class="title-cart">Kristina Dam Oak Table With White Marble Top</h3>
-      <p class="price">$ 799.55</p>
-    <div class="image__overlay image__overlay--primary">
-      <div class="buttons">
-        <button class="Plus-button"><i class="fas fa-plus"></i></button>
-        <button class="Heart-button"><i class="fas fa-heart"></i></button>
-    </div>
-    </div>
-  </div>
-  
-      </div>
-    </div>
+      <!--We sort the itmes on columns and rows-->
+      <div class="products-row">
 
+        <div class="products-column">
+          <div class="img">
+            <img class="product-image" src="img/prd1.png" alt="Product Image1">
+            <h1 class="product-title">Kristina Dam Oak Table With White <br>Marble Top</h1>
+            <p class="price">$ 799.55</p>
+            <div class="image__overlay image__overlay--primary">
+              <div class="buttons">
+                <button class="Plus-button"><i class="fas fa-plus"></i></button>
+                <button class="Heart-button"><i class="fas fa-heart"></i></button>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-column">
+          <div class="img">
+            <a href="ProductDetailedPage.html">
+              <img class="product-image" src="img/prd2.png" alt="Product Image1">
+              <h1 class="product-title title-center"> Hay - About A Lounge <br>Chair AAL 93</h1>
+            </a>
+            <div class="buttons1">
+              <button class="Price-button"><a href="ProductDetailedPage.html">$ 659.55</a></button>
+              <button class="BuyNow-button">BUY NOW</button>
+              </div>
+          </div>
+        </div>
+
+        <div class="products-column">
+          <div class="img">
+            <img class="product-image" src="img/prd3.png" alt="Product Image1">
+            <h1 class="product-title title-center">Activate Facial Mask and<br> Charcoal Soap</h1>
+            <p class="price">$ 129.55</p>
+            <div class="image__overlay image__overlay--primary">
+              <div class="buttons">
+                <button class="Plus-button"><i class="fas fa-plus"></i></button>
+                <button class="Heart-button"><i class="fas fa-heart"></i></button>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-column">
+          <div class="img">
+            <img class="product-image" src="img/prd4.png" alt="Product Image1">
+            <h1 class="product-title title-center">Cocktail Table Walnut 
+              <br>  | YES</h1>
+            <p class="price">$ 299.99</p>
+            <div class="image__overlay image__overlay--primary">
+              <div class="buttons">
+                <button class="Plus-button"><i class="fas fa-plus"></i></button>
+                <button class="Heart-button"><i class="fas fa-heart"></i></button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products-row">
+        <div class="products-column">
+          <div class="img">
+            <img class="product-image" src="img/prd5.png" alt="Product Image1">
+            <h1 class="product-title title-center">Hay - About A Lounge <br>Chair AAL 93</h1>
+            <p class="price">$ 659.55</p>
+            <div class="image__overlay image__overlay--primary">
+              <div class="buttons">
+                <button class="Plus-button"><i class="fas fa-plus"></i></button>
+                <button class="Heart-button"><i class="fas fa-heart"></i></button>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-column">
+          <div class="img">
+            <img class="product-image" src="img/prd6.png" alt="Product Image1">
+            <h1 class="product-title title-center">TORY DESK CALENDAR</h1>
+            <p class="price">$ 410.99</p>
+            <div class="image__overlay image__overlay--primary">
+              <div class="buttons">
+                <button class="Plus-button"><i class="fas fa-plus"></i></button>
+                <button class="Heart-button"><i class="fas fa-heart"></i></button>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-column">
+          <div class="img">
+            <img class="product-image" src="img/prd7.png" alt="Product Image1">
+            <h1 class="product-title title-center">CH445 Wing Chair on <br> SUITE NY</h1>
+            <p class="price">$ 330.55</p>
+            <div class="image__overlay image__overlay--primary">
+              <div class="buttons">
+                <button class="Plus-button"><i class="fas fa-plus"></i></button>
+                <button class="Heart-button"><i class="fas fa-heart"></i></button>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-column">
+          <div class="img">
+            <img class="product-image" src="img/prd8.png" alt="Product Image1">
+            <div class="image__overlay-gradient">
+            </div>
+          </div>
+          <div class="chat">
+            <p>My dragons are 
+              misbehaving again.
+              Unbelieveable!</p>
+              <div class="bottom-text">
+                <i class="fas fa-comment-alt"></i>
+                <p>5H AGO</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
     <!------------------------------End HomePage---------------------------->
 
   <!---Main footer-->
@@ -368,10 +440,10 @@
         <a href="page404.html">Contact</a>
       </div>
       <div class="footer-column inline">
-        <a href="https://www.facebook.com/OSFDigital/"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.google.com/"><i class="fab fa-google-plus-g"></i></a>
-        <a href="https://twitter.com/osfdigital?lang=en"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.pinterest.ca/osfglobal/_saved/"><i class="fab fa-pinterest-p"></i></a>
+        <a href="https://www.facebook.com/OSFDigital/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+        <a href="https://twitter.com/osfdigital?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.pinterest.ca/osfglobal/_saved/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
       </div>
     </div>
   </footer>
@@ -419,10 +491,10 @@
       <a href="page404.html">Contact</a>
     </div>
     <div class="social-media">
-      <a href="https://www.facebook.com/OSFDigital/"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.google.com/"><i class="fab fa-google-plus-g"></i></a>
-      <a href="https://twitter.com/osfdigital?lang=en"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.pinterest.ca/osfglobal/_saved/"><i class="fab fa-pinterest-p"></i></a>
+      <a href="https://www.facebook.com/OSFDigital/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+      <a href="https://twitter.com/osfdigital?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.pinterest.ca/osfglobal/_saved/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
   </div>
 </div>
 </footer>

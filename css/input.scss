@@ -11,6 +11,11 @@ $icons-color:rgb(69, 65, 62);
 $border-color:rgb(215, 215, 215);
 $color-footer-titles:rgb(51, 51, 51);
 $facebook-color:rgb(58, 91, 150);
+$gradient-color-primary:rgb(28,193,103);
+$gradient-color-secondary:rgb(46,211,162);
+$plus-color-button:rgb(35, 196, 110);
+$heart-color-button:rgb(231, 60, 104);
+
 /* use viewport-relative units to cover page fully */
 body {
   font-family:$font;
@@ -256,7 +261,7 @@ body {
 
 /* The fields of the email and lato */
 
-input[type=email], input[type=password] {
+input[type=email], input[type=password],input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -424,6 +429,10 @@ span.psw {
               text-transform: uppercase;
             }
           }
+          :no-button:hover{
+            background-color: $facebook-color;
+            color:$white;
+          }
       }
     }
 }
@@ -461,6 +470,10 @@ span.psw {
           text-decoration: none;
           color:inherit;
         }
+    }
+    .viewmorebtn:hover{
+      background-color: $white;
+      color:$black;
     }
     /*Styling the center text */
     .text-center {
@@ -504,6 +517,10 @@ span.psw {
           text-decoration: none;
           color:inherit;
         }
+    }
+    .viewmorebtn-right:hover{
+      background-color: $white;
+      color:$black;
     }
 
 }
@@ -560,27 +577,179 @@ span.psw {
   background-color: $darker-blue;
   color:$white;
   padding:4%;
+
     .popular-items-title{
         font-size:30px;
         display: flex; 
 	      flex-direction: row;
     }
+    //--the lines after and before the title----//
+    .popular-items-title:before,.popular-items-title:after{
+      content: ""; 
+      flex: 1 1; 
+      border-bottom: 3px solid $white; 
+      margin:auto;
+      margin-left:50px;
+      margin-right:50px;
+      opacity: 0.5;
+    } 
     .products-list{
       display:flex;
       justify-content: row;
-      margin-left:4%;
     }
-}
-//--the lines after and before the title----//
-.popular-items-title:before,.popular-items-title:after{
-  content: ""; 
-  flex: 1 1; 
-  border-bottom: 3px solid rgb(255, 255, 255); 
-  margin:auto;
-  margin-left:50px;
-  margin-right:50px;
-  opacity: 0.5;
-}
+    .products-row{
+      margin:4% 0 4% 4%;
+    }
+    .products-column {
+      float:left;
+      width: 25%; 
+      position: relative;
+  
+        .img{
+          position: relative;
+          text-align:center;
+          width:80%;
+
+          .product-title{
+            position:absolute;
+            bottom:15%;
+            left:7%;
+            color:$icons-color;
+            font-size:15px;
+            font-weight:400;
+          }
+          .title-center{
+            left:25%;
+          }
+          .price{
+            position:absolute;
+            bottom:3%;
+            left:38%;
+            color:$icons-color;
+            font-size:15px;
+          }
+          .image__overlay {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 101%;
+            height: 99.5%;
+            border-radius: 5px;
+            background: $black;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.25s;
+          }
+        
+          .image__overlay--primary {
+            background-image: -webkit-linear-gradient( 90deg, $gradient-color-primary 0%, $gradient-color-secondary 100%);
+          }
+        
+          .image__overlay > * {
+            transform: translateY(20px);
+            transition: transform 0.25s;
+          }
+        
+          .image__overlay:hover {
+            opacity: 0.902;
+          }
+        
+          .image__overlay:hover > * {
+            transform: translateY(0);
+          }
+          .buttons{
+            width:100%;
+            display: flex;
+            justify-content: space-evenly;
+            button{
+              margin-left:4%;
+              border-radius:50%;
+              border:2px solid transparent;
+              padding:8% 11%;
+              font-size:40px;
+            }
+            .Plus-button{
+              color:$plus-color-button;
+            }
+            .Heart-button{
+              color:$heart-color-button;
+            }
+            
+          }
+          .buttons1{
+            position: absolute;
+            bottom:3%;
+            left:20%;
+            color:$icons-color;
+              .Price-button{
+                background-color: transparent;
+                border:2px solid $light-grey;
+                padding:6px;
+                border-radius:25px 0px 0px 25px;
+                a{
+                  text-decoration: none;
+                  color:$gradient-color-primary;
+                }
+              }
+
+              .BuyNow-button{
+                background-color: transparent;
+                border:2px solid $light-grey;
+                padding:6px;
+                border-radius:0px 25px 25px 0px;
+                margin-left:-2.5%;
+              }
+              .BuyNow-button:hover{
+                background-color: $green;
+                color:$white;
+              }
+             
+          }
+          .image__overlay-gradient{
+            z-index:1;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 101%;
+            height: 99.5%;
+            border-radius: 5px;
+            background: $black;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity:0.8;  
+            transition: opacity 0.25s;
+            background-image:linear-gradient(to bottom, rgb(220,89,135), rgb(103,91,153))
+          }
+        }
+        .chat{
+          position: absolute;
+          width:50%;
+          bottom:10%;
+          left:10%;
+          z-index:2;
+          i{
+            color:$green;
+          }
+        }
+
+    }
+
+
+    
+    /* Clear floats after the columns */
+    .products-row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+}   
 
 /*--------------------------------------------------Footer--------------------------*/
 .main-footer{
