@@ -779,7 +779,6 @@ span.psw {
   position: relative;
     img{
       width:100%;
-      
     }
     h1{
       position: absolute;
@@ -800,11 +799,69 @@ span.psw {
 }
 /*------------------------FEATURED PRODUCTS--------------*/
 .featured-products{
-  width:100%;
   background-color:$darker-blue;
   color:$white;
+  width:100%;
+  padding:4% 0%;
+  margin-top:-1%;
+  .featured-products-title{
+    text-align:center;
+    h1{
+      font-size:36px;
+    }
+    h2{
+      font-size:20px;
+      font-weight:400;
+    }
+  }
+  .gallery {
+    width:80%;
+    margin-left:11%;
+  }
   
+  .gallery-cell {
+    width: 22%;
+    height:286px;
+    margin-left:2%;
+    color:$icons-color;
+
+      .img-carousel{
+        position: relative;
+        text-align:center;
+    
+        img{
+          width:100%;
+          border-bottom:96px solid $white;
+          border-radius:6px;
+        }
+        h3{
+          position:absolute;
+          bottom:10%;
+          left:20%;
+          font-weight:400;
+          font-size:15px;
+        }
+        p{
+          position: absolute;
+          bottom:0;
+          left:38%;
+          font-weight: 700;
+          font-size:15px;
+          color:$green;
+        }
+      }
+  }
+  
+  .gallery-cell.is-selected {
+    background: #ED2;
+  }
+  .flickity-page-dots{
+    display:none;
+  }
 }
+
+
+
 
 /*--------------------------------------------------Footer--------------------------*/
 .main-footer{

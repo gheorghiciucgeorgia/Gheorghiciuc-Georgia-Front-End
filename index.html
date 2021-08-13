@@ -4,11 +4,17 @@
         <meta charset="utf-8">
         <title>Home Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
+        <!--Links of the css-->
         <link rel="stylesheet" href="css/normalize.min.css">
         <link href="css/style.css" rel="stylesheet">
         <link href="css/media-query.css" rel="stylesheet">
+        <link href="flickity-docs/flickity.css" rel="stylesheet">
+
+        <!--The link for Icons-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <!--Link for Fonts-->
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
@@ -271,7 +277,7 @@
     <div class="popular-items-section">
       <h2 class="popular-items-title">Popular Items</h2>
       <!--We sort the itmes on columns and rows-->
-      <div class="products-row">
+      <div class="products-row box-hidden">
 
         <div class="products-column">
           <div class="img">
@@ -330,7 +336,7 @@
         </div>
       </div>
 
-      <div class="products-row">
+      <div class="products-row box-hidden">
         <div class="products-column">
           <div class="img">
             <img class="product-image" src="img/prd5.png" alt="Product Image1">
@@ -468,6 +474,58 @@
         <h1>Featured Products</h1>
         <h2>Unde omnis iste natus error sit voluptatem</h2>
       </div>
+      <div class="gallery js-flickity" data-flickity='{ "freeScroll": true,"wrapAround": true,"autoPlay": 5000,
+      "pauseAutoPlayOnHover": false }'>
+        <div class="gallery-cell">
+          <div class="img-carousel">
+            <img src="img/fp1.png">
+            <h3 class="title-cell">Kristina Dam Oak Table <br>With White Marble</h3>
+            <p class="title-cell2">Awesome</p>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="img-carousel">
+            <img src="img/fp2.png">
+            <h3 class="title-cell">Kristina Dam Oak Table <br>With White Marble</h3>
+            <p class="title-cell2">Marketing</p>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="img-carousel">
+            <img src="img/fp3.png">
+            <h3 class="title-cell">Kristina Dam Oak Table <br>With White Marble</h3>
+            <p class="title-cell2">Awesome</p>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="img-carousel">
+            <img src="img/fp4.png">
+            <h3 class="title-cell">Kristina Dam Oak Table <br>With White Marble</h3>
+            <p class="title-cell2">Marketing</p>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="img-carousel">
+            <img src="img/fp3.png">
+            <h3 class="title-cell">Kristina Dam Oak Table <br>With White Marble</h3>
+            <p class="title-cell2">Awesome</p>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="img-carousel">
+            <img src="img/fp2.png">
+            <h3 class="title-cell">Kristina Dam Oak Table <br>With White Marble</h3>
+            <p class="title-cell2">Marketing</p>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="img-carousel">
+            <img src="img/fp4.png">
+            <h3 class="title3cell">Kristina Dam Oak Table <br>With White Marble</h3>
+            <p class="title-cell2">Awesome</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!------------------------------End HomePage---------------------------->
@@ -588,5 +646,6 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="javascript/script.js"></script>
+<script src="flickity-docs/flickity.pkgd.min.js"></script>
 </body>
 </html>
