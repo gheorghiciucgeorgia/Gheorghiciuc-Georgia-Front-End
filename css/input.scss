@@ -15,6 +15,7 @@ $gradient-color-primary:rgb(28,193,103);
 $gradient-color-secondary:rgb(46,211,162);
 $plus-color-button:rgb(35, 196, 110);
 $heart-color-button:rgb(231, 60, 104);
+$text-color:#777471;
 
 /* use viewport-relative units to cover page fully */
 body {
@@ -799,31 +800,50 @@ span.psw {
 }
 /*------------------------FEATURED PRODUCTS--------------*/
 .featured-products{
-  background-color:$darker-blue;
-  color:$white;
-  width:100%;
-  padding:4% 0%;
-  margin-top:-1%;
-  .featured-products-title{
-    text-align:center;
-    h1{
-      font-size:36px;
+    background-color:$darker-blue;
+    color:$white;
+    width:100%;
+    padding:4% 0%;
+    margin-top:-1%;
+
+    .featured-products-title{
+      text-align:center;
+      h1{
+        font-size:36px;
+      }
+      h2{
+        font-size:20px;
+        font-weight:400;
+      }
+      p{
+        display: flex; 
+	      flex-direction: row;
+        font-size: xxx-large;
+        width:50%;
+        margin:auto;
+        margin-top:5%;
+      }
+      p:before,p:after{
+        content: ""; 
+        flex: 1 1; 
+        border-bottom: 3px solid $white; 
+        margin:auto;
+        margin-left:50px;
+        margin-right:50px;
+        opacity: 0.5;
+      } 
     }
-    h2{
-      font-size:20px;
-      font-weight:400;
+    .gallery {
+      width:80%;
+      margin-left:11%;
+      margin-top:5%;
     }
-  }
-  .gallery {
-    width:80%;
-    margin-left:11%;
-  }
   
-  .gallery-cell {
-    width: 22%;
-    height:286px;
-    margin-left:2%;
-    color:$icons-color;
+    .gallery-cell {
+      width: 22%;
+      height:286px;
+      margin-left:2%;
+      color:$icons-color;
 
       .img-carousel{
         position: relative;
@@ -851,17 +871,53 @@ span.psw {
         }
       }
   }
-  
-  .gallery-cell.is-selected {
-    background: #ED2;
-  }
   .flickity-page-dots{
     display:none;
   }
 }
+/*----------------BENEFITS CONTENT------------*/
+.benefits-content{
+    width:100%;
+    background-color: $icons-color;
+    color:$white;
+    
 
+    .benefits-content-content{
+      display:flex;
+      justify-content: space-between;
+      padding:3% 0%;
 
-
+      i{
+        font-size:110px;
+        color:$green;
+        margin-top:5%;
+        margin-right:5%;
+      }
+      .left-content,.center-content,.right-content{
+        display:flex;
+        flex-direction: row;
+        margin-left:5%;
+        margin-right:5%;
+      }
+      
+      .text-content{
+        display:flex;
+        flex-direction:column;
+        margin-left:2%;
+        h2{
+          text-transform: uppercase;
+          font-weight:400;
+          font-size:20px;
+        }
+        p{
+          font-size:15px;
+          font-weight:400;
+          color:$text-color;
+          margin-top:-2%;
+        }
+      }
+    }
+}
 
 /*--------------------------------------------------Footer--------------------------*/
 .main-footer{
