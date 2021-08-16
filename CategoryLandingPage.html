@@ -5,15 +5,22 @@
         <title>Category Landing Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <!--Links of the css-->
+        <link rel="stylesheet" href="css/normalize.min.css">
         <link href="css/style.css" rel="stylesheet">
         <link href="css/media-query.css" rel="stylesheet">
+        <link href="flickity-docs/flickity.css" rel="stylesheet">
+
+        <!--The link for Icons-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <!--Link for Fonts-->
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     
     </head>
-<body>
+<body class="bodyforCLP">
     <!--Header-->
     <div class="header">
         <!---------------------Mobile Header---------------->
@@ -212,7 +219,11 @@
       </form>
     </div>    
     <!--End Login Form Modal-->
-  
+  <!----Content in the Category Landing Page-->
+    <div class="CategoryLandingPage">
+      <p><a href="index.html">Home</a>  /  CategoryLanding </p>
+      <h1>Services</h1>
+    </div>
   <!---Main footer-->
   <footer class="main-footer">
       <div class="footer-row">
@@ -326,6 +337,10 @@
   <a href="#about"><i class="far fa-heart"></i></a>
   <a href="#about"><i class="fas fa-shopping-bag"></i></a> 
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="javascript/script.js"></script>
+<script src="flickity-docs/flickity.pkgd.min.js"></script>
+
 </body>
 </html>

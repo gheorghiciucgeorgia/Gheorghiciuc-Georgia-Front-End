@@ -975,5 +975,39 @@ span.psw a {
 }
 
 /*-------End Footer-----*/
+/*---------------Category Landing Page Styling--------*/
+.bodyforCLP {
+  background-color: #f2edea;
+}
+
+/*---------Styling the content in the CLP-----*/
+.CategoryLandingPage {
+  padding: 4%;
+  text-align: center;
+  word-spacing: 2em;
+}
+.CategoryLandingPage p {
+  font-size: 18px;
+}
+.CategoryLandingPage p a {
+  text-decoration: none;
+  color: inherit;
+}
+.CategoryLandingPage p a:hover {
+  color: #85c441;
+}
+.CategoryLandingPage h1 {
+  font-size: 70px;
+  font-weight: 900;
+}
+.CategoryLandingPage h1:before, .CategoryLandingPage h1:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 3px solid white;
+  margin: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  opacity: 1;
+}
 
 /*# sourceMappingURL=style.css.map */

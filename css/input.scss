@@ -16,6 +16,8 @@ $gradient-color-secondary:rgb(46,211,162);
 $plus-color-button:rgb(35, 196, 110);
 $heart-color-button:rgb(231, 60, 104);
 $text-color:#777471;
+$CLP-background-color:#f2edea;
+$green-for-text:rgb(133, 196, 65);
 
 /* use viewport-relative units to cover page fully */
 body {
@@ -918,7 +920,6 @@ span.psw {
       }
     }
 }
-
 /*--------------------------------------------------Footer--------------------------*/
 .main-footer{
     width: 100%;
@@ -989,3 +990,41 @@ span.psw {
   clear: both;
 }
 /*-------End Footer-----*/ 
+
+
+
+
+
+/*---------------Category Landing Page Styling--------*/
+.bodyforCLP{
+  background-color: $CLP-background-color;
+}
+/*---------Styling the content in the CLP-----*/
+.CategoryLandingPage{
+  padding:4%;
+  text-align:center;
+  word-spacing:2em;
+  p{
+    font-size:18px;
+    a{
+      text-decoration: none;
+      color:inherit;
+    }
+    a:hover{
+      color:$green-for-text;
+    }
+  }
+  h1{
+    font-size:70px;
+    font-weight:900;
+  }
+  h1:before,h1:after{
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 3px solid $white; 
+    margin:auto;
+    margin-left:50px;
+    margin-right:50px;
+    opacity: 1;
+  } 
+}
