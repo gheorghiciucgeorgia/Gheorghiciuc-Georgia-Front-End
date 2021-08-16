@@ -983,12 +983,12 @@ span.psw a {
 /*---------Styling the content in the CLP-----*/
 /*Styling the title*/
 .CategoryLandingPagetitle {
-  padding-top: 4%;
+  padding-top: 3%;
   text-align: center;
   word-spacing: 2em;
 }
 .CategoryLandingPagetitle p {
-  font-size: 18px;
+  font-size: 15px;
 }
 .CategoryLandingPagetitle p a {
   text-decoration: none;
@@ -998,7 +998,7 @@ span.psw a {
   color: #85c441;
 }
 .CategoryLandingPagetitle h2 {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 900;
 }
 .CategoryLandingPagetitle h2:before, .CategoryLandingPagetitle h2:after {
@@ -1141,6 +1141,61 @@ span.psw a {
 }
 .CLP-products .box-hidden {
   display: none;
+}
+
+/*---------------404 page Styling--------*/
+.page404-content {
+  background-color: white;
+  margin: 4%;
+  display: flex;
+  justify-content: right;
+}
+.page404-content .content-left {
+  position: relative;
+}
+.page404-content .content-left svg {
+  margin-top: 15%;
+  position: relative;
+}
+.page404-content .content-left h2 {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  font-size: 120px;
+  color: #84bc22;
+}
+.page404-content .content-right {
+  margin-left: 4%;
+  width: 100%;
+  margin-top: 5%;
+  line-height: 1.2;
+}
+.page404-content .content-right h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.page404-content .content-right p {
+  width: 80%;
+  padding-bottom: 2%;
+  font-weight: 400;
+}
+.page404-content .content-right a {
+  text-decoration: none;
+  color: #84bc22;
+}
+.page404-content .content-right button {
+  border: 2px solid #e8e2d6;
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 1% 80% 1% 2%;
+  text-transform: uppercase;
+  position: relative;
+}
+.page404-content .content-right button i {
+  color: rgba(69, 65, 62, 0.502);
+  position: absolute;
+  right: 4%;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

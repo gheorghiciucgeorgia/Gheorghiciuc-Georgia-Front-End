@@ -1007,12 +1007,12 @@ span.psw {
 /*---------Styling the content in the CLP-----*/
 /*Styling the title*/
 .CategoryLandingPagetitle{
-  padding-top:4%;
+  padding-top:3%;
   text-align:center;
   word-spacing:2em;
 
   p{
-    font-size:18px;
+    font-size:15px;
     a{
       text-decoration: none;
       color:inherit;
@@ -1022,7 +1022,7 @@ span.psw {
     }
   }
   h2{
-    font-size:70px;
+    font-size:50px;
     font-weight:900;
   }
   h2:before,h2:after{
@@ -1175,5 +1175,61 @@ span.psw {
     
     .box-hidden{
       display:none;
+    }
+}
+/*---------------404 page Styling--------*/
+.page404-content{
+  background-color: $white;
+  margin:4%;
+  display:flex;
+  justify-content:right;
+
+    .content-left{
+      position: relative;
+      svg{
+        margin-top:15%;
+        position: relative;
+      }
+      h2{
+        position: absolute;
+        top:10%;
+        left:30%;
+        font-size:120px;
+        color:$green;
+      }
+    }
+    .content-right{
+      margin-left:4%;
+      width:100%;
+      margin-top:5%;
+      line-height: 1.2;
+      h1{
+        font-weight:700;
+        font-size:30px;
+      }
+      p{
+        width:80%;
+        padding-bottom:2%;
+        font-weight:400;
+      }
+      a{
+        text-decoration:none;
+        color:$green;
+      }
+      button{
+        border:2px solid $lighter-gray;
+        background-color: transparent;
+        border-radius:25px;
+        padding:1% 80% 1% 2%;
+        text-transform: uppercase;
+        position: relative;
+
+          i{
+            color:$light-grey;
+            position: absolute;
+            right:4%;
+            font-size:20px;
+          }
+      }
     }
 }

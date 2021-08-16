@@ -5,15 +5,22 @@
         <title>Non Product Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <!--Links of the css-->
+        <link rel="stylesheet" href="css/normalize.min.css">
         <link href="css/style.css" rel="stylesheet">
         <link href="css/media-query.css" rel="stylesheet">
+        <link href="flickity-docs/flickity.css" rel="stylesheet">
+
+        <!--The link for Icons-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <!--Link for Fonts-->
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     
     </head>
-<body>
+<body class="bodyforCLP">
     <!--Header-->
     <div class="header">
         <!---------------------Mobile Header---------------->
@@ -212,7 +219,34 @@
       </form>
     </div>    
     <!--End Login Form Modal-->
-  
+
+    <!--404 Page Content-->
+      <div class="CategoryLandingPagetitle">
+        <p><a href="index.html">Home</a>  /  404 </p>
+        <h2>404</h2>
+      </div>
+
+      <div class="page404-content">
+        <div class="content-left">
+          <svg 
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="5.083in" height="5.083in">
+          <path fill-rule="evenodd"  opacity="0.302" fill="rgb(241, 237, 234)"
+          d="M265.519,6.702 C261.207,2.402 255.399,-0.000 249.301,-0.000 L116.688,-0.000 C110.621,-0.000 104.793,2.402 100.513,6.702 L6.723,100.513 C2.402,104.793 0.000,110.601 0.000,116.688 L0.000,249.347 C0.000,255.399 2.402,261.230 6.702,265.519 L100.492,359.320 C104.793,363.587 110.601,366.000 116.688,366.000 L249.347,366.000 C255.399,366.000 261.230,363.587 265.519,359.298 L359.298,265.476 C363.587,261.207 366.000,255.399 366.000,249.301 L366.000,116.688 C366.000,110.621 363.587,104.793 359.298,100.513 L265.519,6.702 ZM343.125,249.301 L249.301,343.125 L116.688,343.125 L22.875,249.301 L22.875,116.688 L116.688,22.875 L249.347,22.875 L343.125,116.688 L343.125,249.301 ZM183.000,68.625 C170.378,68.625 160.125,78.878 160.125,91.500 L160.125,205.875 C160.125,218.497 170.378,228.750 183.000,228.750 C195.622,228.750 205.875,218.497 205.875,205.875 L205.875,91.500 C205.875,78.878 195.622,68.625 183.000,68.625 ZM160.125,274.500 C160.125,287.143 170.368,297.375 183.000,297.375 C195.643,297.375 205.875,287.143 205.875,274.500 C205.875,261.857 195.643,251.625 183.000,251.625 C170.368,251.625 160.125,261.857 160.125,274.500 Z"/>
+          </svg>
+          <h2>Oops!</h2>
+        </div>
+        <div class="content-right">
+          <h1>Sorry, this page could not be found!</h1>
+          <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+            <a href="index.html">Go back to homepage</a>
+            <h2>Search our site</h2>
+            <button>Search <i class="fas fa-search"></i></button>
+        </div>
+      </div>
+
   <!---Main footer-->
   <footer class="main-footer">
       <div class="footer-row">
@@ -326,6 +360,10 @@
   <a href="#about"><i class="far fa-heart"></i></a>
   <a href="#about"><i class="fas fa-shopping-bag"></i></a> 
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="javascript/script.js"></script>
+<script src="flickity-docs/flickity.pkgd.min.js"></script>
+
 </body>
 </html>

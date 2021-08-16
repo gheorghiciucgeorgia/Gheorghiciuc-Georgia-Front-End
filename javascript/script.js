@@ -69,18 +69,8 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 //--------------------Load More button-----------//
-$(function () {
-    $(".box-hidden").slice(0, 2).show();
-    $("#loadMore").on('click', function (e) {
-        e.preventDefault();
-        $(".box-hidden:hidden").slice(0, 1).slideDown('fast','linear');
-        if ($(".box-hidden:hidden").length == 0) {
-            $("#load").fadeOut('slow');
-        }
-    });
-});
-$(function () {
-    $(".box-hidden").slice(0, 1).show();
+$(function loadCLP() {
+    $(".box-hidden").slice(0, 4).show();
     $("#CLP-loadMore").on('click', function (e) {
         e.preventDefault();
         $(".box-hidden:hidden").slice(0, 1).slideDown('fast','linear');
@@ -89,3 +79,4 @@ $(function () {
         }
     });
 });
+
