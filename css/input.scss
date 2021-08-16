@@ -18,7 +18,12 @@ $heart-color-button:rgb(231, 60, 104);
 $text-color:#777471;
 $CLP-background-color:#f2edea;
 $green-for-text:rgb(133, 196, 65);
-
+$turqoise:#43c0cf;
+$blue:#315bbd;
+$orange:#ec6115;
+$red:#dc041d;
+$nude:#efead7;
+$price-color:rgb(189, 195, 199);
 /* use viewport-relative units to cover page fully */
 body {
   font-family:$font;
@@ -1000,10 +1005,12 @@ span.psw {
   background-color: $CLP-background-color;
 }
 /*---------Styling the content in the CLP-----*/
-.CategoryLandingPage{
-  padding:4%;
+/*Styling the title*/
+.CategoryLandingPagetitle{
+  padding-top:4%;
   text-align:center;
   word-spacing:2em;
+
   p{
     font-size:18px;
     a{
@@ -1014,17 +1021,157 @@ span.psw {
       color:$green-for-text;
     }
   }
-  h1{
+  h2{
     font-size:70px;
     font-weight:900;
   }
-  h1:before,h1:after{
+  h2:before,h2:after{
     content: ""; 
     flex: 1 1; 
-    border-bottom: 3px solid $white; 
+    border-bottom: 3px solid $green; 
     margin:auto;
     margin-left:50px;
     margin-right:50px;
     opacity: 1;
   } 
+}
+.Filters{
+  background-color: $white;
+  padding:2%;
+  margin:4%;
+
+  .filters-row{
+    width: 100%;
+    margin-top:2%;
+    margin-left:4%;
+    margin-right:4%;
+  }
+   /* Clear floats after the columns */
+   .filters-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .filters-column {
+    float: left;
+    width: 33%;
+
+    label{
+      margin-right:20px;
+    }
+    select{
+      border:2px solid $icons-color;
+      border-radius:25px;
+      padding:2%;
+      padding-right:20%;
+      outline:none;
+    }
+    .color-dot {
+      height: 15px;
+      width: 15px;
+      margin-left:4px;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+      border:3px solid transparent;
+    }
+    .color-dot:hover{
+      border:3px solid $black;
+    }
+    .dot1{
+      background-color:$white;
+      border:3px solid $black;
+    }
+    .dot2{
+      background-color:$turqoise;
+    }
+    .dot3{
+      background-color:$black;
+    }
+    .dot3:hover{
+      opacity:0.5;  
+    }
+    .dot4{
+      background-color:$green;
+    }
+    .dot5{
+      background-color:$blue;
+    }
+    .dot6{
+      background-color:$orange;
+    }
+    .dot7{
+      background-color:$red;
+    }
+    .dot8{
+      background-color: $nude;
+    }
+  }
+}
+.CLP-products{
+  margin:2% 4%;
+  text-align: center;
+
+    .title-products{
+      margin-bottom:2%;
+    }
+
+    .CLP-products-row{
+      margin:4% 0% 4% 4%;
+
+      .CLP-products-column {
+        float:left;
+        width: 25%; 
+        position: relative;
+    
+          .img{
+            position: relative;
+            text-align:center;
+            width:80%;
+  
+            .product-title{
+              position:absolute;
+              bottom:15%;
+              left:7%;
+              color:$icons-color;
+              font-size:15px;
+              font-weight:400;
+            }
+            .title-center{
+              left:25%;
+            }
+            .price{
+              position:absolute;
+              bottom:3%;
+              left:38%;
+              color:$price-color;
+              font-size:15px;
+              
+            }
+          }
+        }
+    }
+    .CLP-products-row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .CLP-load-btn{
+      border:2px solid $price-color;
+      border-radius:25px;
+      padding:1% 8%;
+      background-color: $green;
+      font-size:18px;
+      text-transform: uppercase;
+      color:$white;
+      font-weight:700;
+      }
+      .CLP-load-btn:hover{
+        opacity: 0.7;
+      }
+    .box-hidden{
+      display:none;
+    }
 }
