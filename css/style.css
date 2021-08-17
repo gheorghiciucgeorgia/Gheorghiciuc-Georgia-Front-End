@@ -1091,6 +1091,22 @@ span.psw a {
 .CLP-products .title-products {
   margin-bottom: 2%;
 }
+.CLP-products .new-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #45413e;
+}
+.CLP-products .new-title:before,
+.CLP-products .new-title:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 3px solid black;
+  margin: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  opacity: 0.102;
+}
 .CLP-products .CLP-products-row {
   margin: 4% 0% 4% 4%;
 }
@@ -1202,12 +1218,12 @@ span.psw a {
 /*---------------Product Detailed Page Styling--------*/
 .PDP-content {
   background-color: white;
-  padding: 2%;
   margin: 4% 6%;
 }
 .PDP-content .PDP-product-details {
   display: flex;
   justify-content: right;
+  padding: 2%;
 }
 .PDP-content .PDP-product-details .content-left {
   position: relative;
@@ -1215,12 +1231,11 @@ span.psw a {
   width: 50%;
   display: flex;
   justify-content: space-around;
+  padding-bottom: 10%;
   /* Add a pointer when hovering over the thumbnail images */
   /* Style the Image Used to Trigger the Modal */
   /* The Modal (background) */
   /* Modal Content (Image) */
-  /* Caption of Modal Image (Image Text) - Same Width as the Image */
-  /* Add Animation - Zoom in the Modal */
   /* The Close Button */
 }
 .PDP-content .PDP-product-details .content-left .slide {
@@ -1305,10 +1320,6 @@ span.psw a {
   width: 30%;
   max-width: 700px;
 }
-.PDP-content .PDP-product-details .content-left .modal-content01, .PDP-content .PDP-product-details .content-left #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
 @keyframes zoom {
   from {
     transform: scale(0);
@@ -1385,8 +1396,80 @@ span.psw a {
   padding: 2% 4%;
   color: white;
 }
+.PDP-content .PDP-product-details .content-right .product-detail {
+  padding: 4% 0%;
+  width: 80%;
+  font-size: 12px;
+}
+.PDP-content .PDP-product-details .content-right #more {
+  display: none;
+}
+.PDP-content .PDP-product-details .content-right #myBtn {
+  border: none;
+  color: #84bc22;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 0;
+}
+.PDP-content .PDP-product-details .content-right .share {
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  color: black;
+  opacity: 0.5;
+  width: 50%;
+}
+.PDP-content .PDP-product-details .content-right .share a {
+  text-decoration: none;
+  color: inherit;
+  margin: auto;
+}
 .PDP-content .content-bottom {
-  background-color: #e8e2d6;
+  /* Style the tab content */
+}
+.PDP-content .content-bottom .tab {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  margin-left: 136px;
+}
+.PDP-content .content-bottom .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  border-radius: 25px 25px 0px 0px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(69, 65, 62, 0.502);
+  width: 30%;
+}
+.PDP-content .content-bottom .tab button:hover {
+  background-color: #262a32;
+  color: white;
+}
+.PDP-content .content-bottom .tab button.active {
+  background-color: #262a32;
+  color: white;
+}
+.PDP-content .content-bottom .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #262a32;
+  color: white;
+  columns: 2;
+}
+.PDP-content .content-bottom .tabcontent .tabcontent p {
+  margin: 40px;
+}
+.PDP-content .content-bottom .tabcontent .column2-tab {
+  padding: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

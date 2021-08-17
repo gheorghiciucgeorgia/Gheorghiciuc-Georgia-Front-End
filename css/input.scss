@@ -1121,6 +1121,22 @@ span.psw {
     .title-products{
       margin-bottom:2%;
     }
+    .new-title{
+      font-size:30px;
+      text-transform: uppercase;
+      font-weight:900;
+      color:$icons-color;
+    }
+    .new-title:before, 
+    .new-title:after { 
+      content: ""; 
+      flex: 1 1; 
+      border-bottom: 3px solid $black; 
+      margin:auto;
+      margin-left:50px;
+      margin-right:50px;
+      opacity: 0.102;
+    }
 
     .CLP-products-row{
       margin:4% 0% 4% 4%;
@@ -1241,12 +1257,12 @@ span.psw {
 /*---------------Product Detailed Page Styling--------*/
 .PDP-content{
   background-color: $white;
-  padding:2%;
   margin:4% 6%;
 
   .PDP-product-details{
     display:flex;
     justify-content:right;
+    padding:2%;
     
     .content-left{
       position: relative;
@@ -1254,6 +1270,7 @@ span.psw {
       width: 50%;
       display: flex;
       justify-content: space-around;
+      padding-bottom:10%;
       
       .slide{
         width:100%;
@@ -1313,69 +1330,62 @@ span.psw {
           }
       }
       /* Style the Image Used to Trigger the Modal */
-  .myImg01 {
-    border-radius: 5px;
-    transition: 0.3s;
-  }
+      .myImg01 {
+        border-radius: 5px;
+        transition: 0.3s;
+      }
 
-    /* The Modal (background) */
-  .modal01 {
-    display: none; /* Hidden by default */
-   position: fixed; /* Stay in place */
-    z-index: 12; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height:100%;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: $black; /* Fallback color */
-    background-color: $blackish;  /* Black w/ opacity */
-  }
+      /* The Modal (background) */
+      .modal01 {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 12; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height:100%;
+        overflow: auto; /* Enable scroll if needed */
+        background-color: $black; /* Fallback color */
+        background-color: $blackish;  /* Black w/ opacity */
+      }
 
-  /* Modal Content (Image) */
-  .modal-content01 {
-    margin: auto;
-    display: block;
-    width: 30%;
-    max-width: 700px;
-  }
+      /* Modal Content (Image) */
+      .modal-content01 {
+        margin: auto;
+        display: block;
+        width: 30%;
+        max-width: 700px;
+      }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
+      @keyframes zoom {
+        from {transform:scale(0)}
+        to {transform:scale(1)}
+      }
 
+      /* The Close Button */
+      .close01 {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
 
-/* Add Animation - Zoom in the Modal */
-.modal-content01, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close01 {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close01:hover,
-.close01:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
+      .close01:hover,
+      .close01:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
 
     }
+
     .content-right{
       width:50%;
+     
 
       .price{
         font-size:50px;
@@ -1396,8 +1406,6 @@ span.psw {
           color:$lighter-gray;
         }
       }
-
-      
       .add-to-cart-and-quantity{
         display:flex;
         justify-content: left;
@@ -1430,9 +1438,86 @@ span.psw {
             color:$white;
           }
       }
+      .product-detail{
+        padding:4% 0%;
+        width:80%;
+        font-size:12px;
+      }
+      #more{
+        display:none;
+      }
+      #myBtn{
+        border:none;
+        color:$green;
+        background-color:transparent;
+        font-size:18px;
+        padding:0;
+      }
+      .share{
+        display:flex;
+        justify-content: left;
+        text-align:center;
+        color:$black;
+        opacity:0.5;
+        width:50%;
+
+        a{
+          text-decoration: none;
+          color:inherit;
+          margin:auto;
+        }
+      }
     }
   }
   .content-bottom{
-    background-color: $lighter-gray;
+
+    .tab {
+      position: relative;
+      overflow: hidden;
+      border: none;
+      background-color: transparent;
+      margin-left:136px;
+
+      button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        border-radius:25px 25px 0px 0px;
+        font-size:24px;
+        font-weight:bold;
+        color:$light-grey;
+        width:30%;
+      }
+      button:hover {
+        background-color: $darker-blue;
+        color:$white;
+      }
+      button.active {
+        background-color: $darker-blue;
+        color:$white;
+      }
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+      background-color: $darker-blue;
+      color:$white;
+      columns:2;
+
+      .tabcontent p{
+        margin:40px;
+      }
+      .column2-tab{
+        padding:40px;
+      }
+    }
   }
 }
