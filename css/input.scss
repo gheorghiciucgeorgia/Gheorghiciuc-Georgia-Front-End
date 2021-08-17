@@ -24,6 +24,8 @@ $orange:#ec6115;
 $red:#dc041d;
 $nude:#efead7;
 $price-color:rgb(189, 195, 199);
+$blackish:rgba(0,0,0,0.9);
+
 /* use viewport-relative units to cover page fully */
 body {
   font-family:$font;
@@ -1009,7 +1011,8 @@ span.psw {
 .CategoryLandingPagetitle{
   padding-top:3%;
   text-align:center;
-  word-spacing:2em;
+  word-spacing:1em;
+  
 
   p{
     font-size:15px;
@@ -1025,16 +1028,18 @@ span.psw {
     font-size:50px;
     font-weight:900;
   }
-  h2:before,h2:after{
+  .title-lines:before, 
+  .title-lines:after { 
     content: ""; 
     flex: 1 1; 
-    border-bottom: 3px solid $green; 
+    border-bottom: 3px solid $black; 
     margin:auto;
     margin-left:50px;
     margin-right:50px;
-    opacity: 1;
-  } 
+    opacity: 0.102;
+  }
 }
+
 .Filters{
   background-color: $white;
   padding:2%;
@@ -1232,4 +1237,202 @@ span.psw {
           }
       }
     }
+}
+/*---------------Product Detailed Page Styling--------*/
+.PDP-content{
+  background-color: $white;
+  padding:2%;
+  margin:4% 6%;
+
+  .PDP-product-details{
+    display:flex;
+    justify-content:right;
+    
+    .content-left{
+      position: relative;
+      padding-right:10%;
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      
+      .slide{
+        width:100%;
+        padding-right:4%;
+
+        /* Hide the images by default */
+        .mySlides1 { 
+          display: none;
+          width:100%;
+          position: relative;
+
+          img{
+            width:100%;
+          }
+          i{
+            position: absolute;
+            top:3%;
+            left:3%;
+            font-size:20px;
+            color:$green;
+          }
+          i:hover{
+            cursor:pointer;
+          }
+        }
+      }
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+    
+      .smallpic-row{
+        display:grid;
+        margin-bottom:20%;
+
+          /* Six columns side by side */
+          .smallpic-column {
+            float: left;
+            width: 100%;
+
+            img{
+              width:100%;
+              height:auto;
+              border:2px solid $icons-color;
+            }
+            /* Add a transparency effect for thumnbail images */
+            .demo {
+              opacity: 0.6;
+              width:100%;
+            }
+            .active,
+            .demo:hover {
+              opacity: 1;
+              width:100%;
+              border:2px solid $green;
+            }
+          }
+      }
+      /* Style the Image Used to Trigger the Modal */
+  .myImg01 {
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+    /* The Modal (background) */
+  .modal01 {
+    display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+    z-index: 12; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height:100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: $black; /* Fallback color */
+    background-color: $blackish;  /* Black w/ opacity */
+  }
+
+  /* Modal Content (Image) */
+  .modal-content01 {
+    margin: auto;
+    display: block;
+    width: 30%;
+    max-width: 700px;
+  }
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+
+
+/* Add Animation - Zoom in the Modal */
+.modal-content01, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close01 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close01:hover,
+.close01:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+    }
+    .content-right{
+      width:50%;
+
+      .price{
+        font-size:50px;
+        font-weight:900;
+      }
+      .product-color{
+        border:2px solid $lighter-gray;
+        padding:2% 4%;
+        border-radius:25px;
+        outline:none;
+        background-color: transparent;
+        word-spacing:0.1em;
+        .fa-circle{
+          color:$icons-color;
+          font-size:20px;
+        }
+        .fa-caret-down{
+          color:$lighter-gray;
+        }
+      }
+
+      
+      .add-to-cart-and-quantity{
+        display:flex;
+        justify-content: left;
+        padding-top:4%;
+        
+          #field1{
+            margin-right:4%;
+            border:2px solid $lighter-gray;
+            border-radius:25px;
+            padding:1%;
+              button{
+                border:none;
+                background-color: transparent;
+                text-align:center;
+                font-size:18px;
+              }
+              input[type=number]{
+                border:none;
+                text-align:center;
+                outline:none;
+                font-size:18px;
+              }
+          }
+          .add-cart{
+            border:2px solid $lighter-gray;
+            border-radius:25px;
+            background-color: $green;
+            text-transform:uppercase;
+            padding:2% 4%;
+            color:$white;
+          }
+      }
+    }
+  }
+  .content-bottom{
+    background-color: $lighter-gray;
+  }
 }

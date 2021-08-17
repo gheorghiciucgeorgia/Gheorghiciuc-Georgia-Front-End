@@ -985,7 +985,7 @@ span.psw a {
 .CategoryLandingPagetitle {
   padding-top: 3%;
   text-align: center;
-  word-spacing: 2em;
+  word-spacing: 1em;
 }
 .CategoryLandingPagetitle p {
   font-size: 15px;
@@ -1001,14 +1001,15 @@ span.psw a {
   font-size: 50px;
   font-weight: 900;
 }
-.CategoryLandingPagetitle h2:before, .CategoryLandingPagetitle h2:after {
+.CategoryLandingPagetitle .title-lines:before,
+.CategoryLandingPagetitle .title-lines:after {
   content: "";
   flex: 1 1;
-  border-bottom: 3px solid #84bc22;
+  border-bottom: 3px solid black;
   margin: auto;
   margin-left: 50px;
   margin-right: 50px;
-  opacity: 1;
+  opacity: 0.102;
 }
 
 .Filters {
@@ -1196,6 +1197,196 @@ span.psw a {
   position: absolute;
   right: 4%;
   font-size: 20px;
+}
+
+/*---------------Product Detailed Page Styling--------*/
+.PDP-content {
+  background-color: white;
+  padding: 2%;
+  margin: 4% 6%;
+}
+.PDP-content .PDP-product-details {
+  display: flex;
+  justify-content: right;
+}
+.PDP-content .PDP-product-details .content-left {
+  position: relative;
+  padding-right: 10%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  /* Add a pointer when hovering over the thumbnail images */
+  /* Style the Image Used to Trigger the Modal */
+  /* The Modal (background) */
+  /* Modal Content (Image) */
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  /* Add Animation - Zoom in the Modal */
+  /* The Close Button */
+}
+.PDP-content .PDP-product-details .content-left .slide {
+  width: 100%;
+  padding-right: 4%;
+  /* Hide the images by default */
+}
+.PDP-content .PDP-product-details .content-left .slide .mySlides1 {
+  display: none;
+  width: 100%;
+  position: relative;
+}
+.PDP-content .PDP-product-details .content-left .slide .mySlides1 img {
+  width: 100%;
+}
+.PDP-content .PDP-product-details .content-left .slide .mySlides1 i {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  font-size: 20px;
+  color: #84bc22;
+}
+.PDP-content .PDP-product-details .content-left .slide .mySlides1 i:hover {
+  cursor: pointer;
+}
+.PDP-content .PDP-product-details .content-left .cursor {
+  cursor: pointer;
+}
+.PDP-content .PDP-product-details .content-left .smallpic-row {
+  display: grid;
+  margin-bottom: 20%;
+  /* Six columns side by side */
+}
+.PDP-content .PDP-product-details .content-left .smallpic-row .smallpic-column {
+  float: left;
+  width: 100%;
+  /* Add a transparency effect for thumnbail images */
+}
+.PDP-content .PDP-product-details .content-left .smallpic-row .smallpic-column img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #45413e;
+}
+.PDP-content .PDP-product-details .content-left .smallpic-row .smallpic-column .demo {
+  opacity: 0.6;
+  width: 100%;
+}
+.PDP-content .PDP-product-details .content-left .smallpic-row .smallpic-column .active,
+.PDP-content .PDP-product-details .content-left .smallpic-row .smallpic-column .demo:hover {
+  opacity: 1;
+  width: 100%;
+  border: 2px solid #84bc22;
+}
+.PDP-content .PDP-product-details .content-left .myImg01 {
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.PDP-content .PDP-product-details .content-left .modal01 {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 12;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+.PDP-content .PDP-product-details .content-left .modal-content01 {
+  margin: auto;
+  display: block;
+  width: 30%;
+  max-width: 700px;
+}
+.PDP-content .PDP-product-details .content-left .modal-content01, .PDP-content .PDP-product-details .content-left #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.PDP-content .PDP-product-details .content-left .close01 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.PDP-content .PDP-product-details .content-left .close01:hover,
+.PDP-content .PDP-product-details .content-left .close01:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.PDP-content .PDP-product-details .content-right {
+  width: 50%;
+}
+.PDP-content .PDP-product-details .content-right .price {
+  font-size: 50px;
+  font-weight: 900;
+}
+.PDP-content .PDP-product-details .content-right .product-color {
+  border: 2px solid #e8e2d6;
+  padding: 2% 4%;
+  border-radius: 25px;
+  outline: none;
+  background-color: transparent;
+  word-spacing: 0.1em;
+}
+.PDP-content .PDP-product-details .content-right .product-color .fa-circle {
+  color: #45413e;
+  font-size: 20px;
+}
+.PDP-content .PDP-product-details .content-right .product-color .fa-caret-down {
+  color: #e8e2d6;
+}
+.PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity {
+  display: flex;
+  justify-content: left;
+  padding-top: 4%;
+}
+.PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity #field1 {
+  margin-right: 4%;
+  border: 2px solid #e8e2d6;
+  border-radius: 25px;
+  padding: 1%;
+}
+.PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity #field1 button {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  font-size: 18px;
+}
+.PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity #field1 input[type=number] {
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 18px;
+}
+.PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity .add-cart {
+  border: 2px solid #e8e2d6;
+  border-radius: 25px;
+  background-color: #84bc22;
+  text-transform: uppercase;
+  padding: 2% 4%;
+  color: white;
+}
+.PDP-content .content-bottom {
+  background-color: #e8e2d6;
 }
 
 /*# sourceMappingURL=style.css.map */
