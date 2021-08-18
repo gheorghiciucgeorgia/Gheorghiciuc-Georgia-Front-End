@@ -8,7 +8,7 @@ body {
 /* ---------------------The header style -------------------*/
 .header {
   width: 100%;
-  position: relative;
+  position: fixed;
   overflow: hidden;
   display: flex;
   justify-content: space-around;
@@ -17,6 +17,7 @@ body {
   border-bottom: 3px solid #e8e2d6;
   margin-left: -1%;
   z-index: 12;
+  top: 0;
   /*-------------------- Style the header-links --------------*/
 }
 .header a {
@@ -179,6 +180,22 @@ body {
   opacity: 0.502;
   font-weight: 400;
 }
+.header-right i {
+  position: relative;
+}
+.header-right .ellipse {
+  border: 2.5px solid #84bc22;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: inline;
+  font-size: 12px;
+  color: #84bc22;
+  padding: 2px 4px;
+  font-weight: 700;
+}
 .header-right .fa-heart:hover, .header-right .fa-shopping-bag:hover {
   color: #84bc22;
   opacity: 1;
@@ -203,7 +220,6 @@ body {
   overflow: auto;
   /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.741);
-  /* Black w/ opacity */
   z-index: 13;
 }
 
@@ -372,6 +388,7 @@ span.psw a {
   display: flex;
   justify-content: center;
   margin: 4%;
+  margin-top: 10%;
 }
 .homepage .right-content {
   padding-left: 5%;
@@ -532,10 +549,9 @@ span.psw a {
   text-align: center;
   bottom: 5%;
   width: 100%;
+  /* The dots/bullets/indicators */
 }
-
-/* The dots/bullets/indicators */
-.dot {
+.alldots .dot {
   cursor: pointer;
   height: 10px;
   width: 10px;
@@ -547,8 +563,7 @@ span.psw a {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
-.active, .dot:hover {
+.alldots .active, .alldots .dot:hover {
   border: 4px solid white;
   background-color: transparent;
   opacity: 1;
@@ -974,19 +989,39 @@ span.psw a {
 
 /*-------End Footer-----*/
 /*------Cookie--------*/
-.cookie-container {
+.cookie-back {
   position: fixed;
+  width: 100%;
+  height: 100%;
+  top: -10px;
+  left: -10px;
+  padding: 0 10px 10px 0;
+  background-color: rgba(0, 0, 0, 0.741);
+  z-index: 12;
+  display: none;
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cookie-container {
   width: 80%;
   margin: auto;
-  bottom: -100%;
-  left: 0;
-  right: 0;
   background: white;
   color: black;
-  padding: 0 32px;
-  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
-  transition: 400ms;
+  padding: 10px 32px;
   border-radius: 8px;
+  position: relative;
+}
+.cookie-container .close-cookie {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 25px;
+  cursor: pointer;
 }
 .cookie-container h2 {
   color: #84bc22;
@@ -995,19 +1030,23 @@ span.psw a {
   color: #84bc22;
   text-decoration: none;
 }
+.cookie-container p {
+  width: 80%;
+  font-size: 15px;
+  line-height: 2;
+}
 .cookie-container .cookie-btn {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
   background: #84bc22;
   border: 0;
-  color: #f5f6fa;
+  color: white;
   padding: 12px 48px;
   font-size: 18px;
   margin-bottom: 16px;
   border-radius: 25px;
   cursor: pointer;
-}
-
-.cookie-container.active {
-  bottom: 40%;
 }
 
 /*---------------Category Landing Page Styling--------*/
@@ -1018,9 +1057,9 @@ span.psw a {
 /*---------Styling the content in the CLP-----*/
 /*Styling the title*/
 .CategoryLandingPagetitle {
-  padding-top: 3%;
   text-align: center;
   word-spacing: 1em;
+  margin-top: 10%;
 }
 .CategoryLandingPagetitle p {
   font-size: 15px;
@@ -1346,7 +1385,7 @@ span.psw a {
   /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.741);
   /* Black w/ opacity */
 }
 .PDP-content .PDP-product-details .content-left .modal-content01 {
@@ -1505,6 +1544,13 @@ span.psw a {
 }
 .PDP-content .content-bottom .tabcontent .column2-tab {
   padding: 40px;
+}
+
+.cart-content {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 4%;
 }
 
 /*# sourceMappingURL=style.css.map */
