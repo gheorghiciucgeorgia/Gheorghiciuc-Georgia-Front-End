@@ -119,26 +119,25 @@ function displayCart(){
       productContainer.innerHTML='';
       Object.values(cartItems).map(item=>{
         productContainer.innerHTML +=`
+        <div class="product-row">
           <div class="product">
-            <i class="fas fa-times-circle closing"></i>
             <img src="img/${item.tag}.png">
             <span>${item.name}</span>
           </div>
           <div class="price">$${item.price}</div>
           <div class="quantity">
-            <i class="fas fa-arrow-circle-left arrow"></i>
             <span>${item.inCart}</span>
-            <i class="fas fa-arrow-circle-right arrow"></i>
           </div>
           <div class="total">
               $${item.inCart*item.price}
+          </div>
           </div>
         `;
       });
       productContainer.innerHTML+=`
         <div class="basketTotalContainer">
           <h4 class="basketTotalTitle">Basket Total </h4>
-          <h4 class="basketTotal">$${cartCost} <i class="fas fa-shopping-basket"></i></h4>
+          <h4 class="basketTotal">$${cartCost} </h4>
         </div>
       `;
   }

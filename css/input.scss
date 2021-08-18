@@ -1597,3 +1597,17 @@ span.psw {
   }
 }
 //------------------CART STYLING---------------
+.products-box{
+  background-color: $white;
+  padding:4%;
+  width:80%;
+  margin:auto;
+  margin-bottom:4%;
+
+  .products{
+    border-bottom:3px solid $lighter-gray;
+    .product-row{
+      displaY:inline;
+    }
+  }
+}

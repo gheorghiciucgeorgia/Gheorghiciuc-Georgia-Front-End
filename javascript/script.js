@@ -92,3 +92,15 @@ setTimeout(() => {
 closecookie.onclick=function(){
     cookieContainer.classList.remove("active");
 }
+// wish increasing number when clicked
+var count=0;
+let wishes=document.querySelectorAll(".add-wish");
+var wishesnumber=document.getElementById("wish-number");
+
+for(let i=0;i<wishes.length;i++){
+    wishes[i].addEventListener('click',() => {
+      count++;
+      wishesnumber.innerHTML=count;
+    })
+}
+

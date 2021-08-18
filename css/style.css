@@ -1546,4 +1546,18 @@ span.psw a {
   padding: 40px;
 }
 
+.products-box {
+  background-color: white;
+  padding: 4%;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 4%;
+}
+.products-box .products {
+  border-bottom: 3px solid #e8e2d6;
+}
+.products-box .products .product-row {
+  displaY: inline;
+}
+
 /*# sourceMappingURL=style.css.map */
