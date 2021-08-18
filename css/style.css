@@ -709,7 +709,6 @@ span.psw a {
   color: white;
 }
 .popular-items-section .products-column .img .image__overlay-gradient {
-  z-index: 1;
   position: absolute;
   top: 0%;
   left: 0%;
@@ -731,7 +730,6 @@ span.psw a {
   width: 50%;
   bottom: 10%;
   left: 10%;
-  z-index: 2;
 }
 .popular-items-section .products-column .chat i {
   color: #84bc22;
@@ -975,6 +973,43 @@ span.psw a {
 }
 
 /*-------End Footer-----*/
+/*------Cookie--------*/
+.cookie-container {
+  position: fixed;
+  width: 80%;
+  margin: auto;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: white;
+  color: black;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+  transition: 400ms;
+  border-radius: 8px;
+}
+.cookie-container h2 {
+  color: #84bc22;
+}
+.cookie-container a {
+  color: #84bc22;
+  text-decoration: none;
+}
+.cookie-container .cookie-btn {
+  background: #84bc22;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.cookie-container.active {
+  bottom: 40%;
+}
+
 /*---------------Category Landing Page Styling--------*/
 .bodyforCLP {
   background-color: #f2edea;
