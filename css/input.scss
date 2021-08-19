@@ -1630,6 +1630,44 @@ span.psw {
             }
           }
         }
+        .quantity{
+          border:3px solid $lighter-gray;
+          border-radius:25px;
+          padding:1%;
+          input[type=number]{
+            border:none;
+            background-color: transparent;
+            outline:none;
+            text-align: center;
+
+          }
+          //to hide the deafult arrows
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+          button{
+            border:none;
+            background-color: transparent;
+            font-size:18px;
+          }
+        }
+        .total{
+          font-size:40px;
+          font-weight:900;
+          color:$icons-color;
+        }
+        .close-btn{
+          i{
+            color:$price-color;
+            cursor:pointer;
+            border:3px solid $lighter-gray;
+            border-radius:50%;
+            padding:3px 5px;
+          }
+        }
     }
   }
 }
+

@@ -1578,5 +1578,38 @@ span.psw a {
 .products-box .products .product-row .product .product-name .price {
   color: #bdc3c7;
 }
+.products-box .products .product-row .quantity {
+  border: 3px solid #e8e2d6;
+  border-radius: 25px;
+  padding: 1%;
+}
+.products-box .products .product-row .quantity input[type=number] {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  text-align: center;
+}
+.products-box .products .product-row .quantity input::-webkit-outer-spin-button,
+.products-box .products .product-row .quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.products-box .products .product-row .quantity button {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+}
+.products-box .products .product-row .total {
+  font-size: 40px;
+  font-weight: 900;
+  color: #45413e;
+}
+.products-box .products .product-row .close-btn i {
+  color: #bdc3c7;
+  cursor: pointer;
+  border: 3px solid #e8e2d6;
+  border-radius: 50%;
+  padding: 3px 5px;
+}
 
 /*# sourceMappingURL=style.css.map */

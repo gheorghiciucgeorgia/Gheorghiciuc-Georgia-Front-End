@@ -42,12 +42,20 @@ let products=[
      tag:"prd7",
      price:330.55,
      inCart:0
+  },
+  {
+    name:"Ruffle Front V-Neck Cardigan",
+    tag:"pd1",
+    price:299.99,
+    inCart:0
   }
 ];
 for(let i=0;i<carts.length;i++){
+
     carts[i].addEventListener('click',() => {
       cartNumbers(products[i]);
       totalCost(products[i]);
+      
     })
 }
 function onLoadCartNumbers(){
@@ -95,9 +103,10 @@ function setItems(product) {
   localStorage.setItem("productsInCart",JSON.stringify(cartItems));  // body...
 }
 function totalCost(product){
+
     let cartCost=localStorage.getItem('totalCost');
 
-    console.log("my cartCost is",cartCost);
+    console.log('my cartCost is',cartCost);
     console.log(typeof cartCost);
 
     if(cartCost!=null){
@@ -109,6 +118,7 @@ function totalCost(product){
     }
 }
 function displayCart(){
+
   let cartItems=localStorage.getItem("productsInCart");
   cartItems=JSON.parse(cartItems);
   let productContainer=document.querySelector(".products");
@@ -130,14 +140,16 @@ function displayCart(){
           </div>
             
           <div class="quantity">
-            <span>${item.inCart}</span>
-          </div>
+            <button type="button" id="sub" class="sub">-</button>
+            <input class="quantity-input" type="number" id="1" value="${item.inCart}" min="1" max="100"/>
+            <button type="button" id="add" class="add">+</button>
+            </div>
 
           <div class="total">
               $${item.inCart*item.price}
           </div>
-          <div class="close">
-          <span>x</span>
+          <div class="close-btn">
+          <i class="fas fa-times"></i>
           </div>
 
           </div>
@@ -151,6 +163,56 @@ function displayCart(){
       `;
   }
 }
-
 onLoadCartNumbers();
 displayCart();
+//removing button
+var removebtn=document.getElementsByClassName('close-btn');
+
+for(var i=0;i<removebtn.length;i++)
+{
+  var button=removebtn[i]
+  button.addEventListener('click',function(event){
+    var buttonclicked=event.target;
+    buttonclicked.parentElement.parentElement.remove();
+    updateCartTotal();
+  })
+}
+
+//quantity updating the total item price
+var quantityInput=document.getElementsByClassName('quantity-input');
+
+for(var i=0;i<quantityInput.length;i++){
+  var input=quantityInput[i];
+  input.addEventListener( 'change',quantityChanged);
+  console.log(input)
+}
+function quantityChanged(event){
+  var input=event.target;
+  console.log(input);   
+  if(isNaN(input.value) || input.value <= 0){
+    input.value=1;
+  }
+  updateCartTotal();
+}
+
+//updating the cart total
+function updateCartTotal(){
+  
+  var cartitemContainer=document.getElementsByClassName('products')[0];
+  var cartRows=cartitemContainer.getElementsByClassName('product-row');
+  var totalCart=0;
+
+
+  for(var i=0;i<cartRows.length;i++){
+    var cartRow=cartRows[i];
+    var priceElement=cartRow.getElementsByClassName('price')[0];
+    var quantityElement=cartRow.getElementsByClassName('quantity-input')[0];
+    var priceproduct=parseFloat(priceElement.innerText.replace('$',''));
+    var quantityproduct=quantityElement.value;
+
+    totalCart=totalCart+(priceproduct * quantityproduct); 
+  }
+  totalCart=Math.round(totalCart *100)/100;
+  document.getElementsByClassName('basketTotal')[0].innerText='$'+ totalCart;
+  
+}
