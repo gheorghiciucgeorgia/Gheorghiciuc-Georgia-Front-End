@@ -165,6 +165,7 @@ function displayCart(){
 }
 onLoadCartNumbers();
 displayCart();
+
 //removing button
 var removebtn=document.getElementsByClassName('close-btn');
 
@@ -181,18 +182,33 @@ for(var i=0;i<removebtn.length;i++)
 //quantity updating the total item price
 var quantityInput=document.getElementsByClassName('quantity-input');
 
+var IncreaseQuantity=document.getElementsByClassName("add");
+console.log(IncreaseQuantity);
+
 for(var i=0;i<quantityInput.length;i++){
   var input=quantityInput[i];
   input.addEventListener( 'change',quantityChanged);
-  console.log(input)
+
+  for(var i=0;i<IncreaseQuantity.length;i++){
+    var output=IncreaseQuantity[i];
+    output.addEventListener('click', increase);
+  };
+}
+function increase(event){
+  var output=event.target;
+  for(var i=0;i<quantityInput.length;i++){
+  var input=quantityInput[i];
+  console.log(input);
+  }
+  
 }
 function quantityChanged(event){
-  var input=event.target;
-  console.log(input);   
+  var input=event.target; 
   if(isNaN(input.value) || input.value <= 0){
     input.value=1;
   }
   updateCartTotal();
+  //here we will do another function for updating the product price
 }
 
 //updating the cart total
