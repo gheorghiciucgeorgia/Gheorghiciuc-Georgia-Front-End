@@ -136,6 +136,9 @@ function displayCart(){
           <div class="total">
               $${item.inCart*item.price}
           </div>
+          <div class="close">
+          <span>x</span>
+          </div>
 
           </div>
         `;
