@@ -38,7 +38,7 @@ let products=[
      inCart:0
   },
   {
-     name:"CH445 Wing Chair on <br> SUITE NY",
+     name:"CH445 Wing Chair on  SUITE NY",
      tag:"prd7",
      price:330.55,
      inCart:0
@@ -120,17 +120,23 @@ function displayCart(){
       Object.values(cartItems).map(item=>{
         productContainer.innerHTML +=`
         <div class="product-row">
+
           <div class="product">
             <img src="img/${item.tag}.png">
-            <span>${item.name}</span>
+            <div class="product-name">
+              <span>${item.name}</span>
+              <span class="price">$${item.price}</span>
+            </div>
           </div>
-          <div class="price">$${item.price}</div>
+            
           <div class="quantity">
             <span>${item.inCart}</span>
           </div>
+
           <div class="total">
               $${item.inCart*item.price}
           </div>
+
           </div>
         `;
       });
