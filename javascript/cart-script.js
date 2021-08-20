@@ -197,8 +197,8 @@ for(var i=0;i<quantityInput.length;i++){
 function increase(event){
   var output=event.target;
   for(var i=0;i<quantityInput.length;i++){
-  var input=quantityInput[i];
-  console.log(input);
+    var input=quantityInput[i];
+    console.log(input);
   }
   
 }
