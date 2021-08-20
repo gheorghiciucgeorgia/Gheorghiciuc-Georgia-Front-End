@@ -1606,5 +1606,43 @@ span.psw a {
   border-radius: 50%;
   padding: 3px 5px;
 }
+.products-box .buttons-content {
+  margin-top: 3%;
+}
+.products-box .buttons-content .content-left {
+  display: flex;
+  justify-content: space-between;
+}
+.products-box .buttons-content .content-left button {
+  border: 2px solid #84bc22;
+  border-radius: 25px;
+  font-size: 18px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+}
+.products-box .buttons-content .content-left .content-left-left {
+  width: 50%;
+}
+.products-box .buttons-content .content-left .content-left-left .cupon {
+  width: 50%;
+  color: black;
+  border: 2px solid #e8e2d6;
+}
+.products-box .buttons-content .content-left .content-left-left button {
+  color: #84bc22;
+  background-color: transparent;
+  margin-left: 5px;
+}
+.products-box .buttons-content .content-left .content-right-right {
+  margin-top: 0.5%;
+}
+.products-box .buttons-content .content-left .content-right-right .update {
+  color: #84bc22;
+  background-color: transparent;
+}
+.products-box .buttons-content .content-left .content-right-right .proceed {
+  color: white;
+  background-color: #84bc22;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -157,9 +157,11 @@ function displayCart() {
   cart = parseFloat(cart).toFixed(2);
 
   let productContainer = document.querySelector('.products');
+  let totalContainer=document.querySelector('.cartsubtotal')
   
   if( cartItems && productContainer ) {
     productContainer.innerHTML = '';
+    totalContainer.innerHTML='';
     Object.values(cartItems).map( (item, index) => {
         productContainer.innerHTML += `
         <div class="product-row">
@@ -190,10 +192,9 @@ function displayCart() {
           </div>
         `;
       });
-      productContainer.innerHTML+=`
+      totalContainer.innerHTML+=`
         <div class="basketTotalContainer">
-          <h4 class="basketTotalTitle">Basket Total </h4>
-          <h4 class="basketTotal">$${cart} </h4>
+          <h4 class="basketTotalTitle">cart subtotal: $${cart}  </h4>
         </div>
       `;
       deleteButtons();

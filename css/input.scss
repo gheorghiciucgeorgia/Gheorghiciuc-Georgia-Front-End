@@ -1661,6 +1661,49 @@ span.psw {
           }
         }
     }
+    
   }
+  .buttons-content{
+    margin-top:3%;
+
+      .content-left{
+        display: flex;
+        justify-content: space-between;
+        button{
+          border:2px solid $green;
+          border-radius:25px;
+          font-size:18px;
+          padding:10px 40px;
+          text-transform: uppercase;
+        }
+        .content-left-left{
+          width:50%;
+          .cupon{
+            width:50%;
+            color:$black;
+            border:2px solid $lighter-gray;
+          }
+          button{
+            color:$green;
+            background-color: transparent;
+            margin-left:5px;
+          }
+        }
+        .content-right-right{
+          margin-top:0.5%;
+          .update{
+            color:$green;
+            background-color: transparent;
+          }
+          .proceed{
+            color:$white;
+            background-color: $green;
+          }
+        }
+      }
+      .content-bottom{
+        
+      }
+    }
 }
 
