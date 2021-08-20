@@ -1575,6 +1575,9 @@ span.psw a {
   font-size: 15px;
   display: grid;
 }
+.products-box .products .product-row .product .product-name .product-tag {
+  display: none;
+}
 .products-box .products .product-row .product .product-name .price {
   color: #bdc3c7;
 }

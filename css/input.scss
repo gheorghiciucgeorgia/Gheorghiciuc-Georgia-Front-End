@@ -1625,6 +1625,9 @@ span.psw {
           .product-name{
             font-size:15px;
             display:grid;
+            .product-tag{
+              display:none;
+            }
             .price{
                 color: $price-color;
             }
