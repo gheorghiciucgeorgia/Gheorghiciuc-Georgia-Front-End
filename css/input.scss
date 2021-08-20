@@ -1637,18 +1637,8 @@ span.psw {
           border:3px solid $lighter-gray;
           border-radius:25px;
           padding:1%;
-          input[type=number]{
-            border:none;
-            background-color: transparent;
-            outline:none;
-            text-align: center;
-
-          }
-          //to hide the deafult arrows
-          input::-webkit-outer-spin-button,
-          input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
+          span{
+            padding:15px;
           }
           button{
             border:none;

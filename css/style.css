@@ -1586,16 +1586,8 @@ span.psw a {
   border-radius: 25px;
   padding: 1%;
 }
-.products-box .products .product-row .quantity input[type=number] {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  text-align: center;
-}
-.products-box .products .product-row .quantity input::-webkit-outer-spin-button,
-.products-box .products .product-row .quantity input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.products-box .products .product-row .quantity span {
+  padding: 15px;
 }
 .products-box .products .product-row .quantity button {
   border: none;

@@ -133,6 +133,7 @@ function setItems(product) {
 
 function totalCost( product, action ) {
   let cart = localStorage.getItem("totalCost");
+  
 
   if( action) {
       cart = parseFloat(cart);
@@ -153,7 +154,7 @@ function displayCart() {
   cartItems = JSON.parse(cartItems);
 
   let cart = localStorage.getItem("totalCost");
-  cart = parseFloat(cart);
+  cart = parseFloat(cart).toFixed(2);
 
   let productContainer = document.querySelector('.products');
   
@@ -179,7 +180,7 @@ function displayCart() {
             </div>
 
           <div class="total">
-              $${item.inCart*item.price}
+              $${(item.inCart*item.price).toFixed(2)}
           </div>
 
           <div class="close-btn">
@@ -248,8 +249,25 @@ function deleteButtons() {
   let productNumbers = localStorage.getItem('cartNumbers');
   let cartCost = localStorage.getItem("totalCost");
   let cartItems = localStorage.getItem('productsInCart');
+  cartItems = JSON.parse(cartItems);
+  let productName;
   
-  
+
+  for(let i=0; i < deleteButtons.length; i++) {
+    deleteButtons[i].addEventListener('click', () => {
+
+      productName = deleteButtons[i].parentElement.previousElementSibling.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLocaleLowerCase().replace(/ /g,'').trim();
+      
+      localStorage.setItem('cartNumbers', productNumbers - cartItems[productName].inCart);
+      localStorage.setItem('totalCost', cartCost - ( cartItems[productName].price * cartItems[productName].inCart));
+
+        delete cartItems[productName];
+        localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+
+        displayCart();
+        onLoadCartNumbers();
+    });
+  }
 }
 onLoadCartNumbers();
 displayCart();
