@@ -1644,17 +1644,20 @@ span.psw a {
   color: white;
   background-color: #84bc22;
 }
+.products-box .buttons-content .content-bottom {
+  padding-right: 5%;
+}
 .products-box .buttons-content .content-bottom .cartsubtotal {
   display: flex;
   justify-content: flex-end;
   text-transform: uppercase;
 }
 .products-box .buttons-content .content-bottom .cartsubtotal .left {
-  width: 35%;
+  width: 30%;
   font-weight: 400;
 }
 .products-box .buttons-content .content-bottom .cartsubtotal .right {
-  width: 10%;
+  width: 16%;
   font-size: 18px;
   font-weight: 900;
 }
@@ -1670,32 +1673,33 @@ span.psw a {
 }
 .products-box .buttons-content .content-bottom .shipping .right {
   line-height: 2.2;
-}
-.products-box .buttons-content .content-bottom .shipping .right input[type=radio]:after {
-  width: 12px;
-  height: 12px;
-  border-radius: 15px;
-  top: -2px;
-  left: -1px;
-  position: relative;
-  background-color: white;
-  content: "";
-  display: inline-block;
-  visibility: visible;
-  border: 3px solid #e8e2d6;
-}
-.products-box .buttons-content .content-bottom .shipping .right input[type=radio]:checked:after {
-  width: 12px;
-  height: 12px;
-  border-radius: 15px;
-  top: -2px;
-  left: -1px;
-  position: relative;
-  background-color: #84bc22;
-  content: "";
-  display: inline-block;
-  visibility: visible;
-  border: 3px solid #e8e2d6;
+  /*input[type=radio]:after {
+      width: 12px;
+      height: 12px;
+      border-radius: 15px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+      background-color: $white;
+      content: '';
+      display: inline-block;
+      visibility: visible;
+      border: 3px solid $lighter-gray;
+  }
+
+  input[type=radio]:checked:after {
+      width: 12px;
+      height: 12px;
+      border-radius: 15px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+      background-color: $green;
+      content: '';
+      display: inline-block;
+      visibility: visible;
+      border: 3px solid $lighter-gray;
+  }*/
 }
 .products-box .buttons-content .content-bottom .shipping .right label span {
   font-weight: 900;

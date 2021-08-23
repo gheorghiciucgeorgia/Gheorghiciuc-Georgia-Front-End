@@ -105,6 +105,7 @@ function cartNumbers(product, action) {
 }
 
 function setItems(product) {
+
   let productNumbers = localStorage.getItem('cartNumbers');
   productNumbers = parseInt(productNumbers);
   let cartItems = localStorage.getItem('productsInCart');
@@ -150,6 +151,7 @@ function totalCost( product, action ) {
 }
 
 function displayCart() {
+
   let cartItems = localStorage.getItem('productsInCart');
   cartItems = JSON.parse(cartItems);
 
@@ -157,11 +159,17 @@ function displayCart() {
   cart = parseFloat(cart).toFixed(2);
 
   let productContainer = document.querySelector('.products');
-  let totalContainer=document.querySelector('.cartsubtotal')
+
+  let totalContainer=document.querySelector('.cartsubtotal');
+
+  let totalOrderContainer=document.querySelector('.order-total');
+  
+  let total=localStorage.getItem('totalOrder');
   
   if( cartItems && productContainer ) {
     productContainer.innerHTML = '';
     totalContainer.innerHTML='';
+    totalOrderContainer.innerHTML='';
     Object.values(cartItems).map( (item, index) => {
         productContainer.innerHTML += `
         <div class="product-row">
@@ -201,6 +209,14 @@ function displayCart() {
           </div>
         
       `;
+      totalOrderContainer.innerHTML+=`
+        <div class="left">
+          <p class=title-order>Order Total:</p>
+        </div>
+        <div class="right">
+          <p>${total}</p>
+        </div>
+      `
       deleteButtons();
       manageQuantity();
   }
@@ -276,4 +292,36 @@ function deleteButtons() {
 }
 onLoadCartNumbers();
 displayCart();
+
+let radiobutton=document.getElementsByName('fav_language');
+console.log(radiobutton);
+for(var i=0;i<radiobutton.length;i++){
+  let input=radiobutton[i];
+  input.addEventListener('click',shipping);
+}
+
+//did the shipping methods
+function shipping(){
+
+  let cart=localStorage.getItem('totalCost');
+  cart = parseFloat(cart);
+
+  console.log(cart);
+  var shippingvalue=document.getElementsByClassName('price-shipping')
+  let ordertotal=cart;
+
+  for(let i=0;i<shippingvalue.length;i++){
+
+    if(shippingvalue[i].checked){
+
+      var itis=parseFloat(shippingvalue[i].value);
+      console.log(itis);
+
+      ordertotal=(ordertotal+itis).toFixed(2);
+      
+      localStorage.setItem('totalOrder',ordertotal);
+      displayCart();
+      }
+  }
+}
 

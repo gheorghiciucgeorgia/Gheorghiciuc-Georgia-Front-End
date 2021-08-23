@@ -1704,7 +1704,7 @@ span.psw {
         }
       }
       .content-bottom{
-
+        padding-right:5%;
         .cartsubtotal{
             
           display:flex;
@@ -1712,11 +1712,11 @@ span.psw {
           text-transform: uppercase;
 
           .left{
-            width:35%;
+            width:30%;
             font-weight:400;
           }
           .right{
-            width:10%;
+            width:16%;
             font-size:18px;
             font-weight:900;
           } 
@@ -1733,7 +1733,7 @@ span.psw {
           }
           .right{
             line-height: 2.2;
-            input[type=radio]:after {
+            /*input[type=radio]:after {
               width: 12px;
               height: 12px;
               border-radius: 15px;
@@ -1759,7 +1759,7 @@ span.psw {
               display: inline-block;
               visibility: visible;
               border: 3px solid $lighter-gray;
-          }
+          }*/
           label {
             span{
               font-weight:900;
