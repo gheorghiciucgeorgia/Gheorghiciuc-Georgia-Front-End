@@ -271,7 +271,7 @@ input[type=email], input[type=password], input[type=text] {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 2px solid #d7d7d7;
+  border: 2px solid rgba(0, 0, 0, 0.102);
   box-sizing: border-box;
   border-radius: 25px;
   outline: none;
@@ -704,7 +704,7 @@ span.psw a {
 }
 .popular-items-section .products-column .img .buttons1 .Price-button {
   background-color: transparent;
-  border: 2px solid rgba(69, 65, 62, 0.502);
+  border: 2px solid rgba(0, 0, 0, 0.102);
   padding: 6px;
   border-radius: 25px 0px 0px 25px;
 }
@@ -714,7 +714,7 @@ span.psw a {
 }
 .popular-items-section .products-column .img .buttons1 .BuyNow-button {
   background-color: transparent;
-  border: 2px solid rgba(69, 65, 62, 0.502);
+  border: 2px solid rgba(0, 0, 0, 0.102);
   padding: 6px;
   border-radius: 0px 25px 25px 0px;
   margin-left: -2.5%;
@@ -1643,6 +1643,62 @@ span.psw a {
 .products-box .buttons-content .content-left .content-right-right .proceed {
   color: white;
   background-color: #84bc22;
+}
+.products-box .buttons-content .content-bottom .cartsubtotal {
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+}
+.products-box .buttons-content .content-bottom .cartsubtotal .left {
+  width: 35%;
+  font-weight: 400;
+}
+.products-box .buttons-content .content-bottom .cartsubtotal .right {
+  width: 10%;
+  font-size: 18px;
+  font-weight: 900;
+}
+.products-box .buttons-content .content-bottom .shipping {
+  display: flex;
+  justify-content: flex-end;
+}
+.products-box .buttons-content .content-bottom .shipping .left {
+  width: 30%;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.products-box .buttons-content .content-bottom .shipping .right {
+  line-height: 2.2;
+}
+.products-box .buttons-content .content-bottom .shipping .right input[type=radio]:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: white;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 3px solid #e8e2d6;
+}
+.products-box .buttons-content .content-bottom .shipping .right input[type=radio]:checked:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #84bc22;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 3px solid #e8e2d6;
+}
+.products-box .buttons-content .content-bottom .shipping .right label span {
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=style.css.map */

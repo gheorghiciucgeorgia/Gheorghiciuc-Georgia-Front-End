@@ -25,6 +25,8 @@ $red:#dc041d;
 $nude:#efead7;
 $price-color:rgb(189, 195, 199);
 $blackish:rgba(0,0,0,0.741);
+$border-color: rgb(0, 0, 0,0.102);
+
 
 /* use viewport-relative units to cover page fully */
 body {
@@ -715,7 +717,7 @@ span.psw {
             color:$icons-color;
               .Price-button{
                 background-color: transparent;
-                border:2px solid $light-grey;
+                border:2px solid $border-color;
                 padding:6px;
                 border-radius:25px 0px 0px 25px;
                 a{
@@ -726,7 +728,7 @@ span.psw {
 
               .BuyNow-button{
                 background-color: transparent;
-                border:2px solid $light-grey;
+                border:2px solid $border-color;
                 padding:6px;
                 border-radius:0px 25px 25px 0px;
                 margin-left:-2.5%;
@@ -1698,6 +1700,71 @@ span.psw {
           .proceed{
             color:$white;
             background-color: $green;
+          }
+        }
+      }
+      .content-bottom{
+
+        .cartsubtotal{
+            
+          display:flex;
+          justify-content: flex-end;
+          text-transform: uppercase;
+
+          .left{
+            width:35%;
+            font-weight:400;
+          }
+          .right{
+            width:10%;
+            font-size:18px;
+            font-weight:900;
+          } 
+        }
+        .shipping{
+          display: flex;
+          justify-content: flex-end;
+          
+          .left{
+            width:30%;
+            font-size:18px;
+            text-transform: uppercase;
+            font-weight:900;
+          }
+          .right{
+            line-height: 2.2;
+            input[type=radio]:after {
+              width: 12px;
+              height: 12px;
+              border-radius: 15px;
+              top: -2px;
+              left: -1px;
+              position: relative;
+              background-color: $white;
+              content: '';
+              display: inline-block;
+              visibility: visible;
+              border: 3px solid $lighter-gray;
+          }
+          
+          input[type=radio]:checked:after {
+              width: 12px;
+              height: 12px;
+              border-radius: 15px;
+              top: -2px;
+              left: -1px;
+              position: relative;
+              background-color: $green;
+              content: '';
+              display: inline-block;
+              visibility: visible;
+              border: 3px solid $lighter-gray;
+          }
+          label {
+            span{
+              font-weight:900;
+            }
+          }
           }
         }
       }

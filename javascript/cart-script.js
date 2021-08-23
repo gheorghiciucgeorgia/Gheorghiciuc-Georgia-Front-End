@@ -193,9 +193,13 @@ function displayCart() {
         `;
       });
       totalContainer.innerHTML+=`
-        <div class="basketTotalContainer">
-          <h4 class="basketTotalTitle">cart subtotal: $${cart}  </h4>
-        </div>
+          <div class="left">
+            <p class="basketTotalTitle">cart subtotal:  </p>
+          </div>
+          <div class="right">
+            <p>$${cart}</p>
+          </div>
+        
       `;
       deleteButtons();
       manageQuantity();
