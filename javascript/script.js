@@ -97,12 +97,18 @@ var count=0;
 let wishes=document.querySelectorAll(".add-wish");
 var wishesnumber=document.getElementById("wish-number");
 
+
 for(let i=0;i<wishes.length;i++){
     wishes[i].addEventListener('click',() => {
       count++;
-      wishesnumber.innerHTML=count;
+      localStorage.setItem('WishesNumber',count);
+      let wishnumbers = localStorage.getItem('WishesNumber');
+      if( wishnumbers ) {
+        document.querySelector('.heart span').textContent = wishnumbers;
+      }
     })
 }
+
 
 var slideIndex1 = 1;
 showSlides1(slideIndex1);
