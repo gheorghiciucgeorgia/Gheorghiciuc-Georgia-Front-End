@@ -1724,6 +1724,7 @@ span.psw {
         .shipping{
           display: flex;
           justify-content: flex-end;
+          padding-bottom:3%;
           
           .left{
             width:30%;
@@ -1732,40 +1733,59 @@ span.psw {
             font-weight:900;
           }
           .right{
-            line-height: 2.2;
-            /*input[type=radio]:after {
-              width: 12px;
-              height: 12px;
-              border-radius: 15px;
-              top: -2px;
-              left: -1px;
-              position: relative;
-              background-color: $white;
-              content: '';
-              display: inline-block;
-              visibility: visible;
-              border: 3px solid $lighter-gray;
-          }
+              line-height: 2.2;
+                input[type=radio]:after {
+                  width: 12px;
+                  height: 12px;
+                  border-radius: 15px;
+                  top: -2px;
+                  left: -1px;
+                  position: relative;
+                  background-color: $white;
+                  content: '';
+                  display: inline-block;
+                  visibility: visible;
+                  border: 3px solid $lighter-gray;
+                  cursor: pointer;
+                }
           
-          input[type=radio]:checked:after {
-              width: 12px;
-              height: 12px;
-              border-radius: 15px;
-              top: -2px;
-              left: -1px;
-              position: relative;
-              background-color: $green;
-              content: '';
-              display: inline-block;
-              visibility: visible;
-              border: 3px solid $lighter-gray;
-          }*/
-          label {
-            span{
+                input[type=radio]:checked:after {
+                  width: 12px;
+                  height: 12px;
+                  border-radius: 15px;
+                  top: -2px;
+                  left: -1px;
+                  position: relative;
+                  background-color: $green;
+                  content: '';
+                  display: inline-block;
+                  visibility: visible;
+                  border: 3px solid $lighter-gray;
+                }
+                label {
+                  span{
+                    font-weight:900;
+                  }
+                }
+          }
+        }
+        .order-total{
+          display: flex;
+          justify-content: flex-end;
+          padding:4% 0;
+            .left{
+              width:40%;
+              font-size:18px;
+              text-transform: uppercase;
               font-weight:900;
+              text-align: center;
+              margin:auto 0;
             }
-          }
-          }
+            .right{
+              font-size:40px;
+              width:20%;
+              font-weight: 900;
+            }
         }
       }
     }

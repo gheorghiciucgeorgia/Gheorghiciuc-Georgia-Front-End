@@ -161,7 +161,8 @@ function displayCart() {
   let productContainer = document.querySelector('.products');
 
   let totalContainer=document.querySelector('.cartsubtotal');
-
+  
+  
   let totalOrderContainer=document.querySelector('.order-total');
   
   let total=localStorage.getItem('totalOrder');
@@ -214,7 +215,7 @@ function displayCart() {
           <p class=title-order>Order Total:</p>
         </div>
         <div class="right">
-          <p>${total}</p>
+          <p>$${total}</p>
         </div>
       `
       deleteButtons();
@@ -295,6 +296,7 @@ displayCart();
 
 let radiobutton=document.getElementsByName('fav_language');
 console.log(radiobutton);
+
 for(var i=0;i<radiobutton.length;i++){
   let input=radiobutton[i];
   input.addEventListener('click',shipping);
@@ -307,7 +309,8 @@ function shipping(){
   cart = parseFloat(cart);
 
   console.log(cart);
-  var shippingvalue=document.getElementsByClassName('price-shipping')
+  var shippingvalue=document.getElementsByClassName('price-shipping');
+
   let ordertotal=cart;
 
   for(let i=0;i<shippingvalue.length;i++){
@@ -315,10 +318,11 @@ function shipping(){
     if(shippingvalue[i].checked){
 
       var itis=parseFloat(shippingvalue[i].value);
+      
       console.log(itis);
 
       ordertotal=(ordertotal+itis).toFixed(2);
-      
+
       localStorage.setItem('totalOrder',ordertotal);
       displayCart();
       }

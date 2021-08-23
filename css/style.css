@@ -1664,6 +1664,7 @@ span.psw a {
 .products-box .buttons-content .content-bottom .shipping {
   display: flex;
   justify-content: flex-end;
+  padding-bottom: 3%;
 }
 .products-box .buttons-content .content-bottom .shipping .left {
   width: 30%;
@@ -1673,35 +1674,53 @@ span.psw a {
 }
 .products-box .buttons-content .content-bottom .shipping .right {
   line-height: 2.2;
-  /*input[type=radio]:after {
-      width: 12px;
-      height: 12px;
-      border-radius: 15px;
-      top: -2px;
-      left: -1px;
-      position: relative;
-      background-color: $white;
-      content: '';
-      display: inline-block;
-      visibility: visible;
-      border: 3px solid $lighter-gray;
-  }
-
-  input[type=radio]:checked:after {
-      width: 12px;
-      height: 12px;
-      border-radius: 15px;
-      top: -2px;
-      left: -1px;
-      position: relative;
-      background-color: $green;
-      content: '';
-      display: inline-block;
-      visibility: visible;
-      border: 3px solid $lighter-gray;
-  }*/
+}
+.products-box .buttons-content .content-bottom .shipping .right input[type=radio]:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: white;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 3px solid #e8e2d6;
+  cursor: pointer;
+}
+.products-box .buttons-content .content-bottom .shipping .right input[type=radio]:checked:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #84bc22;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 3px solid #e8e2d6;
 }
 .products-box .buttons-content .content-bottom .shipping .right label span {
+  font-weight: 900;
+}
+.products-box .buttons-content .content-bottom .order-total {
+  display: flex;
+  justify-content: flex-end;
+  padding: 4% 0;
+}
+.products-box .buttons-content .content-bottom .order-total .left {
+  width: 40%;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  margin: auto 0;
+}
+.products-box .buttons-content .content-bottom .order-total .right {
+  font-size: 40px;
+  width: 20%;
   font-weight: 900;
 }
 
