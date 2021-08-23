@@ -383,6 +383,10 @@ span.psw a {
   display: none;
 }
 
+.slideshow-media-products {
+  display: none;
+}
+
 /*---------------------------------HOMEPAGE----------------------------*/
 .homepage {
   display: flex;
@@ -1001,7 +1005,7 @@ span.psw a {
   display: none;
 }
 
-.active {
+.active-cookie {
   display: flex;
   justify-content: center;
   flex-direction: column;

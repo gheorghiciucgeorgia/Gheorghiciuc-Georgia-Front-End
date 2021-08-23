@@ -1,3 +1,90 @@
+/*--------------------------Values saved----------------*/
+@media only screen and (max-width: 1264px) and (min-width: 1138px) {
+  .slideshow-container .text-left {
+    font-size: 30px;
+  }
+  .slideshow-container .minitext-left {
+    font-size: 12px;
+  }
+  .slideshow-container .viewmorebtn {
+    padding: 5px 30px;
+    bottom: 10%;
+  }
+  .slideshow-container .text-center {
+    left: 25%;
+  }
+  .slideshow-container .minitext-center {
+    left: 30%;
+  }
+  .slideshow-container .center {
+    left: 40%;
+  }
+  .slideshow-container .text-right {
+    font-size: 30px;
+  }
+  .slideshow-container .minitext-right {
+    font-size: 12px;
+  }
+  .slideshow-container .viewmorebtn-right {
+    padding: 5px 30px;
+    bottom: 10%;
+  }
+
+  .alldots .dot {
+    height: 5px;
+    width: 5px;
+    border: 2px solid transparent;
+  }
+  .alldots .active, .alldots .dot:hover {
+    border: 2px solid white;
+  }
+
+  .popular-items-section .products-row {
+    width: 100%;
+  }
+  .popular-items-section .products-row .products-column {
+    width: 25%;
+    margin-bottom: 4%;
+  }
+  .popular-items-section .products-row .products-column .img img {
+    width: 100%;
+  }
+  .popular-items-section .products-row .products-column .img .product-title {
+    font-size: 10px;
+  }
+  .popular-items-section .products-row .products-column .img .price {
+    font-size: 10px;
+  }
+  .popular-items-section .products-row .products-column .img .buttons1 {
+    left: 10%;
+  }
+  .popular-items-section .products-row .products-column .img .buttons1 .Price-button a {
+    font-size: 15px;
+  }
+  .popular-items-section .products-row .products-column .img .buttons1 .BuyNow-button {
+    font-size: 15px;
+  }
+  .popular-items-section .products-row .products-column .img .image__overlay-gradient {
+    width: 100%;
+  }
+
+  .banner h1 {
+    font-size: 50px;
+    top: 30%;
+  }
+  .banner h2 {
+    font-size: 20px;
+  }
+
+  .featured-products .gallery-cell .img-carousel h3 {
+    bottom: 20%;
+    left: 20%;
+    font-size: 12px;
+  }
+  .featured-products .gallery-cell .img-carousel p {
+    left: 35%;
+  }
+}
 /* for tablets */
 @media only screen and (max-width: 1138px) and (min-width: 767px) {
   .header a {
@@ -21,6 +108,11 @@
   .header-right a {
     margin-left: -10px;
   }
+  .header-right a .ellipse {
+    border: 1px solid #84bc22;
+    font-size: 8px;
+    padding: 2px;
+  }
 
   .header-center {
     margin-right: 10px;
@@ -28,6 +120,93 @@
 
   .modal-content {
     width: 50%;
+  }
+
+  .homepage {
+    margin: 2%;
+    margin-top: 15%;
+    margin-left: 2%;
+  }
+  .homepage .right-content .btn55 h1 {
+    font-size: 50px;
+  }
+  .homepage .right-content .socialmedia-text button {
+    padding: 5px 15px;
+    font-size: 15px;
+  }
+
+  .slideshow-container .text-left {
+    font-size: 30px;
+  }
+  .slideshow-container .minitext-left {
+    font-size: 12px;
+  }
+  .slideshow-container .viewmorebtn {
+    padding: 5px 30px;
+    bottom: 10%;
+  }
+  .slideshow-container .text-center {
+    left: 15%;
+  }
+  .slideshow-container .minitext-center {
+    left: 20%;
+  }
+  .slideshow-container .center {
+    left: 35%;
+  }
+  .slideshow-container .text-right {
+    font-size: 30px;
+  }
+  .slideshow-container .minitext-right {
+    font-size: 12px;
+  }
+  .slideshow-container .viewmorebtn-right {
+    padding: 5px 30px;
+    bottom: 10%;
+  }
+
+  .alldots .dot {
+    height: 5px;
+    width: 5px;
+    border: 2px solid transparent;
+  }
+  .alldots .active, .alldots .dot:hover {
+    border: 2px solid white;
+  }
+
+  .popular-items-section .products-column {
+    width: 50%;
+    margin-bottom: 4%;
+  }
+  .popular-items-section .products-column .img {
+    width: 72%;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+    top: 10%;
+  }
+  .banner h2 {
+    font-size: 15px;
+  }
+
+  .featured-products .gallery-cell .img-carousel h3 {
+    bottom: 20%;
+    left: 10%;
+    font-size: 12px;
+  }
+  .featured-products .gallery-cell .img-carousel p {
+    left: 30%;
+  }
+
+  .benefits-content .benefits-content-content i {
+    font-size: 70px;
+  }
+  .benefits-content .benefits-content-content .text-content h2 {
+    font-size: 18px;
+  }
+  .benefits-content .benefits-content-content .text-content p {
+    font-size: 10px;
   }
 }
 /* for phones */
@@ -239,6 +418,21 @@
     color: #e8e2d6;
     margin-right: 15%;
   }
+  .mobile-footer a i {
+    position: relative;
+  }
+  .mobile-footer a .ellipse {
+    border: 2.5px solid #84bc22;
+    border-radius: 50%;
+    position: absolute;
+    color: #84bc22;
+    font-size: 20px;
+    padding: 2px 4px;
+    top: -10px;
+    right: -10px;
+    background-color: #262a32;
+    font-weight: 400;
+  }
   .mobile-footer #user-icon-for-mobile {
     width: auto;
   }
@@ -267,6 +461,276 @@
   }
 
   /*-------------------------END LOG IN MODAL FOR MEDIA--------------*/
+  .homepage {
+    margin-top: 30%;
+    display: block;
+    width: 90%;
+  }
+  .homepage .right-content {
+    display: none;
+  }
+  .homepage .left-content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slideshow-container .text-left {
+    font-size: 40px;
+  }
+  .slideshow-container .minitext-left {
+    font-size: 20px;
+  }
+  .slideshow-container .viewmorebtn {
+    padding: 10px 30px;
+    bottom: 15%;
+  }
+  .slideshow-container .text-center {
+    left: 10%;
+  }
+  .slideshow-container .minitext-center {
+    left: 10%;
+  }
+  .slideshow-container .center {
+    left: 38%;
+  }
+  .slideshow-container .text-right {
+    font-size: 40px;
+  }
+  .slideshow-container .minitext-right {
+    font-size: 20px;
+  }
+  .slideshow-container .viewmorebtn-right {
+    padding: 10px 30px;
+    bottom: 10%;
+  }
+  .slideshow-container .mySlides img {
+    width: 100%;
+    height: 500px;
+  }
+
+  .popular-items-section .products-row {
+    display: none;
+  }
+  .popular-items-section .products-column {
+    display: none;
+  }
+
+  .loadbtn-section .load-btn {
+    display: none;
+  }
+
+  .slideshow-media-products {
+    display: block;
+    /* Hide the images by default */
+    /* Next & previous buttons */
+    /* Position the "next button" to the right */
+    /* On hover, add a black background color with a little bit see-through */
+  }
+  .slideshow-media-products .slideshow-container1 {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .slideshow-media-products .mySlides1 {
+    display: none;
+    margin: auto;
+  }
+  .slideshow-media-products .mySlides1 .img {
+    position: relative;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  .slideshow-media-products .mySlides1 .img img {
+    width: 100%;
+  }
+  .slideshow-media-products .mySlides1 .img .product-title {
+    position: absolute;
+    bottom: 15%;
+    left: 7%;
+    color: #45413e;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .slideshow-media-products .mySlides1 .img .title-center {
+    left: 25%;
+  }
+  .slideshow-media-products .mySlides1 .img .price {
+    position: absolute;
+    bottom: 3%;
+    left: 38%;
+    color: #45413e;
+    font-size: 15px;
+  }
+  .slideshow-media-products .mySlides1 .img .image__overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 99.5%;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .slideshow-media-products .mySlides1 .img .image__overlay--primary {
+    background-image: -webkit-linear-gradient(90deg, #1cc167 0%, #2ed3a2 100%);
+  }
+  .slideshow-media-products .mySlides1 .img .image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+  }
+  .slideshow-media-products .mySlides1 .img .image__overlay:hover {
+    opacity: 0.902;
+  }
+  .slideshow-media-products .mySlides1 .img .image__overlay:hover > * {
+    transform: translateY(0);
+  }
+  .slideshow-media-products .mySlides1 .img .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .slideshow-media-products .mySlides1 .img .buttons button {
+    margin-left: 4%;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    padding: 8% 11%;
+    font-size: 40px;
+  }
+  .slideshow-media-products .mySlides1 .img .buttons .Plus-button {
+    color: #23c46e;
+  }
+  .slideshow-media-products .mySlides1 .img .buttons .Heart-button {
+    color: #e73c68;
+  }
+  .slideshow-media-products .mySlides1 .img .buttons1 {
+    position: absolute;
+    bottom: 3%;
+    left: 20%;
+    color: #45413e;
+  }
+  .slideshow-media-products .mySlides1 .img .buttons1 .Price-button {
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.102);
+    padding: 6px;
+    border-radius: 25px 0px 0px 25px;
+  }
+  .slideshow-media-products .mySlides1 .img .buttons1 .Price-button a {
+    text-decoration: none;
+    color: #1cc167;
+  }
+  .slideshow-media-products .mySlides1 .img .buttons1 .BuyNow-button {
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.102);
+    padding: 6px;
+    border-radius: 0px 25px 25px 0px;
+    margin-left: -2.5%;
+  }
+  .slideshow-media-products .mySlides1 .img .buttons1 .BuyNow-button:hover {
+    background-color: #84bc22;
+    color: white;
+  }
+  .slideshow-media-products .mySlides1 .img .image__overlay-gradient {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 99.5%;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    transition: opacity 0.25s;
+    background-image: linear-gradient(to bottom, #dc5987, #675b99);
+  }
+  .slideshow-media-products .mySlides1 .chat {
+    position: absolute;
+    width: 50%;
+    bottom: 10%;
+    left: 20%;
+  }
+  .slideshow-media-products .mySlides1 .chat i {
+    color: #84bc22;
+  }
+  .slideshow-media-products .prev1, .slideshow-media-products .next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .slideshow-media-products .next1 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .slideshow-media-products .prev1:hover, .slideshow-media-products .next1:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .slideshow-media-products .dot1 {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0% 1%;
+    background-color: white;
+    border: 4px solid transparent;
+    opacity: 0.502;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .slideshow-media-products .active, .slideshow-media-products .dot1:hover {
+    border: 4px solid white;
+    background-color: transparent;
+    opacity: 1;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+    top: 15%;
+  }
+  .banner h2 {
+    font-size: 10px;
+    top: 60%;
+  }
+
+  .featured-products {
+    display: none;
+  }
+
+  .benefits-content .benefits-content-content {
+    display: block;
+  }
+  .benefits-content .benefits-content-content .left-content, .benefits-content .benefits-content-content .right-content {
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 0;
+  }
+  .benefits-content .benefits-content-content .center-content {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: 0;
+  }
+  .benefits-content .benefits-content-content .text-content {
+    width: 30%;
+  }
+
   .main-footer {
     display: none;
   }

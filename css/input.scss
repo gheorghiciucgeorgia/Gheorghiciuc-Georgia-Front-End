@@ -398,6 +398,9 @@ span.psw {
 .footer2-media{
   display:none;
 }
+.slideshow-media-products{
+  display:none;
+}
 /*---------------------------------HOMEPAGE----------------------------*/
 .homepage{
   display:flex;
@@ -466,6 +469,7 @@ span.psw {
           }
       }
     }
+    
 }
 /*---------Styling carousel banner---*/
 .slideshow-container {
@@ -1028,7 +1032,7 @@ span.psw {
     z-index:12;
     display:none;
 } 
-.active{
+.active-cookie{
   display:flex;
   justify-content: center;
   flex-direction: column;
