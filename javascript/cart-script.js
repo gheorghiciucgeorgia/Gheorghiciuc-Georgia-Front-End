@@ -296,7 +296,7 @@ onLoadCartNumbers();
 displayCart();
 
 let radiobutton=document.getElementsByName('fav_language');
-console.log(radiobutton);
+
 
 for(var i=0;i<radiobutton.length;i++){
   let input=radiobutton[i];

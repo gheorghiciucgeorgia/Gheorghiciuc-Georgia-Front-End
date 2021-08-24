@@ -95,7 +95,7 @@ closecookie.onclick=function(){
 // wish increasing number when clicked
 var count=0;
 let wishes=document.querySelectorAll(".add-wish");
-var wishesnumber=document.getElementById("wish-number");
+let wishesnumber=document.getElementsByClassName("heart");
 
 
 for(let i=0;i<wishes.length;i++){
@@ -104,7 +104,8 @@ for(let i=0;i<wishes.length;i++){
       localStorage.setItem('WishesNumber',count);
       let wishnumbers = localStorage.getItem('WishesNumber');
       if( wishnumbers ) {
-        document.querySelector('.heart span').textContent = wishnumbers;
+        document.querySelector('.ellipse').textContent = wishnumbers;
+        console.log(wishnumbers);
       }
     })
 }
