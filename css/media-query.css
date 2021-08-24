@@ -253,6 +253,20 @@
   .CLP-products .CLP-products-row .CLP-products-column .img .price {
     font-size: 8px;
   }
+
+  .page404-content .content-left {
+    width: 50%;
+  }
+  .page404-content .content-left h2 {
+    font-size: 100px;
+    top: 15%;
+  }
+  .page404-content .content-right {
+    margin-left: 10%;
+  }
+  .page404-content .content-right button {
+    padding: 1% 70% 1% 2%;
+  }
 }
 /* for phones */
 @media only screen and (max-width: 767px) and (min-width: 280px) {
@@ -886,6 +900,28 @@
   }
   .CLP-products .CLP-products-row .CLP-products-column .img .price {
     font-size: 18px;
+  }
+
+  .page404-content {
+    display: block;
+  }
+  .page404-content .content-left {
+    width: 100%;
+    margin: 0;
+    left: 10%;
+  }
+  .page404-content .content-left h2 {
+    font-size: 100px;
+    top: 15%;
+    left: 10%;
+  }
+  .page404-content .content-right {
+    width: 100%;
+    padding-bottom: 5%;
+    margin-top: -25%;
+  }
+  .page404-content .content-right button {
+    padding: 1% 70% 1% 2%;
   }
 }
 

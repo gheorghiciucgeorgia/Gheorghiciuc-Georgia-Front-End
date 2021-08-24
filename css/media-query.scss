@@ -329,6 +329,23 @@ $border-color: rgb(0, 0, 0,0.102);
           }
         }
       }
+      //------------------------------404 Page--------------//
+      .page404-content{
+        .content-left{
+          width:50%;
+
+          h2{
+            font-size:100px;
+            top:15%;
+          }
+        }
+        .content-right{
+          margin-left: 10%;
+          button{
+            padding: 1% 70% 1% 2%
+          }
+        }
+      }
 }
 
 /* for phones */
@@ -979,6 +996,29 @@ $border-color: rgb(0, 0, 0,0.102);
             font-size:18px;
           }
         }
+      }
+    }
+  }
+  //404 PAge
+  .page404-content{
+    display:block;
+    .content-left{
+      width:100%;
+      margin:0;
+      left:10%;
+
+      h2{
+        font-size:100px;
+        top:15%;
+        left:10%;
+      }
+    }
+    .content-right{
+      width:100%;
+      padding-bottom:5%;
+      margin-top:-25%;
+      button{
+        padding: 1% 70% 1% 2%
       }
     }
   }
