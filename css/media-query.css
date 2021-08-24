@@ -84,6 +84,23 @@
   .featured-products .gallery-cell .img-carousel p {
     left: 35%;
   }
+
+  .CLP-products .CLP-products-row {
+    width: 100%;
+  }
+  .CLP-products .CLP-products-row .CLP-products-column {
+    width: 25%;
+    margin-bottom: 4%;
+  }
+  .CLP-products .CLP-products-row .CLP-products-column .img img {
+    width: 100%;
+  }
+  .CLP-products .CLP-products-row .CLP-products-column .img .product-title {
+    font-size: 10px;
+  }
+  .CLP-products .CLP-products-row .CLP-products-column .img .price {
+    font-size: 10px;
+  }
 }
 /* for tablets */
 @media only screen and (max-width: 1138px) and (min-width: 767px) {
@@ -207,6 +224,34 @@
   }
   .benefits-content .benefits-content-content .text-content p {
     font-size: 10px;
+  }
+
+  .Filters .filters-row {
+    width: 100%;
+  }
+  .Filters .filters-column {
+    width: 51%;
+    margin-left: 23%;
+  }
+  .Filters .filters-column select {
+    width: 90%;
+  }
+
+  .CLP-products .CLP-products-row {
+    width: 100%;
+  }
+  .CLP-products .CLP-products-row .CLP-products-column {
+    width: 25%;
+    margin-bottom: 4%;
+  }
+  .CLP-products .CLP-products-row .CLP-products-column .img img {
+    width: 100%;
+  }
+  .CLP-products .CLP-products-row .CLP-products-column .img .product-title {
+    font-size: 8px;
+  }
+  .CLP-products .CLP-products-row .CLP-products-column .img .price {
+    font-size: 8px;
   }
 }
 /* for phones */
@@ -803,6 +848,44 @@
     padding-left: 15%;
     width: 100%;
     color: rgba(69, 65, 62, 0.502);
+  }
+
+  .CategoryLandingPagetitle {
+    margin-top: 30%;
+  }
+
+  .Filters .filters-row {
+    width: 100%;
+    margin-left: 0;
+  }
+  .Filters .filters-column {
+    margin-bottom: 4%;
+    width: 100%;
+  }
+  .Filters .filters-column select {
+    width: 80%;
+    float: right;
+  }
+  .Filters .filters-column .color-dot {
+    margin-left: 4%;
+  }
+
+  .CLP-products .CLP-products-row {
+    width: 100%;
+  }
+  .CLP-products .CLP-products-row .CLP-products-column {
+    width: 100%;
+    margin-bottom: 4%;
+    margin-left: 4%;
+  }
+  .CLP-products .CLP-products-row .CLP-products-column .img img {
+    width: 100%;
+  }
+  .CLP-products .CLP-products-row .CLP-products-column .img .product-title {
+    font-size: 18px;
+  }
+  .CLP-products .CLP-products-row .CLP-products-column .img .price {
+    font-size: 18px;
   }
 }
 

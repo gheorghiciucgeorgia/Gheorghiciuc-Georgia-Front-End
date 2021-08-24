@@ -26,6 +26,7 @@ $nude:#efead7;
 $price-color:rgb(189, 195, 199);
 $blackish:rgba(0,0,0,0.741);
 $border-color: rgb(0, 0, 0,0.102);
+
 @media only screen and (max-width: 1264px) and (min-width: 1138px){
   //------------------Home Page-------------
   .slideshow-container{
@@ -123,6 +124,28 @@ $border-color: rgb(0, 0, 0,0.102);
           }
           p{
             left:35%;
+          }
+        }
+      }
+    }
+    //------------------Category Landing Page----------------//
+    .CLP-products {
+      .CLP-products-row{
+        width: 100%;
+      .CLP-products-column {
+          width: 25%;
+          margin-bottom:4%;
+          .img{
+            
+            img{
+              width:100%;
+            }
+            .product-title{
+              font-size:10px;
+            }
+            .price{
+              font-size:10px;
+            }
           }
         }
       }
@@ -268,6 +291,40 @@ $border-color: rgb(0, 0, 0,0.102);
             }
             p{
               font-size:10px;
+            }
+          }
+        }
+      }
+      //------------------------------Cateogry Landing Page--------------//
+      .Filters{
+        .filters-row{
+          width:100%;
+        }
+        .filters-column{
+          width:51%;
+          margin-left:23%;
+          select{
+            width:90%;
+          }
+        }
+      }
+      .CLP-products {
+        .CLP-products-row{
+          width: 100%;
+        .CLP-products-column {
+            width: 25%;
+            margin-bottom:4%;
+            .img{
+              
+              img{
+                width:100%;
+              }
+              .product-title{
+                font-size:8px;
+              }
+              .price{
+                font-size:8px;
+              }
             }
           }
         }
@@ -879,6 +936,50 @@ $border-color: rgb(0, 0, 0,0.102);
       padding-left:15%;
       width:100%;
       color:$light-grey;
+    }
+  }
+  //Category Landing Page
+  .CategoryLandingPagetitle{
+    margin-top:30%;
+  }
+  .Filters{
+    .filters-row{
+      width:100%;
+      margin-left:0;
+    }
+    .filters-column{
+      margin-bottom:4%;
+      width:100%;
+      
+      select{
+        width:80%;
+        float:right;
+      }
+      .color-dot{
+        margin-left:4%;
+      }
+    }
+  }
+  .CLP-products {
+    .CLP-products-row{
+      width: 100%;
+    .CLP-products-column {
+        width: 100%;
+        margin-bottom:4%;
+        margin-left:4%;
+        .img{
+          
+          img{
+            width:100%;
+          }
+          .product-title{
+            font-size:18px;
+          }
+          .price{
+            font-size:18px;
+          }
+        }
+      }
     }
   }
 }
