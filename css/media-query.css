@@ -105,6 +105,11 @@
   .PDP-content .content-bottom .tab button {
     font-size: 19px;
   }
+
+  .products-box .buttons-content .content-left button {
+    padding: 10px 30px;
+    font-size: 15px;
+  }
 }
 /* for tablets */
 @media only screen and (max-width: 1138px) and (min-width: 767px) {
@@ -283,6 +288,33 @@
   }
   .PDP-content .content-bottom .tabcontent .column2-tab {
     padding: 0;
+  }
+
+  .products-box .products .product-row .product img {
+    width: 100px;
+  }
+  .products-box .products .product-row .product .product-name {
+    font-size: 12px;
+  }
+  .products-box .products .product-row .quantity button {
+    font-size: 12px;
+  }
+  .products-box .products .product-row .total {
+    font-size: 20px;
+  }
+  .products-box .buttons-content .content-left button {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+  .products-box .buttons-content .content-left .content-left-left .cupon {
+    width: 50%;
+    font-size: 12px;
+  }
+  .products-box .buttons-content .content-left .content-right-right {
+    margin-top: 2%;
+  }
+  .products-box .buttons-content .content-bottom .order-total .right {
+    font-size: 30px;
   }
 }
 /* for phones */
@@ -884,6 +916,9 @@
   .CategoryLandingPagetitle {
     margin-top: 30%;
   }
+  .CategoryLandingPagetitle h2 {
+    font-size: 30px;
+  }
 
   .Filters .filters-row {
     width: 100%;
@@ -1036,6 +1071,50 @@
 
   .PDP-row {
     display: none;
+  }
+
+  .products-box .products .product-row .product img {
+    width: 50px;
+  }
+  .products-box .products .product-row .product .product-name {
+    font-size: 8px;
+  }
+  .products-box .products .product-row .quantity {
+    padding: 0.5%;
+  }
+  .products-box .products .product-row .quantity span {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .products-box .products .product-row .quantity button {
+    font-size: 12px;
+  }
+  .products-box .products .product-row .total {
+    font-size: 12px;
+  }
+  .products-box .products .product-row .close-btn i {
+    font-size: 8px;
+  }
+  .products-box .buttons-content .content-left {
+    display: block;
+  }
+  .products-box .buttons-content .content-left button {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+  .products-box .buttons-content .content-left .content-left-left {
+    width: 100%;
+    margin-left: 10%;
+  }
+  .products-box .buttons-content .content-left .content-left-left .cupon {
+    width: 50%;
+    font-size: 12px;
+  }
+  .products-box .buttons-content .content-left .content-right-right {
+    margin-left: 15%;
+  }
+  .products-box .buttons-content .content-bottom .order-total .right {
+    font-size: 20px;
   }
 }
 

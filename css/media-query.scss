@@ -161,6 +161,17 @@ $dot-media-color:#8b8b8e;
       }
     }
   }
+  //Cart Page
+  .products-box{
+    .buttons-content{
+      .content-left{
+        button{
+          padding:10px 30px;
+          font-size:15px;
+        }
+      }
+    }
+  }
 }
 /* for tablets */
 @media only screen and (max-width: 1138px) and (min-width: 767px){
@@ -376,6 +387,53 @@ $dot-media-color:#8b8b8e;
         columns:1;
         .column2-tab{
           padding:0;
+        }
+      }
+    }
+  }
+  //Cart Page
+  .products-box{
+    .products{
+      .product-row{
+        .product{
+          img{
+            width:100px;
+          }
+          .product-name{
+            font-size: 12px;
+          }
+        }
+        .quantity{
+          button{
+            font-size:12px;
+          }
+        }
+        .total{
+          font-size:20px;
+        }
+      }
+    }
+    .buttons-content{
+      .content-left{
+        button{
+          padding:10px 20px;
+          font-size:10px;
+        }
+        .content-left-left{
+          .cupon{
+            width:50%;
+            font-size:12px;
+          }
+        }
+        .content-right-right{
+          margin-top:2%;
+        }
+      }
+      .content-bottom{
+        .order-total{
+          .right{
+            font-size:30px;
+          }
         }
       }
     }
@@ -992,6 +1050,9 @@ $dot-media-color:#8b8b8e;
   //Category Landing Page
   .CategoryLandingPagetitle{
     margin-top:30%;
+    h2{
+      font-size:30px;
+    }
   }
   .Filters{
     .filters-row{
@@ -1162,6 +1223,66 @@ $dot-media-color:#8b8b8e;
   }
   .PDP-row{
     display:none;
+  }
+  //Cart Page
+  .products-box{
+    .products{
+      .product-row{
+        .product{
+          img{
+            width:50px;
+          }
+          .product-name{
+            font-size: 8px;
+          }
+        }
+        .quantity{
+          padding:0.5%;
+          span{
+            padding:5px;
+            font-size:10px;
+          }
+          button{
+            font-size:12px;
+          }
+        }
+        .total{
+          font-size: 12px;
+        }
+        .close-btn {
+          i{
+            font-size:8px;
+          }
+        }
+      }
+    }
+    .buttons-content{
+      .content-left{
+        display:block;
+        button{
+          padding:10px 20px;
+          font-size:10px;
+        }
+        .content-left-left{
+          width:100%;
+          margin-left:10%;
+          .cupon{
+            width:50%;
+            font-size:12px;
+          }
+        }
+        .content-right-right{
+          margin-left:15%;
+        }
+      }
+      .content-bottom{
+        .order-total{
+          .right{
+            font-size:20px;
+          }
+        }
+      }
+    }
   }
 
 }
