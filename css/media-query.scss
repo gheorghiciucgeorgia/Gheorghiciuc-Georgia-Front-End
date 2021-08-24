@@ -1187,18 +1187,23 @@ $dot-media-color:#8b8b8e;
       .content-left{
         width:100%;
         display:inline;
+
         .smallpic-row{
           display:inline;
+    
           .smallpic-column{
-            width:15%;
+            width:10%;
             margin:20px;
           }
         }
       }
       .content-right{
         width:100%;
+        margin-top:20%;
         margin-left:20px;
-      
+        .price{
+          font-size: 30px;
+        }
         .add-to-cart-and-quantity{
           display:block;
           #field1{

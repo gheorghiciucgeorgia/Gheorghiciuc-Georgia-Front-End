@@ -1042,12 +1042,16 @@
     display: inline;
   }
   .PDP-content .PDP-product-details .content-left .smallpic-row .smallpic-column {
-    width: 15%;
+    width: 10%;
     margin: 20px;
   }
   .PDP-content .PDP-product-details .content-right {
     width: 100%;
+    margin-top: 20%;
     margin-left: 20px;
+  }
+  .PDP-content .PDP-product-details .content-right .price {
+    font-size: 30px;
   }
   .PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity {
     display: block;
