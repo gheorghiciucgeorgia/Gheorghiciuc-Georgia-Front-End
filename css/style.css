@@ -1460,11 +1460,8 @@ span.psw a {
   text-align: center;
   font-size: 18px;
 }
-.PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity #field1 input[type=number] {
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 18px;
+.PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity #field1 span {
+  padding: 13px;
 }
 .PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity .add-cart {
   border: 2px solid #e8e2d6;

@@ -1503,12 +1503,9 @@ span.psw {
                 text-align:center;
                 font-size:18px;
               }
-              input[type=number]{
-                border:none;
-                text-align:center;
-                outline:none;
-                font-size:18px;
-              }
+            span{
+              padding:13px;
+            }
           }
           .add-cart{
             border:2px solid $lighter-gray;

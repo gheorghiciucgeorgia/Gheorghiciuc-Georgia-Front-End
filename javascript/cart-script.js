@@ -329,4 +329,12 @@ function shipping(){
       }
   }
 }
+function quantityPDP(){
+  let decreaseButtons = document.querySelectorAll('.decrease');
+  let increaseButtons = document.querySelectorAll('.increase');
+  let quantity=document.querySelectorAll('#field1 span');
+  console.log(quantity);
+  
+}
+quantityPDP();
 
