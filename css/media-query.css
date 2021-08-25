@@ -228,6 +228,9 @@
   .benefits-content .benefits-content-content i {
     font-size: 70px;
   }
+  .benefits-content .benefits-content-content .text-content {
+    margin-right: 21px;
+  }
   .benefits-content .benefits-content-content .text-content h2 {
     font-size: 18px;
   }
@@ -811,7 +814,7 @@
   }
 
   .banner h1 {
-    font-size: 40px;
+    font-size: 24px;
     top: 15%;
   }
   .banner h2 {
@@ -837,6 +840,7 @@
     margin-left: 0;
   }
   .benefits-content .benefits-content-content .text-content {
+    margin-right: 21px;
     width: 30%;
   }
 
@@ -914,10 +918,13 @@
   }
 
   .CategoryLandingPagetitle {
-    margin-top: 30%;
+    margin-top: 34%;
+  }
+  .CategoryLandingPagetitle p {
+    font-size: 12px;
   }
   .CategoryLandingPagetitle h2 {
-    font-size: 30px;
+    font-size: 12px;
   }
 
   .Filters .filters-row {
@@ -936,6 +943,9 @@
     margin-left: 4%;
   }
 
+  .CLP-products .new-title {
+    font-size: 20px;
+  }
   .CLP-products .slideshow-media-products {
     display: block;
   }
@@ -1002,7 +1012,7 @@
     width: 100%;
   }
   .CLP-products .CLP-products-row .CLP-products-column .img .product-title {
-    font-size: 18px;
+    font-size: 15px;
   }
   .CLP-products .CLP-products-row .CLP-products-column .img .price {
     font-size: 18px;
@@ -1012,9 +1022,10 @@
     display: block;
   }
   .page404-content .content-left {
-    width: 100%;
     margin: 0;
-    left: 10%;
+  }
+  .page404-content .content-left svg {
+    width: 100%;
   }
   .page404-content .content-left h2 {
     font-size: 100px;
@@ -1025,6 +1036,9 @@
     width: 100%;
     padding-bottom: 5%;
     margin-top: -25%;
+  }
+  .page404-content .content-right h1 {
+    font-size: 29px;
   }
   .page404-content .content-right button {
     padding: 1% 70% 1% 2%;
@@ -1045,6 +1059,10 @@
     width: 10%;
     margin: 20px;
   }
+  .PDP-content .PDP-product-details .content-left .modal-content01 {
+    width: 90%;
+    margin: auto;
+  }
   .PDP-content .PDP-product-details .content-right {
     width: 100%;
     margin-top: 20%;
@@ -1057,7 +1075,7 @@
     display: block;
   }
   .PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity #field1 {
-    width: 20%;
+    width: 26%;
     margin-bottom: 3%;
   }
   .PDP-content .PDP-product-details .content-right .product-detail {
@@ -1081,7 +1099,7 @@
     width: 50px;
   }
   .products-box .products .product-row .product .product-name {
-    font-size: 8px;
+    font-size: 4px;
   }
   .products-box .products .product-row .quantity {
     padding: 0.5%;
@@ -1108,14 +1126,22 @@
   }
   .products-box .buttons-content .content-left .content-left-left {
     width: 100%;
-    margin-left: 10%;
   }
   .products-box .buttons-content .content-left .content-left-left .cupon {
     width: 50%;
     font-size: 12px;
   }
-  .products-box .buttons-content .content-left .content-right-right {
-    margin-left: 15%;
+  .products-box .buttons-content .content-bottom .cartsubtotal .left {
+    width: 80%;
+  }
+  .products-box .buttons-content .content-bottom .cartsubtotal .right {
+    width: 79%;
+  }
+  .products-box .buttons-content .content-bottom .shipping .left {
+    width: 40%;
+  }
+  .products-box .buttons-content .content-bottom .shipping .right {
+    font-size: 15px;
   }
   .products-box .buttons-content .content-bottom .order-total .right {
     font-size: 20px;
