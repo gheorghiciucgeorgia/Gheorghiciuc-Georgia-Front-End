@@ -234,7 +234,8 @@ function manageQuantity() {
   for(let i=0; i < increaseButtons.length; i++) {
 
       decreaseButtons[i].addEventListener('click', () => {
-          console.log(cartItems);
+          
+        console.log(cartItems);
           currentQuantity = decreaseButtons[i].parentElement.querySelector('span').textContent;
           console.log(currentQuantity);
           currentProduct = decreaseButtons[i].parentElement.previousElementSibling.querySelector('span').textContent.toLocaleLowerCase().replace(/ /g,'').trim();
@@ -329,12 +330,5 @@ function shipping(){
       }
   }
 }
-function quantityPDP(){
-  let decreaseButtons = document.querySelectorAll('.decrease');
-  let increaseButtons = document.querySelectorAll('.increase');
-  let quantity=document.querySelectorAll('#field1 span');
-  console.log(quantity);
-  
-}
-quantityPDP();
+
 
