@@ -105,6 +105,7 @@ function cartNumbers(product, action) {
   setItems(product);
 }
 
+
 function setItems(product) {
 
   let productNumbers = localStorage.getItem('cartNumbers');

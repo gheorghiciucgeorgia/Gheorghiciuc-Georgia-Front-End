@@ -337,8 +337,36 @@
     display: none;
   }
 
+  .header-right {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #262a32;
+    color: white;
+    text-align: center;
+    padding: 20px 0px 20px 20px;
+    opacity: 1;
+  }
   .header-right a {
-    displaY: none;
+    font-size: 30px;
+    text-decoration: none;
+    color: #e8e2d6;
+    margin-right: 10%;
+    opacity: 1;
+  }
+  .header-right .ellipse {
+    border: 2px solid #84bc22;
+    border-radius: 50%;
+    position: absolute;
+    color: #84bc22;
+    font-size: 14px;
+    padding: 2px 4px;
+    top: -10px;
+    right: -10px;
+    background-color: #262a32;
+    font-weight: 400;
+    text-align: center;
   }
 
   .header-center {
@@ -511,42 +539,6 @@
 
   #toggle:checked + .menu-media {
     display: block;
-  }
-
-  .mobile-footer {
-    display: block;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #262a32;
-    color: white;
-    text-align: center;
-    padding: 20px 0px 20px 20px;
-  }
-  .mobile-footer a {
-    font-size: 30px;
-    text-decoration: none;
-    color: #e8e2d6;
-    margin-right: 15%;
-  }
-  .mobile-footer a i {
-    position: relative;
-  }
-  .mobile-footer a .ellipse {
-    border: 2.5px solid #84bc22;
-    border-radius: 50%;
-    position: absolute;
-    color: #84bc22;
-    font-size: 20px;
-    padding: 2px 4px;
-    top: -10px;
-    right: -10px;
-    background-color: #262a32;
-    font-weight: 400;
-  }
-  .mobile-footer #user-icon-for-mobile {
-    width: auto;
   }
 
   /*----------------------Styling the modal-------*/

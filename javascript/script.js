@@ -92,23 +92,6 @@ setTimeout(() => {
 closecookie.onclick=function(){
     cookieContainer.classList.remove("active-cookie");
 }
-// wish increasing number when clicked
-var count=0;
-let wishes=document.querySelectorAll(".add-wish");
-let wishesnumber=document.getElementsByClassName("heart");
-
-
-for(let i=0;i<wishes.length;i++){
-    wishes[i].addEventListener('click',() => {
-      count++;
-      localStorage.setItem('WishesNumber',count);
-      let wishnumbers = localStorage.getItem('WishesNumber');
-      if( wishnumbers ) {
-        document.querySelector('.ellipse').textContent = wishnumbers;
-        console.log(wishnumbers);
-      }
-    })
-}
 
 
 var slideIndex1 = 1;
@@ -140,3 +123,22 @@ function showSlides1(n) {
   dots1[slideIndex1-1].className += " active";
 }
 
+// wish increasing number when clicked
+var count=0;
+let wishes=document.querySelectorAll(".add-wish");
+let wishesnumber=document.getElementsByClassName("heart");
+
+
+for(let i=0;i<wishes.length;i++){
+    wishes[i].addEventListener('click',() => {
+      count++;
+      localStorage.setItem('WishesNumber',count);
+      let wishnumbers = localStorage.getItem('WishesNumber');
+      if( wishnumbers ) {
+
+        document.querySelector('.ellipse').textContent = wishnumbers;
+        console.log(wishnumbers);
+        
+      }
+    })
+}
