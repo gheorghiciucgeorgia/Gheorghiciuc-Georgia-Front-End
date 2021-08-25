@@ -368,41 +368,4 @@ function shipping(){
   }
 }
 
-function quantityPDP(){
-
-  let decreaseButtons = document.querySelectorAll('.decrease-PDP');
-  let increaseButtons = document.querySelectorAll('.increase-PDP');
-  let currentQuantity=0;
-  currentProduct='';
-  let cartItems=localStorage.getItem('productsInCart');
-  cartItems=JSON.parse(cartItems);
-
-  let quantity=document.querySelectorAll('.quantity-PDP');
-  
-    for(let i=0;i<increaseButtons.length;i++){
-
-      decreaseButtons[i].addEventListener('click',function(){
-      
-      currentQuantity=quantity[0].textContent;
-      currentQuantity=JSON.parse(currentQuantity);
-      if(currentQuantity > 1){
-        currentQuantity-=1;
-      }
-      console.log(currentQuantity);
-    });
-
-    increaseButtons[i].addEventListener('click',function(){
-      currentQuantity=quantity[0].textContent;
-      currentQuantity=JSON.parse(currentQuantity);
-
-      currentQuantity+=1;
-      console.log(currentQuantity);
-      
-    });
-
-    }
-    
-  }
-  
-quantityPDP();
 
