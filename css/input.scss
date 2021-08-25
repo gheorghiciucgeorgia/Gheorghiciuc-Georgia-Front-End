@@ -26,6 +26,7 @@ $nude:#efead7;
 $price-color:rgb(189, 195, 199);
 $blackish:rgba(0,0,0,0.741);
 $border-color: rgb(0, 0, 0,0.102);
+$line-color:rgb(229, 226, 223);
 
 
 /* use viewport-relative units to cover page fully */
@@ -1094,7 +1095,25 @@ span.psw {
   text-align:center;
   word-spacing:1em;
   margin-top:10%;
-
+  .CategoryLandingPageMainTitle{
+    font-size:30px;
+    display: flex; 
+    flex-direction: row;
+    color:$icons-color;
+  }
+  .CategoryLandingPageMainTitle:before,.CategoryLandingPageMainTitle:after{
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 3px solid $white; 
+    margin:auto;
+    margin-left:50px;
+    margin-right:50px;
+    opacity: 0.502;
+  }
+  .pdp:before,.pdp:after{
+    border-bottom: 3px solid $line-color;
+  }
+  
   p{
     font-size:15px;
     a{
@@ -1109,17 +1128,9 @@ span.psw {
     font-size:50px;
     font-weight:900;
   }
-  .title-lines:before, 
-  .title-lines:after { 
-    content: ""; 
-    flex: 1 1; 
-    border-bottom: 3px solid $black; 
-    margin:auto;
-    margin-left:50px;
-    margin-right:50px;
-    opacity: 0.102;
-  }
 }
+
+
 
 .Filters{
   background-color: $white;

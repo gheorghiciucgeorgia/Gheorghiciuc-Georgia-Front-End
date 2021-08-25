@@ -1065,6 +1065,24 @@ span.psw a {
   word-spacing: 1em;
   margin-top: 10%;
 }
+.CategoryLandingPagetitle .CategoryLandingPageMainTitle {
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  color: #45413e;
+}
+.CategoryLandingPagetitle .CategoryLandingPageMainTitle:before, .CategoryLandingPagetitle .CategoryLandingPageMainTitle:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 3px solid white;
+  margin: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  opacity: 0.502;
+}
+.CategoryLandingPagetitle .pdp:before, .CategoryLandingPagetitle .pdp:after {
+  border-bottom: 3px solid #e5e2df;
+}
 .CategoryLandingPagetitle p {
   font-size: 15px;
 }
@@ -1078,16 +1096,6 @@ span.psw a {
 .CategoryLandingPagetitle h2 {
   font-size: 50px;
   font-weight: 900;
-}
-.CategoryLandingPagetitle .title-lines:before,
-.CategoryLandingPagetitle .title-lines:after {
-  content: "";
-  flex: 1 1;
-  border-bottom: 3px solid black;
-  margin: auto;
-  margin-left: 50px;
-  margin-right: 50px;
-  opacity: 0.102;
 }
 
 .Filters {
