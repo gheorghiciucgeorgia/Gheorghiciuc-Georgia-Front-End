@@ -565,6 +565,10 @@
   }
 
   /*-------------------------END LOG IN MODAL FOR MEDIA--------------*/
+  .mobile-footer {
+    display: none;
+  }
+
   .homepage {
     margin-top: 30%;
     display: block;

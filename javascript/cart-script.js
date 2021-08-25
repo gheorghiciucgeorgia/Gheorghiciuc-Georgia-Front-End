@@ -1,3 +1,39 @@
+// wish increasing number when clicked
+
+let wish=document.querySelectorAll(".add-wish");
+
+for(let i=0;i< wish.length;i++){
+  wish[i].addEventListener('click',()=>{
+    wishNumbers();
+  });
+}
+//this function is to set the wish numbers when we load the page to never change
+function onLoadWishNumbers(){
+  let heartNumbers=localStorage.getItem('wishNumbers');
+  
+  if(heartNumbers){
+    document.querySelector('.heart span').textContent=heartNumbers;
+  }
+}
+function wishNumbers(){
+  
+  let heartNumbers=localStorage.getItem('wishNumbers');
+  
+  heartNumbers=parseInt(heartNumbers);
+
+  if(heartNumbers){
+
+    localStorage.setItem('wishNumbers',heartNumbers + 1);
+    document.querySelector('.heart span').textContent=heartNumbers + 1;
+   
+  
+  }else{
+    localStorage.setItem('wishNumbers',1);
+    document.querySelector('.heart span').textContent=1;
+  }
+}
+onLoadWishNumbers();
+
 //--------------cart script------
 let carts=document.querySelectorAll('.add-cart');
 let products=[
@@ -369,3 +405,4 @@ function quantityPDP(){
   }
   
 quantityPDP();
+
