@@ -27,7 +27,7 @@ $price-color:rgb(189, 195, 199);
 $blackish:rgba(0,0,0,0.741);
 $border-color: rgb(0, 0, 0,0.102);
 $line-color:rgb(229, 226, 223);
-
+$Countdown-background-color:#f1f1f1;
 
 /* use viewport-relative units to cover page fully */
 body {
@@ -1808,4 +1808,112 @@ span.psw {
       }
     }
 }
+//Count Down Page
+.bodyforCountdown{
+  background-color:$Countdown-background-color;
+}
+.countdown{
+  background-color: $white;
+  margin:4%;
+  margin-top:10%;
+  border-radius: 10px;
+
+    .countdown-title{
+      text-align:center;
+      padding:2% 0;
+      color:$icons-color;
+
+      h1{
+        font-weight:900;
+        font-size:30px;
+      }
+
+      p{
+        width: 40%;
+        margin:0 auto;
+        font-size:14px;
+      }
+    }
+
+    .release{
+      width: 90%;
+      margin: 2% 4%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      span{
+
+        font-size: 60px;
+        font-weight:900;
+        color: $icons-color;
+        background-color: $white;
+        border: 0.2rem solid $green;
+        border-radius: 50%;
+        padding: 2rem;
+        user-select: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       }
+       h3{
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 1.2857142857rem;
+        line-height: 1.67;
+        color: $icons-color;
+        margin-top: 1rem;
+       }
+    }
+    .release>div{
+      width: 15%;
+      margin: 0 1%;
+      text-align: center;
+    }
+    .release>div>div{
+      width: 100%;
+      position: relative;
+      height: 8.5714285714rem;
+    }
+    #email-input{
+        width: 42%;
+        margin: 0 auto;
+        position: relative;
+
+        input[type=emmail]{
+          border-radius: 35px;
+          border: 0.15rem solid $nude;
+          padding: 0.7142857143rem 1.4285714286rem;
+          width: 100%;
+          color: $icons-color;
+          font-size: 1rem;
+          transition: all 0.5s ease;
+        }
+        input[type=submit]{
+          position: absolute;
+          opacity: 0;
+          visibility: hidden;
+        }
+        label{
+          i{
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            right: 1rem;
+            color: #84bc22;
+            width: 5%;
+            height: 38%;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+            font-size: 25px;
+          }
+          
+        }
+    }
+  
+}
+
 

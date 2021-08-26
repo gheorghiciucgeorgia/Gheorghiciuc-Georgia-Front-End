@@ -1739,4 +1739,101 @@ span.psw a {
   font-weight: 900;
 }
 
+.bodyforCountdown {
+  background-color: #f1f1f1;
+}
+
+.countdown {
+  background-color: white;
+  margin: 4%;
+  margin-top: 10%;
+  border-radius: 10px;
+}
+.countdown .countdown-title {
+  text-align: center;
+  padding: 2% 0;
+  color: #45413e;
+}
+.countdown .countdown-title h1 {
+  font-weight: 900;
+  font-size: 30px;
+}
+.countdown .countdown-title p {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.countdown .release {
+  width: 90%;
+  margin: 2% 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.countdown .release span {
+  font-size: 60px;
+  font-weight: 900;
+  color: #45413e;
+  background-color: white;
+  border: 0.2rem solid #84bc22;
+  border-radius: 50%;
+  padding: 2rem;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.countdown .release h3 {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 1.2857142857rem;
+  line-height: 1.67;
+  color: #45413e;
+  margin-top: 1rem;
+}
+.countdown .release > div {
+  width: 15%;
+  margin: 0 1%;
+  text-align: center;
+}
+.countdown .release > div > div {
+  width: 100%;
+  position: relative;
+  height: 8.5714285714rem;
+}
+.countdown #email-input {
+  width: 42%;
+  margin: 0 auto;
+  position: relative;
+}
+.countdown #email-input input[type=emmail] {
+  border-radius: 35px;
+  border: 0.15rem solid #efead7;
+  padding: 0.7142857143rem 1.4285714286rem;
+  width: 100%;
+  color: #45413e;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+.countdown #email-input input[type=submit] {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.countdown #email-input label i {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  right: 1rem;
+  color: #84bc22;
+  width: 5%;
+  height: 38%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-size: 25px;
+}
+
 /*# sourceMappingURL=style.css.map */
