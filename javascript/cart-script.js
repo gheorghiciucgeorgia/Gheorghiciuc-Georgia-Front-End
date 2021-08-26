@@ -15,6 +15,7 @@ function onLoadWishNumbers(){
     document.querySelector('.heart span').textContent=heartNumbers;
   }
 }
+
 function wishNumbers(){
   
   let heartNumbers=localStorage.getItem('wishNumbers');
@@ -367,5 +368,71 @@ function shipping(){
       }
   }
 }
+//PDP Page quantity
+const amount = document.querySelector(".quantity-PDP");
+
+function quantityPDP(){
+
+  //added the values of the buttons in some constants
+	const minus = document.querySelector(".decrease-PDP");
+	const plus = document.querySelector(".increase-PDP");
+
+	// Initial value of the input
+	amount.value = 1;
+
+	// Interaction and amount validate
+	minus.addEventListener("click", () => {
+
+		amount.focus();
+		amount.value <= 1 ? amount.value = 1 : amount.value--;
+    
+    //we save the quantity into a localstorage it will help us with the adding to cart
+    localStorage.setItem('quantityPDP',amount.value);
+	}, true);
+
+	plus.addEventListener("click", () => {
+
+		amount.focus();
+
+		amount.value >= 99 ? amount.value = 9 : amount.value++;
+
+    //the same as above
+    localStorage.setItem('quantityPDP',amount.value);
+	}, true);
+}
+quantityPDP();
+    //now we will add the function for adding to cart on the PDP page
+let cartPDP=document.querySelectorAll('.add-to-cart');
+
+for(let i=0;i<cartPDP.length;i++){
+  cartPDP[i].addEventListener('click',()=>{
+    quantityNumber();
+  });
+}
+function onLoadCartPDPNumbers(){
+  let quantitynr=localStorage.getItem('cartNumbers');
+
+  if(quantitynr){
+    document.querySelector('.cart span').textContent=quantitynr;
+  }
+}
+function quantityNumber(){
+
+  let quantNumber=localStorage.getItem('quantityPDP');
+  quantNumber=parseInt(quantNumber);
+  let cartnr=localStorage.getItem('cartNumbers');
+  cartnr=parseInt(cartnr);
+  
+  if(quantNumber){
+    localStorage.setItem('cartNumbers', cartnr + quantNumber);
+    document.querySelector('.cart span').textContent=cartnr;
+  }else{
+    localStorage.setItem('cartNumbers',cartnr);
+    document.querySelector('.cart span').textContent=cartnr;
+  }
+}
+onLoadCartPDPNumbers();
+
+
 
 

@@ -1080,9 +1080,6 @@ span.psw a {
   margin-right: 50px;
   opacity: 0.502;
 }
-.CategoryLandingPagetitle .pdp:before, .CategoryLandingPagetitle .pdp:after {
-  border-bottom: 3px solid #e5e2df;
-}
 .CategoryLandingPagetitle p {
   font-size: 15px;
 }
@@ -1468,10 +1465,19 @@ span.psw a {
   text-align: center;
   font-size: 18px;
 }
-.PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity #field1 span {
-  padding: 13px;
+.PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity #field1 input[type=number] {
+  padding: 5px 5px;
+  width: 30px;
+  border: none;
+  outline: none;
+  text-align: center;
 }
-.PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity .add-cart {
+.PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity #field1 input::-webkit-outer-spin-button,
+.PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity #field1 input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity .add-to-cart {
   border: 2px solid #e8e2d6;
   border-radius: 25px;
   background-color: #84bc22;

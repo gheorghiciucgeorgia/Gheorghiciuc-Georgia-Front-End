@@ -1110,9 +1110,6 @@ span.psw {
     margin-right:50px;
     opacity: 0.502;
   }
-  .pdp:before,.pdp:after{
-    border-bottom: 3px solid $line-color;
-  }
   
   p{
     font-size:15px;
@@ -1514,11 +1511,20 @@ span.psw {
                 text-align:center;
                 font-size:18px;
               }
-            span{
-              padding:13px;
+            input[type=number]{
+              padding:5px 5px;
+              width: 30px;
+              border:none;
+              outline:none;
+              text-align:center;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
             }
           }
-          .add-cart{
+          .add-to-cart{
             border:2px solid $lighter-gray;
             border-radius:25px;
             background-color: $green;
