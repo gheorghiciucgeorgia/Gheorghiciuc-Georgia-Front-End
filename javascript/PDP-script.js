@@ -160,3 +160,10 @@ function showSlides2(n) {
   dots2[slideIndex2-1].className += " active";
 }
 
+//print page
+var printbutton=document.querySelector('#print');
+printbutton.addEventListener('click',()=>{
+
+  window.print();
+
+});

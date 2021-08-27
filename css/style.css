@@ -1504,6 +1504,16 @@ span.psw a {
   font-size: 18px;
   padding: 0;
 }
+.PDP-content .PDP-product-details .content-right #print {
+  border: 2px solid #efead7;
+  border-radius: 25px;
+  background-color: #84bc22;
+  color: white;
+  padding: 10px 18px;
+  text-transform: uppercase;
+  display: list-item;
+  margin: 3% 0;
+}
 .PDP-content .PDP-product-details .content-right .share {
   display: flex;
   justify-content: left;

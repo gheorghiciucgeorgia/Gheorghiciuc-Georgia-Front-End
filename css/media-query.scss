@@ -1313,3 +1313,16 @@ $dot-media-color:#8b8b8e;
   }
 
 }
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .PDP-product-details, .PDP-product-details * {
+    visibility: visible;
+  }
+  .PDP-product-details {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
