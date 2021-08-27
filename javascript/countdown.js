@@ -38,35 +38,23 @@ let x = setInterval(() => {
 
 }, 1000);
 
-//Submit script
-const emailSubscribe = document.getElementById("email");
-const subscribeButton = document.getElementById("subscribe");
 
-subscribeButton.addEventListener("click", (e) => {
-
-	e.preventDefault();
-
-	// Checking email if is valid
-	if (emailSubscribe.validity.valid === true) {
-
-		// Get emails count to form new id
-		firebase.database().ref("/emails")
-		.once('value', snap => {
-
-			let newID = snap.val().length;
-
-			firebase.database().ref(`/emails/${newID}`)
-			.update({
-				email: emailSubscribe.value
-			});
-
-		});
-
-		alert(`Subscribed with email ${emailSubscribe.value}. Thank you!`);
-
-	}
-	else {
-		alert("Email is not valid.");
-	}
-
-}, true);
+//saving the emails into localStorage
+let emails = [];
+        // example {id:1592304983049, title: 'Deadpool', year: 2015}
+        const addEmails = (ev)=>{
+            ev.preventDefault();  //to stop the form submitting
+            let email = {
+                id: Date.now(),
+                email: document.getElementById('email').value,
+            }
+            emails.push(email);
+            document.forms[0].reset(); // to clear the form for the next entries
+            
+            //saving to localStorage
+            localStorage.setItem('EmailsSubscribed', JSON.stringify(emails) );
+			alert("Your email has been added with success!");
+        }
+        document.addEventListener('DOMContentLoaded', ()=>{
+            document.getElementById('forSubscribe').addEventListener('click', addEmails);
+        });
