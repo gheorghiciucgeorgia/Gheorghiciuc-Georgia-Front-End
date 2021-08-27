@@ -711,7 +711,7 @@ $dot-media-color:#8b8b8e;
       left:10%;
     }
     .center{
-      left:38%;
+      left: 30%;
     }
     .text-right{
       font-size:40px;
@@ -721,7 +721,7 @@ $dot-media-color:#8b8b8e;
     }
     .viewmorebtn-right{
       padding: 10px 30px;
-      bottom: 10%;
+      bottom: 15%;
     }
    .mySlides{
      img{
@@ -903,10 +903,10 @@ $dot-media-color:#8b8b8e;
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
+    padding: 6px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 13px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -988,13 +988,16 @@ $dot-media-color:#8b8b8e;
     display: block;
     bottom:5%;
     left:0;
-    padding:20px 0px 20px 20px;
+    padding: 20px 0px 20px 0px;
     background-color:$white;
     font-family:$font;
     overflow-y: scroll;
     -webkit-overflow-scrolling:touch;
     z-index:-1;
     font-size:18px;
+  }
+  .main-footer-column{
+    padding:4%;
   }
   .contact-down{
     margin-left:50px;
@@ -1052,7 +1055,7 @@ $dot-media-color:#8b8b8e;
       font-size:12px;
     }
     h2{
-      font-size: 12px;
+      font-size: 35px;
     }
   }
   .Filters{
@@ -1074,9 +1077,15 @@ $dot-media-color:#8b8b8e;
     }
   }
   .CLP-products {
-    .new-title{
+    .title-products{
+      display: flex; 
+      flex-direction: row;
+      
+      .new-title{
       font-size:20px;
+      }
     }
+    
 
     .slideshow-media-products{
       display:block;
@@ -1104,10 +1113,10 @@ $dot-media-color:#8b8b8e;
           .product-title{
             position:absolute;
             bottom:15%;
-            left:7%;
             color:$icons-color;
-            font-size:15px;
-            font-weight:400;
+            left: 2%;
+            font-size: 17px;
+            font-weight: 400;
           }
           .title-center{
             left:25%;
@@ -1115,11 +1124,15 @@ $dot-media-color:#8b8b8e;
           .price{
             position:absolute;
             bottom:3%;
-            left:38%;
+            left: 40%;
             color:$icons-color;
             font-size:15px;
           }
         }  
+      }
+      .all-dots2{
+        text-align:center;
+        margin: 4% 0;
       }
       .dot2 {
         cursor: pointer;
@@ -1151,6 +1164,10 @@ $dot-media-color:#8b8b8e;
           }
           .product-title{
             font-size: 15px;
+            left: 17%;
+          }
+          .title-center{
+            left:27%;
           }
           .price{
             font-size:18px;
@@ -1162,6 +1179,7 @@ $dot-media-color:#8b8b8e;
   //404 PAge
   .page404-content{
     display:block;
+
     .content-left{
       margin:0;
       svg{
@@ -1181,7 +1199,12 @@ $dot-media-color:#8b8b8e;
         font-size: 29px;
       }
       button{
-        padding: 1% 70% 1% 2%
+        padding: 1% 70% 1% 2%;
+        i{
+          right: 3%;
+          bottom: 5px;
+          font-size: 16px;
+        }
       }
     }
   }

@@ -600,7 +600,7 @@
     left: 10%;
   }
   .slideshow-container .center {
-    left: 38%;
+    left: 30%;
   }
   .slideshow-container .text-right {
     font-size: 40px;
@@ -610,7 +610,7 @@
   }
   .slideshow-container .viewmorebtn-right {
     padding: 10px 30px;
-    bottom: 10%;
+    bottom: 15%;
   }
   .slideshow-container .mySlides img {
     width: 100%;
@@ -777,10 +777,10 @@
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
+    padding: 6px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 13px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -855,13 +855,17 @@
     display: block;
     bottom: 5%;
     left: 0;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 0px 20px 0px;
     background-color: white;
     font-family: "Lato", sans-serif;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     z-index: -1;
     font-size: 18px;
+  }
+
+  .main-footer-column {
+    padding: 4%;
   }
 
   .contact-down {
@@ -924,7 +928,7 @@
     font-size: 12px;
   }
   .CategoryLandingPagetitle h2 {
-    font-size: 12px;
+    font-size: 35px;
   }
 
   .Filters .filters-row {
@@ -943,7 +947,11 @@
     margin-left: 4%;
   }
 
-  .CLP-products .new-title {
+  .CLP-products .title-products {
+    display: flex;
+    flex-direction: row;
+  }
+  .CLP-products .title-products .new-title {
     font-size: 20px;
   }
   .CLP-products .slideshow-media-products {
@@ -970,9 +978,9 @@
   .CLP-products .slideshow-media-products .mySlides2 .img .product-title {
     position: absolute;
     bottom: 15%;
-    left: 7%;
     color: #45413e;
-    font-size: 15px;
+    left: 2%;
+    font-size: 17px;
     font-weight: 400;
   }
   .CLP-products .slideshow-media-products .mySlides2 .img .title-center {
@@ -981,9 +989,13 @@
   .CLP-products .slideshow-media-products .mySlides2 .img .price {
     position: absolute;
     bottom: 3%;
-    left: 38%;
+    left: 40%;
     color: #45413e;
     font-size: 15px;
+  }
+  .CLP-products .slideshow-media-products .all-dots2 {
+    text-align: center;
+    margin: 4% 0;
   }
   .CLP-products .slideshow-media-products .dot2 {
     cursor: pointer;
@@ -1013,6 +1025,10 @@
   }
   .CLP-products .CLP-products-row .CLP-products-column .img .product-title {
     font-size: 15px;
+    left: 17%;
+  }
+  .CLP-products .CLP-products-row .CLP-products-column .img .title-center {
+    left: 27%;
   }
   .CLP-products .CLP-products-row .CLP-products-column .img .price {
     font-size: 18px;
@@ -1042,6 +1058,11 @@
   }
   .page404-content .content-right button {
     padding: 1% 70% 1% 2%;
+  }
+  .page404-content .content-right button i {
+    right: 3%;
+    bottom: 5px;
+    font-size: 16px;
   }
 
   .PDP-content .PDP-product-details {
