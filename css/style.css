@@ -1174,14 +1174,18 @@ span.psw a {
 .CLP-products .title-products {
   margin-bottom: 2%;
 }
-.CLP-products .new-title {
+.CLP-products .title-products {
+  display: flex;
+  flex-direction: row;
+}
+.CLP-products .title-products .new-title {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 900;
   color: #45413e;
 }
-.CLP-products .new-title:before,
-.CLP-products .new-title:after {
+.CLP-products .title-products:before,
+.CLP-products .title-products:after {
   content: "";
   flex: 1 1;
   border-bottom: 3px solid black;
