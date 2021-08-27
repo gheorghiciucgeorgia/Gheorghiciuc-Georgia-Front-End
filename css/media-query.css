@@ -352,7 +352,8 @@
     font-size: 30px;
     text-decoration: none;
     color: #e8e2d6;
-    margin-right: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
     opacity: 1;
   }
   .header-right .ellipse {
@@ -790,6 +791,9 @@
   }
   .slideshow-media-products .prev1:hover, .slideshow-media-products .next1:hover {
     background-color: rgba(0, 0, 0, 0.8);
+  }
+  .slideshow-media-products .all-dots1 {
+    text-align: center;
   }
   .slideshow-media-products .dot1 {
     cursor: pointer;

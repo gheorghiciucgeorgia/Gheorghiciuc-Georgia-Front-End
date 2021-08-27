@@ -564,6 +564,10 @@ span.psw {
 /* Hide the images by default */
 .mySlides {
   display: none;
+  
+  img{
+    width:100%;
+  }
 }
 .alldots{
   position: absolute;

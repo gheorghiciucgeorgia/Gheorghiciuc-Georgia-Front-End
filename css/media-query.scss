@@ -474,7 +474,8 @@ $dot-media-color:#8b8b8e;
       font-size:30px;
       text-decoration: none;
       color:$lighter-gray;
-      margin-right:10%;
+      margin-right: 5%;
+      margin-left: 5%;
       opacity:1;
     }
     .ellipse {
@@ -922,7 +923,9 @@ $dot-media-color:#8b8b8e;
     background-color: rgba(0,0,0,0.8);
   }
 
-
+  .all-dots1{
+    text-align:center;
+  }
   .dot1 {
     cursor: pointer;
     height: 10px;

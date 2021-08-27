@@ -108,7 +108,22 @@ readmorebtn.onclick=function () {
       moreText.style.display = "inline";
     }
 }
+//it doesn't work
+/*var tablinks1=document.getElementsByClassName('tablinks')[0];
+var tablinks2=document.getElementsByClassName('tablinks')[1];
+var tablinks3=document.getElementsByClassName('tablinks')[2];
 
+tablinks1.onlclick=function(event){
+  openCity(event,'Description');
+}
+
+tablinks2.onlclick=function(event){
+  openCity(event,'Additional-Information');
+}
+
+tablinks3.onlclick=function(event){
+  openCity(event,'Reviews');
+}*/
 function openCity(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -130,7 +145,29 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
   }
   document.getElementById("defaultOpen").click();
-  //slide for media
+
+var dot21=document.getElementsByClassName('dot2')[0];
+var dot22=document.getElementsByClassName('dot2')[1];
+var dot23=document.getElementsByClassName('dot2')[2];
+var dot24=document.getElementsByClassName('dot2')[3];
+
+dot21.onclick=function(){
+  currentSlide2(1);
+}
+
+dot22.onclick=function(){
+  currentSlide2(2);
+}
+
+dot23.onclick=function(){
+  currentSlide2(3);
+}
+
+dot24.onclick=function(){
+  currentSlide2(4);
+}
+
+//slide for media
 var slideIndex2 = 1;
 showSlides2(slideIndex2);
 

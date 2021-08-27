@@ -547,6 +547,9 @@ span.psw a {
 .mySlides {
   display: none;
 }
+.mySlides img {
+  width: 100%;
+}
 
 .alldots {
   position: absolute;
