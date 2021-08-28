@@ -87,6 +87,11 @@ https://flickity.metafizzy.co
   transform: translateY(-50%);
   color:white;
 }
+@media only screen and (max-width: 1138px) and (min-width: 767px){
+  .flickity-prev-next-button{
+    top: -23%;
+  }
+}
 
 .flickity-prev-next-button.previous { 
   left: 17%;

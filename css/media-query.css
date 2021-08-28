@@ -42,6 +42,13 @@
   .popular-items-section .products-row {
     width: 100%;
   }
+  .popular-items-section .products-row .popular-items-title {
+    font-size: 18px;
+  }
+  .popular-items-section .products-row .popular-items-title:before, .popular-items-section .products-row .popular-items-title:after {
+    margin-left: 21px;
+    margin-right: 21px;
+  }
   .popular-items-section .products-row .products-column {
     width: 25%;
     margin-bottom: 4%;
@@ -112,7 +119,7 @@
   }
 }
 /* for tablets */
-@media only screen and (max-width: 1138px) and (min-width: 767px) {
+@media only screen and (max-width: 1138px) and (min-width: 768px) {
   .header a {
     font-size: 10px;
   }
@@ -201,11 +208,35 @@
   }
 
   .popular-items-section .products-column {
-    width: 50%;
+    width: 25%;
     margin-bottom: 4%;
   }
   .popular-items-section .products-column .img {
     width: 72%;
+  }
+  .popular-items-section .products-column .img img {
+    width: 100%;
+  }
+  .popular-items-section .products-column .img .product-title {
+    font-size: 10px;
+    bottom: 14%;
+  }
+  .popular-items-section .products-column .img .price {
+    font-size: 10px;
+  }
+  .popular-items-section .products-column .img .buttons1 {
+    left: 15%;
+  }
+  .popular-items-section .products-column .img .buttons1 .Price-button {
+    padding: 2px;
+    font-size: 12px;
+  }
+  .popular-items-section .products-column .img .buttons1 .BuyNow-button {
+    padding: 2px;
+    font-size: 12px;
+  }
+  .popular-items-section .products-column .img .title-center {
+    left: 17%;
   }
 
   .banner h1 {
@@ -242,8 +273,7 @@
     width: 100%;
   }
   .Filters .filters-column {
-    width: 51%;
-    margin-left: 23%;
+    width: 33%;
   }
   .Filters .filters-column select {
     width: 90%;
@@ -260,10 +290,13 @@
     width: 100%;
   }
   .CLP-products .CLP-products-row .CLP-products-column .img .product-title {
-    font-size: 8px;
+    font-size: 10px;
+    width: 98%;
+    left: 2%;
   }
   .CLP-products .CLP-products-row .CLP-products-column .img .price {
-    font-size: 8px;
+    font-size: 10px;
+    left: 37%;
   }
 
   .page404-content .content-left {

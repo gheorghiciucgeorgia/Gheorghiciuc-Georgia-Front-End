@@ -74,6 +74,13 @@ $dot-media-color:#8b8b8e;
   .popular-items-section {
     .products-row{
       width: 100%;
+      .popular-items-title{
+        font-size: 18px;
+      }
+      .popular-items-title:before,.popular-items-title:after{
+        margin-left: 21px;
+        margin-right: 21px;
+      }
     .products-column {
         width: 25%;
         margin-bottom:4%;
@@ -174,7 +181,7 @@ $dot-media-color:#8b8b8e;
   }
 }
 /* for tablets */
-@media only screen and (max-width: 1138px) and (min-width: 767px){
+@media only screen and (max-width: 1138px) and (min-width: 768px){
   //------------------Home Page-------------
   .header {
       a{
@@ -270,10 +277,34 @@ $dot-media-color:#8b8b8e;
     }
     .popular-items-section {
       .products-column {
-          width: 50%;
-          margin-bottom:4%;
+        width: 25%;
+        margin-bottom: 4%;
           .img{
-            width:72%;
+            width: 72%;
+            img{
+              width: 100%;
+            }
+            .product-title{
+              font-size: 10px;
+              bottom: 14%;
+            }
+            .price{
+              font-size: 10px;
+            }
+            .buttons1{
+              left: 15%;
+              .Price-button{
+                padding: 2px;
+                font-size: 12px;
+              }
+              .BuyNow-button{
+                padding:2px;
+                font-size: 12px;
+              }
+            }
+            .title-center{
+              left: 17%;
+            }
           }
         }
       }
@@ -324,8 +355,7 @@ $dot-media-color:#8b8b8e;
           width:100%;
         }
         .filters-column{
-          width:51%;
-          margin-left:23%;
+          width: 33%;
           select{
             width:90%;
           }
@@ -343,10 +373,13 @@ $dot-media-color:#8b8b8e;
                 width:100%;
               }
               .product-title{
-                font-size:8px;
+                font-size: 10px;
+                width: 98%;
+                left: 2%;
               }
               .price{
-                font-size:8px;
+                font-size: 10px;
+                left: 37%;
               }
             }
           }
