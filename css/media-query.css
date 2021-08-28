@@ -544,7 +544,7 @@
 
   /*----------------------Styling the modal-------*/
   .modal-content {
-    width: 70%;
+    width: 100%;
     height: 60%;
   }
 
@@ -1096,7 +1096,7 @@
     display: block;
   }
   .PDP-content .PDP-product-details .content-right .add-to-cart-and-quantity #field1 {
-    width: 26%;
+    width: 28%;
     margin-bottom: 3%;
   }
   .PDP-content .PDP-product-details .content-right .product-detail {
